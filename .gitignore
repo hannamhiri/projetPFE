@@ -216,3 +216,35 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Données et volumes Docker
+clickhouse_data/
+pg_data/
+dagster_pg_data/
+superset_home/
+mlflow/artifacts/
+
+# Jupyter checkpoints
+**/.ipynb_checkpoints/
+ml/notebooks/.ipynb_checkpoints/
+
+# Modèles ML sauvegardés (trop lourds)
+ml/notebooks/*.pkl
+ml/notebooks/*.csv
+ml/notebooks/*.json
+
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Variables d'environnement
+.env
+
+# Docker volumes
+**/data/
+
