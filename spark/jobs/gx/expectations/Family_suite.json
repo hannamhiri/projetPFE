@@ -1,0 +1,54 @@
+{
+  "expectations": [
+    {
+      "id": "46928286-fced-458a-aa38-38d3f87cc834",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "774454f0-f857-4182-a8c1-4b1224c30ae6",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "7369ef62-2eab-45d4-934d-627ccfbf69b2",
+      "kwargs": {
+        "column": "Label"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "f74ce9f1-3962-492c-affc-f45289449079",
+      "kwargs": {
+        "column": "Code"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "0f3165e9-c1fe-41fa-a0f0-576eeb7ddb58",
+      "kwargs": {
+        "column_set": [
+          "Id",
+          "Code",
+          "Label"
+        ]
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "3bbc2371-c7e9-4e73-8a2f-c560dcd9203f",
+  "meta": {
+    "great_expectations_version": "1.1.0"
+  },
+  "name": "Family_suite",
+  "notes": null
+}

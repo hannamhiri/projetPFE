@@ -1,0 +1,7 @@
+# models/groups.yml
+version: 2
+
+groups:
+  - name: gold
+    owner:
+      name: data-engineering

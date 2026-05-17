@@ -1,0 +1,18 @@
+{
+  "actions": [
+    {
+      "name": "update_data_docs",
+      "site_names": [],
+      "type": "update_data_docs"
+    }
+  ],
+  "id": "d4a4ca4d-209c-4fdf-a6b4-7411a7584d6a",
+  "name": "Warehouse_checkpoint",
+  "result_format": "SUMMARY",
+  "validation_definitions": [
+    {
+      "id": "0edba556-c32c-465e-830d-0fbbfc35c8c3",
+      "name": "Warehouse_validation"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+2026-05-13 07:36:06 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14921 - LOGS_CAPTURED - Started capturing logs in process (pid: 14921).
+2026-05-13 07:36:06 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14921 - superset_sync - STEP_START - Started execution of step "superset_sync".
+2026-05-13 07:36:14 +0000 - dagster - INFO - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - superset_sync - =======================================================
+  SAGAP - Synchronisation Cube.js -> Superset
+=======================================================
+Lecture Cube.js (extended)...
+   30 mesures trouvees
+Authentification Superset...
+   OK
+Suppression metriques existantes...
+   OK - colonnes calculees preservees
+
+Creation des metriques...
+   + clientCount (count) -> SUM(clientCount)
+   + itemCount (count) -> SUM(itemCount)
+   + nbFamilles (countDistinct) -> COUNT(DISTINCT nbFamilles)
+   + nbBrands (countDistinct) -> COUNT(DISTINCT nbBrands)
+   + documentStatusCount (count) -> SUM(documentStatusCount)
+   + DocumentTypeCount (count) -> SUM(DocumentTypeCount)
+   + geographicalAreaCount (count) -> SUM(geographicalAreaCount)
+   + warehouseCount (count) -> SUM(warehouseCount)
+   + totalOrders (countDistinct) -> COUNT(DISTINCT documentCode)
+   + totalActiveClients (countDistinct) -> COUNT(DISTINCT CASE WHEN isActive = 1 THEN clientSK END)
+   + totalInactiveClients (countDistinct) -> COUNT(DISTINCT CASE WHEN isActive = 0 THEN clientSK END)
+   + tauxChurn (number) -> SUM(tauxChurn)
+   + totalPriceHT (sum) -> SUM(totalPriceHT)
+   + avgOrderValue (number) -> SUM(avgOrderValue)
+   + totalPriceHTB2B (sum) -> SUM(totalPriceHTB2B)
+   + totalPriceHTB2C (sum) -> SUM(totalPriceHTB2C)
+   + totalPriceHTPos (sum) -> SUM(totalPriceHTPos)
+   + totalPriceHTNonPos (sum) -> SUM(totalPriceHTNonPos)
+   + totalCostPrice (sum) -> SUM(totalCostPrice)
+   + grossMargin (number) -> SUM(grossMargin)
+   + grossMarginRate (number) -> SUM(grossMarginRate)
+   + totalQuantity (sum) -> SUM(totalQuantity)
+   + avgQuantity (avg) -> AVG(avgQuantity)
+   + totalDiscount (sum) -> SUM(totalDiscount)
+   + avgDiscountRate (avg) -> AVG(avgDiscountRate)
+   + avgDiscountRateB2B (avg) -> AVG(avgDiscountRateB2B)
+   + avgDiscountRateB2C (avg) -> AVG(avgDiscountRateB2C)
+   + nbArticlesMarge15 (countDistinct) -> COUNT(DISTINCT nbArticlesMarge15)
+   + nbDocsRemise20 (countDistinct) -> COUNT(DISTINCT nbDocsRemise20)
+   + nbDocsVenteAPerte (countDistinct) -> COUNT(DISTINCT nbDocsVenteAPerte)
+
+Total: 31 metriques
+Status metriques: 200
+OK - Metriques creees!
+Refresh colonnes depuis source...
+   Refresh status: 200
+Suppression colonnes mesures...
+   OK - 31 colonnes supprimees!
+=======================================================
+  Synchronisation terminee avec succes!
+=======================================================
+2026-05-13 07:36:14 +0000 - dagster - INFO - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - superset_sync - Synchronisation Cube.js -> Superset terminee.
+2026-05-13 07:36:14 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14921 - superset_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 07:36:14 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - superset_sync - Writing file at: /dagster/storage/superset_sync using PickledObjectFilesystemIOManager...
+2026-05-13 07:36:14 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14921 - superset_sync - ASSET_MATERIALIZATION - Materialized value superset_sync.
+2026-05-13 07:36:14 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14921 - superset_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 07:36:14 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14921 - superset_sync - STEP_SUCCESS - Finished execution of step "superset_sync" in 7.41s.

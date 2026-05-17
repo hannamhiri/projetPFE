@@ -1,0 +1,27 @@
+2026-04-14 10:01:49 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - LOGS_CAPTURED - Started capturing logs in process (pid: 179).
+2026-04-14 10:01:49 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_START - Started execution of step "dbt_staging".
+2026-04-14 10:01:50 +0000 - dagster - INFO - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - dbt_staging - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'staging']`.
+2026-04-14 10:01:50 +0000 - dagster - INFO - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - dbt_staging - Copying `/dbt/target/partial_parse.msgpack` to `/dbt/target/dbt_staging-54b690e-6850444/partial_parse.msgpack` to take advantage of partial parsing.
+2026-04-14 10:01:50 +0000 - dagster - INFO - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - dbt_staging - Running dbt command: `dbt run --select staging --target dev --select staging`.
+2026-04-14 10:01:54 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_document" of type "Nothing". (Type check passed).
+2026-04-14 10:01:54 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_document.
+2026-04-14 10:01:54 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_client" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_client.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_document_line" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_document_line.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_document_status" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_document_status.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_document_type" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_document_type.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_family" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_family.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_geographical_area" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_geographical_area.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_item" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_item.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_warehouse" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_warehouse.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_product_item" of type "Nothing". (Type check passed).
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_product_item.
+2026-04-14 10:01:55 +0000 - dagster - INFO - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - dbt_staging - Finished dbt command: `dbt run --select staging --target dev --select staging`.
+2026-04-14 10:01:55 +0000 - dagster - DEBUG - __ASSET_JOB - 54b690e1-5c44-46b7-9f75-3ab77033e64f - 179 - dbt_staging - STEP_SUCCESS - Finished execution of step "dbt_staging" in 5.94s.

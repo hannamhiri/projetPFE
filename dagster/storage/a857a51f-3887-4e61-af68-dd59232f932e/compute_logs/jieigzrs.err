@@ -1,0 +1,29 @@
+2026-04-15 09:39:13 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 1055 - LOGS_CAPTURED - Started capturing logs in process (pid: 1055).
+2026-04-15 09:39:13 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 1055 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-04-15 09:39:13 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - Obtention du token OAuth2 Airbyte...
+2026-04-15 09:39:13 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - Token OAuth2 obtenu.
+2026-04-15 09:39:13 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - Déclenchement sync Airbyte connection_id=012ac2da-0a87-4781-8930-2f3fa69063c5...
+2026-04-15 09:39:21 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - Sync déclenchée — job_id=51
+2026-04-15 09:39:32 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [1/360] Airbyte job status: running
+2026-04-15 09:39:42 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [2/360] Airbyte job status: running
+2026-04-15 09:39:52 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [3/360] Airbyte job status: running
+2026-04-15 09:40:02 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [4/360] Airbyte job status: running
+2026-04-15 09:40:12 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [5/360] Airbyte job status: running
+2026-04-15 09:40:22 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [6/360] Airbyte job status: running
+2026-04-15 09:40:32 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [7/360] Airbyte job status: running
+2026-04-15 09:40:47 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [8/360] Airbyte job status: running
+2026-04-15 09:40:58 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [9/360] Airbyte job status: running
+2026-04-15 09:41:08 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [10/360] Airbyte job status: running
+2026-04-15 09:41:18 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [11/360] Airbyte job status: running
+2026-04-15 09:41:28 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [12/360] Airbyte job status: running
+2026-04-15 09:41:38 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [13/360] Airbyte job status: running
+2026-04-15 09:41:48 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [14/360] Airbyte job status: running
+2026-04-15 09:41:58 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [15/360] Airbyte job status: running
+2026-04-15 09:42:08 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [16/360] Airbyte job status: running
+2026-04-15 09:42:18 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - [17/360] Airbyte job status: succeeded
+2026-04-15 09:42:18 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - Sync Airbyte terminée avec succès.
+2026-04-15 09:42:18 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 1055 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-15 09:42:18 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-04-15 09:42:18 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 1055 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-04-15 09:42:18 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 1055 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-15 09:42:18 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 1055 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 3m4s.

@@ -1,0 +1,316 @@
+# models/marts/marts_schema.yml
+# Documentation et tests complets de la couche Gold (marts)
+# Couvre : intégrité référentielle, unicité, nullité, plages de valeurs, cohérence métier
+
+version: 2
+
+models:
+
+  # ─────────────────────────────────────────────
+  # DIMENSIONS
+  # ─────────────────────────────────────────────
+
+  - name: dim_client
+    description: >
+      **Dimension Client** — référentiel des clients actifs et inactifs.
+      Granularité : 1 ligne par client unique.
+      La zone géographique est une dimension séparée (dim_geographical_area)
+      reliée directement à fact_sales pour permettre l'analyse géographique
+      indépendamment du client.
+    meta:
+      owner: "data-engineering"
+      layer: "gold"
+      type: "dimension"
+      grain: "1 ligne par client"
+    columns:
+      - name: ClientSK
+        description: "Surrogate Key technique (CAST de ClientId — entier source propre)"
+        tests: [unique, not_null]
+      - name: ClientBK
+        description: "Business Key — Id original du système source"
+        tests: [unique, not_null]
+      - name: ClientCode
+        description: "Code alphanumérique métier du client"
+        tests: [not_null]
+      - name: ClientName
+        description: "Nom ou raison sociale"
+        tests: [not_null]
+      - name: IsActive
+        description: "Indicateur d'activité (true/false)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1]
+      - name: IsBTOB
+        description: "true = client professionnel B2B / false = particulier B2C"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [0, 1]
+
+  - name: dim_item
+    description: >
+      **Dimension Article** — référentiel des articles vendables.
+      Enrichie par jointure avec les dimensions Brand (ProductItem) et Family.
+      Granularité : 1 ligne par article unique.
+    meta:
+      owner: "data-engineering"
+      layer: "gold"
+      type: "dimension"
+      grain: "1 ligne par article"
+    columns:
+      - name: ItemSK
+        description: "Surrogate Key (CAST de ItemId)"
+        tests: [unique, not_null]
+      - name: ItemBK
+        description: "Business Key — Id original"
+        tests: [unique, not_null]
+      - name: ItemCode
+        description: "Code article"
+        tests: [not_null]
+      - name: ItemLabel
+        description: "Libellé standard de l'article"
+        tests: [not_null]
+      - name: Brand
+        description: "Marque / produit (depuis ProductItem.LabelProduct) — nullable si non renseigné"
+      - name: FamilyCode
+        description: "Code de la famille d'articles — nullable si non renseigné"
+      - name: Family
+        description: "Libellé de la famille d'articles — nullable si non renseigné"
+
+  - name: dim_document_type
+    description: >
+      **Dimension Type de Document** — référentiel des types de pièces commerciales.
+      Exemples : FA (Facture), BL (Bon de livraison), DE (Devis), AV (Avoir).
+      Granularité : 1 ligne par type unique.
+    meta:
+      owner: "data-engineering"
+      layer: "gold"
+      type: "dimension"
+      grain: "1 ligne par type de document"
+    columns:
+      - name: DocumentTypeSK
+        description: "Surrogate Key (ROW_NUMBER — BK source est une chaîne)"
+        tests: [unique, not_null]
+      - name: DocumentTypeBK
+        description: "Business Key — code alphanumérique (ex: 'FA', 'BL')"
+        tests: [unique, not_null]
+      - name: DocumentTypeLabel
+        description: "Libellé complet du type"
+        tests: [not_null]
+
+  - name: dim_document_status
+    description: >
+      **Dimension Statut de Document** — cycle de vie d'un document.
+      Exemples : Brouillon, Validé, Annulé, Clôturé.
+      Granularité : 1 ligne par statut unique.
+    meta:
+      owner: "data-engineering"
+      layer: "gold"
+      type: "dimension"
+      grain: "1 ligne par statut"
+    columns:
+      - name: DocumentStatusSK
+        description: "Surrogate Key (CAST de DocumentStatusId)"
+        tests: [unique, not_null]
+      - name: DocumentStatusBK
+        description: "Business Key — Id original"
+        tests: [unique, not_null]
+      - name: DocumentStatusLabel
+        description: "Libellé du statut"
+        tests: [not_null]
+
+  - name: dim_geographical_area
+    description: >
+      **Dimension Zone Géographique** — découpage territorial des clients.
+      Reliée **directement à fact_sales** (et non à dim_client) pour permettre
+      des analyses géographiques des ventes indépendamment du client.
+      Granularité : 1 ligne par zone unique.
+    meta:
+      owner: "data-engineering"
+      layer: "gold"
+      type: "dimension"
+      grain: "1 ligne par zone géographique"
+    columns:
+      - name: GeographicalAreaSK
+        description: "Surrogate Key (CAST de GeographicalAreaId)"
+        tests: [unique, not_null]
+      - name: GeographicalAreaBK
+        description: "Business Key — Id original"
+        tests: [unique, not_null]
+      - name: GeographicalAreaLabel
+        description: "Libellé de la zone (région, pays, etc.)"
+        tests: [not_null]
+
+  - name: dim_date
+    description: >
+      **Dimension Date** — calendrier analytique généré depuis les dates de documents.
+      Granularité : 1 ligne par date distincte présente dans les données.
+      La SK est l'entier YYYYMMDD — lisible, trié naturellement, compatible cubes OLAP.
+    meta:
+      owner: "data-engineering"
+      layer: "gold"
+      type: "dimension"
+      grain: "1 ligne par date"
+    columns:
+      - name: DateSK
+        description: "Surrogate Key = entier YYYYMMDD (ex: 20240315)"
+        tests: [unique, not_null]
+      - name: DateBK
+        description: "Date complète au format DATE"
+        tests: [unique, not_null]
+      - name: Day
+        description: "Jour du mois (1–31)"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 1
+              max_value: 31
+      - name: Month
+        description: "Numéro du mois (1–12)"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 1
+              max_value: 12
+      - name: MonthName
+        description: "Nom du mois en français (Janvier … Décembre)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Janvier','Février','Mars','Avril','Mai','Juin',
+                       'Juillet','Août','Septembre','Octobre','Novembre','Décembre']
+      - name: Quarter
+        description: "Trimestre (1–4)"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 1
+              max_value: 4
+      - name: Year
+        description: "Année (4 chiffres)"
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 2000
+              max_value: 2027
+      - name: DayName
+        description: "Nom du jour en français (Lundi … Dimanche)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi','Dimanche']
+
+  - name: dim_warehouse
+    description: >
+      **Dimension Entrepôt** — référentiel des dépôts et entrepôts logistiques.
+      ⚠️ Nécessite l'ajout de la table warehouse dans source.yml.
+      Granularité : 1 ligne par entrepôt unique.
+    meta:
+      owner: "data-engineering"
+      layer: "gold"
+      type: "dimension"
+      grain: "1 ligne par entrepôt"
+    columns:
+      - name: WarehouseSK
+        description: "Surrogate Key (CAST de WarehouseId)"
+        tests: [unique, not_null]
+      - name: WarehouseBK
+        description: "Business Key — Id original"
+        tests: [unique, not_null]
+      - name: WarehouseCode
+        tests: [not_null]
+      - name: WarehouseName
+        tests: [not_null]
+
+  # ─────────────────────────────────────────────
+  # TABLE DE FAITS
+  # ─────────────────────────────────────────────
+
+  - name: fact_sales
+    description: >
+      **Table de Faits Ventes** — cœur du modèle en étoile.
+
+      **Granularité** : 1 ligne par ligne de document (DocumentLineId).
+      Chaque enregistrement représente la vente d'un article sur un document commercial.
+
+      **Sources** : jointure stg_document (entête) × stg_document_line (détail).
+
+      **Mesures disponibles** :
+      - `Quantity` : quantité vendue
+      - `PriceHT` : montant HT de la ligne
+      - `CostPrice` : prix de revient (permet le calcul de marge)
+      - `DiscountAmount` : montant de remise calculé
+      - `DiscountPercentage` : taux de remise
+
+      **FK vers dimensions** : ClientSK, ItemSK, DocumentTypeSK,
+      DocumentStatusSK, GeographicalAreaSK, DateSK.
+    meta:
+      owner: "data-engineering"
+      layer: "gold"
+      type: "fact"
+      grain: "1 ligne par ligne de document"
+    columns:
+      - name: DocumentCode
+        description: "Code du document (attribut dégénéré — évite une jointure pour l'affichage)"
+        tests: [not_null]
+
+      # FK — intégrité référentielle vers chaque dimension
+      - name: ClientSK
+        description: "FK → dim_client.ClientSK"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_client')
+              field: ClientSK
+      - name: ItemSK
+        description: "FK → dim_item.ItemSK"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_item')
+              field: ItemSK
+      - name: DocumentTypeSK
+        description: "FK → dim_document_type.DocumentTypeSK"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_document_type')
+              field: DocumentTypeSK
+      - name: DocumentStatusSK
+        description: "FK → dim_document_status.DocumentStatusSK"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_document_status')
+              field: DocumentStatusSK
+      - name: GeographicalAreaSK
+        description: "FK → dim_geographical_area.GeographicalAreaSK"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_geographical_area')
+              field: GeographicalAreaSK
+      - name: DateSK
+        description: "FK → dim_date.DateSK (format YYYYMMDD)"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: DateSK
+
+      # Mesures — validations métier
+      - name: Quantity
+        description: "Quantité vendue (positive) ou retournée (négative)"
+        tests: [not_null]
+      - name: LinePrice
+        description: "Montant HT total de la ligne (après remise)"
+        tests: [not_null]
+      - name: CostPrice
+        description: "Prix de revient unitaire — permet le calcul de la marge brute"
+      - name: DiscountAmount
+        description: "Montant de remise calculé : PriceHT × DiscountPercentage / 100"
+       
+      - name: DiscountPercentage
+        description: "Taux de remise"
+        

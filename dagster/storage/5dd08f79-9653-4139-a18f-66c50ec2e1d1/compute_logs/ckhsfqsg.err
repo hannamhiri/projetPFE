@@ -1,0 +1,8 @@
+2026-05-12 20:58:52 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140651 - LOGS_CAPTURED - Started capturing logs in process (pid: 140651).
+2026-05-12 20:58:52 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140651 - silver__productitem - STEP_START - Started execution of step "silver__productitem".
+2026-05-12 20:58:52 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - silver__productitem - Table silver.productitem disponible.
+2026-05-12 20:58:52 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140651 - silver__productitem - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 20:58:52 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - silver__productitem - Writing file at: /dagster/storage/silver/productitem using PickledObjectFilesystemIOManager...
+2026-05-12 20:58:52 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140651 - silver__productitem - ASSET_MATERIALIZATION - Materialized value silver productitem.
+2026-05-12 20:58:52 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140651 - silver__productitem - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 20:58:52 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140651 - silver__productitem - STEP_SUCCESS - Finished execution of step "silver__productitem" in 165ms.

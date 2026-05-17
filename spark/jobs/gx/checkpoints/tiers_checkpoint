@@ -1,0 +1,18 @@
+{
+  "actions": [
+    {
+      "name": "update_data_docs",
+      "site_names": [],
+      "type": "update_data_docs"
+    }
+  ],
+  "id": "497fdcb0-3a40-4e6a-950e-6cb6990d940a",
+  "name": "tiers_checkpoint",
+  "result_format": "SUMMARY",
+  "validation_definitions": [
+    {
+      "id": "d96a3b23-b4a6-430a-bd5f-6b587f1c03f2",
+      "name": "tiers_validation"
+    }
+  ]
+}

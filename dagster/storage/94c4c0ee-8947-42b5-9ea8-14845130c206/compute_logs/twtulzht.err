@@ -1,0 +1,94 @@
+2026-04-14 08:00:34 +0000 - dagster - DEBUG - __ASSET_JOB - 94c4c0ee-8947-42b5-9ea8-14845130c206 - 691 - LOGS_CAPTURED - Started capturing logs in process (pid: 691).
+2026-04-14 08:00:34 +0000 - dagster - DEBUG - __ASSET_JOB - 94c4c0ee-8947-42b5-9ea8-14845130c206 - 691 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-04-14 08:00:34 +0000 - dagster - INFO - __ASSET_JOB - 94c4c0ee-8947-42b5-9ea8-14845130c206 - airbyte_sync - Obtention du token OAuth2 Airbyte...
+2026-04-14 08:00:56 +0000 - dagster - ERROR - __ASSET_JOB - 94c4c0ee-8947-42b5-9ea8-14845130c206 - 691 - airbyte_sync - STEP_FAILURE - Execution of step "airbyte_sync" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "airbyte_sync"::
+
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.3.17', port=8000): Max retries exceeded with url: /api/v1/applications/token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x767044ebd610>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 473, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 141, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 129, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dagster/pipeline.py", line 69, in airbyte_sync
+    token   = _get_airbyte_token(context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dagster/pipeline.py", line 43, in _get_airbyte_token
+    resp = requests.post(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/adapters.py", line 678, in send
+    raise ConnectionError(e, request=request)
+
+The above exception occurred during handling of the following exception:
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.3.17', port=8000): Max retries exceeded with url: /api/v1/applications/token (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x767044ebd610>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/requests/adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+
+The above exception occurred during handling of the following exception:
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x767044ebd610>: Failed to establish a new connection: [Errno 111] Connection refused
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/lib/python3.11/http/client.py", line 1323, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.11/http/client.py", line 1369, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.11/http/client.py", line 1318, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.11/http/client.py", line 1078, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.11/http/client.py", line 1016, in send
+    self.connect()
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+
+The above exception occurred during handling of the following exception:
+ConnectionRefusedError: [Errno 111] Connection refused
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+

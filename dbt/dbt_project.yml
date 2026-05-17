@@ -1,0 +1,24 @@
+name: sagap
+version: "1.0.0"
+profile: sagap
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+
+models:
+  sagap:
+    staging:
+      +materialized: view
+      +group: gold
+    marts:
+      +materialized: table
+      +engine: "MergeTree()" 
+      +group: gold
+
+tests:
+  +store_failures: true
+  +schema: test_failures
+  sagap:
+    +group: gold

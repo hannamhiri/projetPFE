@@ -1,0 +1,117 @@
+{
+  "expectations": [
+    {
+      "id": "cdad754b-16cb-4e7c-a659-1324de7eabfd",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "50fde464-8f47-4bf1-9f7c-859adc9e987d",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "d81ebf70-f91f-43fa-827c-2d58ccaa932e",
+      "kwargs": {
+        "column": "Name"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "ab25d767-fe68-426d-9428-ebea39277b97",
+      "kwargs": {
+        "column": "Name",
+        "condition_parser": "pandas",
+        "regex": ".*[a-zA-Z0-9].*",
+        "row_condition": "Name.notna()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "84042636-276c-4027-b600-faad271d599f",
+      "kwargs": {
+        "column": "Code"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "4562d2f2-70c1-4851-b326-8d5a1218f79d",
+      "kwargs": {
+        "column": "IsBTOB"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "6652c49e-dbaa-4b24-b612-9ca2bcc50f10",
+      "kwargs": {
+        "column": "IsActive"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "ef8e1336-cfbb-4f6f-8468-5e65db105e13",
+      "kwargs": {
+        "column": "IsBTOB",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "39dba7c6-a925-4fb9-98ee-4cb69315fd4c",
+      "kwargs": {
+        "column": "IsActive",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "dc4ada21-3871-4870-b018-c853fbb3458e",
+      "kwargs": {
+        "column": "Code",
+        "regex": "^C-.*"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "46fc1695-5291-4daa-bfd7-f50232df7eb5",
+      "kwargs": {
+        "column_set": [
+          "Id",
+          "Code",
+          "Name",
+          "IdGeographicalArea",
+          "IsBTOB",
+          "IsActive"
+        ]
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "9259cd44-eb8d-4517-860d-f3187e3b0c75",
+  "meta": {
+    "great_expectations_version": "1.1.0"
+  },
+  "name": "tiers_suite",
+  "notes": null
+}

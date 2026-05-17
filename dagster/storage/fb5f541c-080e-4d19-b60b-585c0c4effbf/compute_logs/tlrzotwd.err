@@ -1,0 +1,575 @@
+2026-05-13 09:17:34 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - LOGS_CAPTURED - Started capturing logs in process (pid: 79236).
+2026-05-13 09:17:34 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-05-13 09:17:35 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - Airbyte job_id=91
+2026-05-13 09:17:46 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [1] status=running
+2026-05-13 09:17:56 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [2] status=running
+2026-05-13 09:18:08 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [3] status=running
+2026-05-13 09:18:27 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [4] status=running
+2026-05-13 09:18:38 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [5] status=running
+2026-05-13 09:18:48 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [6] status=running
+2026-05-13 09:18:58 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [7] status=running
+2026-05-13 09:19:08 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [8] status=running
+2026-05-13 09:19:20 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [9] status=running
+2026-05-13 09:19:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [10] status=running
+2026-05-13 09:19:47 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [11] status=running
+2026-05-13 09:19:58 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [12] status=running
+2026-05-13 09:20:11 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [13] status=running
+2026-05-13 09:20:21 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [14] status=running
+2026-05-13 09:20:34 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [15] status=running
+2026-05-13 09:20:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [16] status=running
+2026-05-13 09:20:54 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - [17] status=succeeded
+2026-05-13 09:20:54 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:20:54 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-05-13 09:20:54 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-05-13 09:20:54 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:20:54 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 3m20s.
+2026-05-13 09:20:54 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - spark_silver_cleaning - STEP_START - Started execution of step "spark_silver_cleaning".
+2026-05-13 09:21:02 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:21:02 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:21:02 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze...
+   850 lignes
+🔍 Validation GX...
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 872.57it/s]
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 281.89it/s]
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 416.69it/s]
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 302.17it/s]
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 397.75it/s]
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 343.68it/s]
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 658.10it/s]
+2026-05-13 09:21:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 633.89it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 633.13it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 632.62it/s]
+2026-05-13 09:21:08 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 5:>                                                          (0 + 1) / 1]
+2026-05-13 09:21:09 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ✅ Validation GX OK pour product_item
+💾 Écriture Silver (850 lignes)...
+ Écriture terminée → silver.ProductItem
+🏁 Pipeline Product Item terminé avec succès ✅
+2026-05-13 09:21:15 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:21:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:21:15 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:21:20 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 2:================>                                       (58 + 6) / 200]
+2026-05-13 09:21:20 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 2:=========================>                              (92 + 6) / 200]
+2026-05-13 09:21:20 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 2:====================================>                  (131 + 7) / 200]
+2026-05-13 09:21:20 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 2:==============================================>        (168 + 6) / 200]
+2026-05-13 09:21:22 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 13:================>                                      (61 + 6) / 200]
+2026-05-13 09:21:22 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 13:============================>                         (106 + 8) / 200]
+2026-05-13 09:21:23 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 13:============================================>         (165 + 6) / 200]
+2026-05-13 09:21:23 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 15:=============================================>        (169 + 7) / 200]
+2026-05-13 09:21:24 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 20:===============================================>      (177 + 8) / 200]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze...
+🔧 Transformation...
+   49 lignes après déduplication, 49 mappings
+ Écriture terminée → silver.family_id_mapping
+   Mappings sauvegardés → silver.family_id_mapping
+🔍 Validation GX...
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 3344.74it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 324.95it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 469.84it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 256.89it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 510.09it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 384.64it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 937.26it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 861.44it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 857.81it/s]
+2026-05-13 09:21:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 847.68it/s]
+2026-05-13 09:21:26 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 24:>                                                       (0 + 6) / 200]
+2026-05-13 09:21:27 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 24:=======>                                               (26 + 6) / 200]
+2026-05-13 09:21:27 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 24:========================>                              (88 + 6) / 200]
+2026-05-13 09:21:27 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 24:============================================>         (165 + 6) / 200]
+2026-05-13 09:21:28 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ✅ Validation GX OK pour Family
+💾 Écriture Silver (49 lignes)...
+ Écriture terminée → silver.Family
+🏁 Pipeline Family terminé avec succès ✅
+2026-05-13 09:21:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:21:31 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:21:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze...
+   8 lignes
+🔍 Validation GX...
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 3450.68it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 428.60it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 605.68it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 345.01it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 586.26it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 445.72it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 1017.40it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 942.53it/s] Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 939.01it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 936.31it/s]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 5:>                                                          (0 + 1) / 1]
+2026-05-13 09:21:36 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ✅ Validation GX OK pour geographical_area
+💾 Écriture Silver (8 lignes)...
+ Écriture terminée → silver.GeographicalArea
+🏁 Pipeline Geographical Area terminé avec succès ✅
+2026-05-13 09:21:40 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:21:40 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:21:40 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze...
+   16 lignes
+🔍 Validation GX...
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 2446.37it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 344.44it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 469.76it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 280.32it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 478.30it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 378.51it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 841.29it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 785.67it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 780.97it/s]
+2026-05-13 09:21:44 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 773.18it/s]
+2026-05-13 09:21:45 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 5:>                                                          (0 + 1) / 1]
+2026-05-13 09:21:46 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ✅ Validation GX OK pour document_status
+💾 Écriture Silver (16 lignes)...
+ Écriture terminée → silver.DocumentStatus
+🏁 Pipeline Document Status terminé avec succès ✅
+2026-05-13 09:21:49 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:21:49 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:21:49 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze...
+   7 lignes
+🔍 Validation GX...
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 1346.49it/s]
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 246.96it/s]
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 359.26it/s]
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 203.22it/s]
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 377.56it/s]
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 296.19it/s]
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 767.41it/s]
+2026-05-13 09:21:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 717.60it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 715.89it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 714.63it/s]
+2026-05-13 09:21:54 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 5:>                                                          (0 + 1) / 1]
+2026-05-13 09:21:54 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ✅ Validation GX OK pour document_type
+💾 Écriture Silver (7 lignes)...
+ Écriture terminée → silver.DocumentType
+🏁 Pipeline Document Type terminé avec succès ✅
+2026-05-13 09:21:57 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:21:57 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:21:57 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:22:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze...
+🔧 Transformation...
+   65674 lignes après filtrage
+🔍 Validation GX...
+2026-05-13 09:22:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/53 [00:00<?, ?it/s]
+2026-05-13 09:22:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/53 [00:00<?, ?it/s]
+2026-05-13 09:22:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  11%|█▏        | 6/53 [00:00<00:00, 190.78it/s]
+2026-05-13 09:22:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  11%|█▏        | 6/53 [00:00<00:00, 142.53it/s]
+2026-05-13 09:22:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 9/53 [00:00<00:00, 211.30it/s]
+2026-05-13 09:22:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 9/53 [00:00<00:00, 170.74it/s]
+2026-05-13 09:22:04 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  36%|███▌      | 19/53 [00:00<00:00, 143.15it/s]Calculating Metrics:  36%|███▌      | 19/53 [00:00<00:00, 143.15it/s]
+2026-05-13 09:22:04 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  36%|███▌      | 19/53 [00:00<00:00, 143.15it/s]
+2026-05-13 09:22:04 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 53/53 [00:00<00:00, 234.57it/s]Calculating Metrics: 100%|██████████| 53/53 [00:00<00:00, 234.57it/s]
+2026-05-13 09:22:04 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 53/53 [00:00<00:00, 234.57it/s]Calculating Metrics: 100%|██████████| 53/53 [00:00<00:00, 234.57it/s]
+2026-05-13 09:22:04 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 53/53 [00:00<00:00, 215.35it/s]
+2026-05-13 09:22:05 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 18:>                                                         (0 + 1) / 1]
+2026-05-13 09:22:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 25:>                                                         (0 + 1) / 1]
+2026-05-13 09:22:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ❌ Validation GX — anomalies détectées pour item :
+──────────────────────────────────────────────────
+
+  Règle    : expect_column_values_to_match_regex
+  Colonne  : Code
+  Total    : 65674 lignes
+  Échoués  : 46 lignes (0.0700%)
+
+  Règle    : expect_column_values_to_match_regex
+  Colonne  : Label
+  Total    : 65674 lignes
+  Échoués  : 48 lignes (0.0731%)
+──────────────────────────────────────────────────
+⚠️  Traitement des anomalies en cours ...
+ Écriture terminée → quarantine.item_lignes_rejected
+⚠️  46 lignes rejetées → quarantine.item_lignes_rejected
+ Écriture terminée → quarantine.item_lignes_rejected
+⚠️  48 lignes rejetées → quarantine.item_lignes_rejected
+💾 Écriture Silver (65626 lignes valides)...
+ Écriture terminée → silver.Item
+🏁 Pipeline Item terminé avec succès ✅
+2026-05-13 09:22:11 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:22:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:22:11 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:22:15 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 0:>                                                          (0 + 1) / 1]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze (avec pushdown SQL)...
+🔧 Transformation...
+   841 lignes après filtrage
+🔍 Validation GX...
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/65 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/65 [00:00<?, ?it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   9%|▉         | 6/65 [00:00<00:00, 1485.41it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   9%|▉         | 6/65 [00:00<00:00, 316.83it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 9/65 [00:00<00:00, 465.27it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 9/65 [00:00<00:00, 272.65it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  34%|███▍      | 22/65 [00:00<00:00, 514.79it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  34%|███▍      | 22/65 [00:00<00:00, 405.57it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 913.77it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 856.99it/s]Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 855.82it/s]
+2026-05-13 09:22:16 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 855.03it/s]
+2026-05-13 09:22:17 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 8:>                                                          (0 + 1) / 1]
+2026-05-13 09:22:17 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ❌ Validation GX — anomalies détectées pour tiers :
+──────────────────────────────────────────────────
+
+  Règle    : expect_column_values_to_match_regex
+  Colonne  : Name
+  Total    : 841 lignes
+  Échoués  : 4 lignes (0.4756%)
+──────────────────────────────────────────────────
+⚠️  Traitement des anomalies en cours ...
+ Écriture terminée → quarantine.tiers_lignes_rejected
+⚠️  4 lignes rejetées → quarantine.tiers_lignes_rejected
+💾 Écriture Silver (837 lignes valides)...
+ Écriture terminée → silver.Client
+🏁 Pipeline Tiers terminé avec succès ✅
+2026-05-13 09:22:21 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:22:21 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:22:21 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "
+2026-05-13 09:22:21 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - WARN".
+2026-05-13 09:22:21 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze...
+   6 lignes
+🔍 Validation GX...
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 3804.36it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 286.60it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 415.47it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 226.33it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 459.09it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 360.14it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 922.08it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 862.13it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 859.68it/s]
+2026-05-13 09:22:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 857.60it/s]
+2026-05-13 09:22:26 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 5:>                                                          (0 + 1) / 1]
+2026-05-13 09:22:26 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ✅ Validation GX OK pour Warehouse
+💾 Écriture Silver (6 lignes)...
+ Écriture terminée → silver.Warehouse
+🏁 Pipeline Warehouse terminé avec succès ✅
+2026-05-13 09:22:29 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:22:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:22:29 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:22:33 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 0:>                                                          (0 + 1) / 1]
+2026-05-13 09:22:56 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze (avec pushdown SQL)...
+🔧 Transformation...
+   489237 lignes après filtrage
+🔍 Validation GX...
+2026-05-13 09:22:56 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/68 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/68 [00:00<?, ?it/s]
+2026-05-13 09:22:57 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:01, 36.87it/s]Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:01, 36.87it/s]
+2026-05-13 09:22:57 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:01, 36.87it/s]
+2026-05-13 09:22:57 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  18%|█▊        | 12/68 [00:00<00:01, 36.87it/s]
+2026-05-13 09:22:57 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  18%|█▊        | 12/68 [00:00<00:01, 36.87it/s]
+2026-05-13 09:22:58 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - /usr/local/lib/python3.8/dist-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_match_regex.py:25: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  return column.astype(str).str.contains(regex)
+Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:02, 20.74it/s]Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:02, 20.74it/s]
+2026-05-13 09:22:58 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:02, 20.74it/s]
+2026-05-13 09:22:59 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 34.09it/s]Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 34.09it/s]
+2026-05-13 09:22:59 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 34.09it/s]Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 34.09it/s]
+2026-05-13 09:22:59 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 32.05it/s]
+2026-05-13 09:22:59 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 5:>                                                          (0 + 1) / 1]
+2026-05-13 09:23:07 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ✅ Validation GX OK pour document
+💾 Écriture Silver (489237 lignes)...
+ Écriture terminée → silver.Document
+🏁 Pipeline Document terminé avec succès ✅
+2026-05-13 09:23:15 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:23:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-13 09:23:15 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-05-13 09:23:19 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 0:>                                                          (0 + 1) / 1]
+2026-05-13 09:23:22 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 4:>                                                          (0 + 1) / 1]
+2026-05-13 09:24:21 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 4:>                                                          (0 + 1) / 1]
+2026-05-13 09:25:05 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 10:>                                                         (0 + 0) / 8]
+2026-05-13 09:25:05 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 10:>                                                         (0 + 6) / 8]
+2026-05-13 09:25:26 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 10:=============================>                            (4 + 4) / 8]
+2026-05-13 09:25:27 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 10:====================================>                     (5 + 3) / 8]
+2026-05-13 09:25:27 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 10:==================================================>       (7 + 1) / 8]
+2026-05-13 09:25:54 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 14:==================================================>       (7 + 1) / 8]
+2026-05-13 09:27:01 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-05-13 09:27:01 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-05-13 09:27:01 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 📥 Extraction Bronze...
+🔧 Transformation...
+   1878451 lignes après filtrage
+🔍 Validation GX...
+2026-05-13 09:27:01 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   5%|▍         | 2/43 [00:00<00:00, 2111.94it/s]
+2026-05-13 09:27:01 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   5%|▍         | 2/43 [00:00<00:00, 190.69it/s] Calculating Metrics:   7%|▋         | 3/43 [00:00<00:00, 279.64it/s]
+2026-05-13 09:27:01 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:   7%|▋         | 3/43 [00:00<00:00, 151.89it/s]
+2026-05-13 09:27:01 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  26%|██▌       | 11/43 [00:00<00:00, 69.74it/s]Calculating Metrics:  26%|██▌       | 11/43 [00:00<00:00, 69.74it/s]
+2026-05-13 09:27:01 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics:  26%|██▌       | 11/43 [00:00<00:00, 69.74it/s]
+2026-05-13 09:27:02 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 168.37it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 168.37it/s]
+2026-05-13 09:27:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 168.37it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 168.37it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 150.13it/s]
+2026-05-13 09:27:03 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - 26/05/13 09:27:03 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-05-13 09:27:04 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - [Stage 15:==================================================>       (7 + 1) / 8]
+2026-05-13 09:27:25 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ✅ Validation GX OK pour document_line
+💾 Écriture Silver (1878451 lignes)...
+ Écriture terminée → silver.DocumentLine
+🏁 Pipeline Document Line terminé avec succès ✅
+2026-05-13 09:27:26 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - ==================================================
+🚀 Lancement : clean_product_item.py
+==================================================
+✅ Succès : clean_product_item.py  ⏱ 17.0s
+
+==================================================
+🚀 Lancement : clean_family.py
+==================================================
+✅ Succès : clean_family.py  ⏱ 16.4s
+
+==================================================
+🚀 Lancement : clean_geographical_area.py
+==================================================
+✅ Succès : clean_geographical_area.py  ⏱ 8.8s
+
+==================================================
+🚀 Lancement : clean_document_status.py
+==================================================
+✅ Succès : clean_document_status.py  ⏱ 9.0s
+
+==================================================
+🚀 Lancement : clean_document_type.py
+==================================================
+✅ Succès : clean_document_type.py  ⏱ 8.3s
+
+==================================================
+🚀 Lancement : clean_item.py
+==================================================
+✅ Succès : clean_item.py  ⏱ 13.5s
+
+==================================================
+🚀 Lancement : clean_tiers.py
+==================================================
+✅ Succès : clean_tiers.py  ⏱ 10.3s
+
+==================================================
+🚀 Lancement : clean_warehouse.py
+==================================================
+✅ Succès : clean_warehouse.py  ⏱ 8.2s
+
+==================================================
+🚀 Lancement : clean_document.py
+==================================================
+✅ Succès : clean_document.py  ⏱ 41.0s
+
+==================================================
+🚀 Lancement : clean_document_line.py
+==================================================
+✅ Succès : clean_document_line.py  ⏱ 4m 19s
+
+==================================================
+⏱  Temps d'exécution par job :
+──────────────────────────────────────────────────
+  ✅  clean_product_item.py                  17.0s
+  ✅  clean_family.py                        16.4s
+  ✅  clean_geographical_area.py              8.8s
+  ✅  clean_document_status.py                9.0s
+  ✅  clean_document_type.py                  8.3s
+  ✅  clean_item.py                          13.5s
+  ✅  clean_tiers.py                         10.3s
+  ✅  clean_warehouse.py                      8.2s
+  ✅  clean_document.py                      41.0s
+  ✅  clean_document_line.py                4m 19s
+──────────────────────────────────────────────────
+  🕒  Total                                  6m 31s
+==================================================
+📊 Résumé : 10/10 jobs réussis
+🏁 Tous les jobs terminés avec succès ✅
+2026-05-13 09:27:27 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - spark_silver_cleaning - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:27 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - spark_silver_cleaning - Writing file at: /dagster/storage/spark_silver_cleaning using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:28 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - spark_silver_cleaning - ASSET_MATERIALIZATION - Materialized value spark_silver_cleaning.
+2026-05-13 09:27:28 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - spark_silver_cleaning - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:28 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - spark_silver_cleaning - STEP_SUCCESS - Finished execution of step "spark_silver_cleaning" in 6m33s.
+2026-05-13 09:27:28 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver_ready - STEP_START - Started execution of step "silver_ready".
+2026-05-13 09:27:29 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK client = 837 lignes
+2026-05-13 09:27:30 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK document = 489237 lignes
+2026-05-13 09:27:30 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK documentline = 1878451 lignes
+2026-05-13 09:27:30 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK documentstatus = 16 lignes
+2026-05-13 09:27:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK documenttype = 7 lignes
+2026-05-13 09:27:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK item = 65626 lignes
+2026-05-13 09:27:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK family = 50 lignes
+2026-05-13 09:27:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK geographicalarea = 9 lignes
+2026-05-13 09:27:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK productitem = 851 lignes
+2026-05-13 09:27:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - OK warehouse = 7 lignes
+2026-05-13 09:27:31 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - Toutes les tables Silver pretes.
+2026-05-13 09:27:31 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver_ready - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:31 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver_ready - Writing file at: /dagster/storage/silver_ready using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:32 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver_ready - ASSET_MATERIALIZATION - Materialized value silver_ready.
+2026-05-13 09:27:32 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver_ready - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:32 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver_ready - STEP_SUCCESS - Finished execution of step "silver_ready" in 4.09s.
+2026-05-13 09:27:34 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__client - STEP_START - Started execution of step "silver__client".
+2026-05-13 09:27:35 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__client - Table silver.client disponible.
+2026-05-13 09:27:35 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__client - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:36 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__client - Writing file at: /dagster/storage/silver/client using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:36 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__client - ASSET_MATERIALIZATION - Materialized value silver client.
+2026-05-13 09:27:36 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__client - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:36 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__client - STEP_SUCCESS - Finished execution of step "silver__client" in 1.88s.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__document - STEP_START - Started execution of step "silver__document".
+2026-05-13 09:27:37 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__document - Table silver.document disponible.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__document - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__document - Writing file at: /dagster/storage/silver/document using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__document - ASSET_MATERIALIZATION - Materialized value silver document.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__document - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__document - STEP_SUCCESS - Finished execution of step "silver__document" in 363ms.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentline - STEP_START - Started execution of step "silver__documentline".
+2026-05-13 09:27:37 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__documentline - Table silver.documentline disponible.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentline - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__documentline - Writing file at: /dagster/storage/silver/documentline using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentline - ASSET_MATERIALIZATION - Materialized value silver documentline.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentline - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentline - STEP_SUCCESS - Finished execution of step "silver__documentline" in 272ms.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentstatus - STEP_START - Started execution of step "silver__documentstatus".
+2026-05-13 09:27:37 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__documentstatus - Table silver.documentstatus disponible.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentstatus - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__documentstatus - Writing file at: /dagster/storage/silver/documentstatus using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentstatus - ASSET_MATERIALIZATION - Materialized value silver documentstatus.
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentstatus - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:37 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documentstatus - STEP_SUCCESS - Finished execution of step "silver__documentstatus" in 183ms.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documenttype - STEP_START - Started execution of step "silver__documenttype".
+2026-05-13 09:27:38 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__documenttype - Table silver.documenttype disponible.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documenttype - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__documenttype - Writing file at: /dagster/storage/silver/documenttype using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documenttype - ASSET_MATERIALIZATION - Materialized value silver documenttype.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documenttype - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__documenttype - STEP_SUCCESS - Finished execution of step "silver__documenttype" in 233ms.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__family - STEP_START - Started execution of step "silver__family".
+2026-05-13 09:27:38 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__family - Table silver.family disponible.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__family - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__family - Writing file at: /dagster/storage/silver/family using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__family - ASSET_MATERIALIZATION - Materialized value silver family.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__family - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__family - STEP_SUCCESS - Finished execution of step "silver__family" in 188ms.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__geographicalarea - STEP_START - Started execution of step "silver__geographicalarea".
+2026-05-13 09:27:38 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__geographicalarea - Table silver.geographicalarea disponible.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__geographicalarea - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__geographicalarea - Writing file at: /dagster/storage/silver/geographicalarea using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__geographicalarea - ASSET_MATERIALIZATION - Materialized value silver geographicalarea.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__geographicalarea - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__geographicalarea - STEP_SUCCESS - Finished execution of step "silver__geographicalarea" in 245ms.
+2026-05-13 09:27:38 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__item - STEP_START - Started execution of step "silver__item".
+2026-05-13 09:27:39 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__item - Table silver.item disponible.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__item - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__item - Writing file at: /dagster/storage/silver/item using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__item - ASSET_MATERIALIZATION - Materialized value silver item.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__item - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__item - STEP_SUCCESS - Finished execution of step "silver__item" in 238ms.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__productitem - STEP_START - Started execution of step "silver__productitem".
+2026-05-13 09:27:39 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__productitem - Table silver.productitem disponible.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__productitem - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__productitem - Writing file at: /dagster/storage/silver/productitem using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__productitem - ASSET_MATERIALIZATION - Materialized value silver productitem.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__productitem - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__productitem - STEP_SUCCESS - Finished execution of step "silver__productitem" in 175ms.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__warehouse - STEP_START - Started execution of step "silver__warehouse".
+2026-05-13 09:27:39 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__warehouse - Table silver.warehouse disponible.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__warehouse - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - silver__warehouse - Writing file at: /dagster/storage/silver/warehouse using PickledObjectFilesystemIOManager...
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__warehouse - ASSET_MATERIALIZATION - Materialized value silver warehouse.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__warehouse - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - silver__warehouse - STEP_SUCCESS - Finished execution of step "silver__warehouse" in 175ms.
+2026-05-13 09:27:39 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_START - Started execution of step "dbt_models".
+2026-05-13 09:27:39 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - dbt_models - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'fqn:*']`.
+2026-05-13 09:27:45 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - dbt_models - Copying `/dbt/target/partial_parse.msgpack` to `/dbt/target/dbt_models-fb5f541-2a38506/partial_parse.msgpack` to take advantage of partial parsing.
+2026-05-13 09:27:46 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - dbt_models - Running dbt command: `dbt run --target dev --select fqn:*`.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_document_status" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_document_status.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_document" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_document.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_document_line" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_document_line.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_client" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_client.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_document_type" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_document_type.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_geographical_area" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_geographical_area.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_item" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_item.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_family" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_family.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_product_item" of type "Nothing". (Type check passed).
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_product_item.
+2026-05-13 09:27:50 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_stg_warehouse" of type "Nothing". (Type check passed).
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value stg_warehouse.
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_dim_document_status" of type "Nothing". (Type check passed).
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value dim_document_status.
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_dim_document_type" of type "Nothing". (Type check passed).
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value dim_document_type.
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_dim_client" of type "Nothing". (Type check passed).
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value dim_client.
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_dim_geographical_area" of type "Nothing". (Type check passed).
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value dim_geographical_area.
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_dim_date" of type "Nothing". (Type check passed).
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value dim_date.
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_dim_warehouse" of type "Nothing". (Type check passed).
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value dim_warehouse.
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_dim_item" of type "Nothing". (Type check passed).
+2026-05-13 09:27:51 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value dim_item.
+2026-05-13 09:27:53 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_OUTPUT - Yielded output "model_sagap_fact_sales" of type "Nothing". (Type check passed).
+2026-05-13 09:27:53 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - ASSET_MATERIALIZATION - Materialized value fact_sales.
+2026-05-13 09:27:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - dbt_models - Finished dbt command: `dbt run --target dev --select fqn:*`.
+2026-05-13 09:27:53 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - dbt_models - op 'dbt_models' did not yield or return expected outputs {'dim_item_not_null_dim_item_ItemSK', 'dim_geographical_area_not_null_dim_geographical_area_GeographicalAreaSK', 'fact_sales_relationships_fact_sales_DocumentStatusSK__DocumentStatusSK__ref_dim_document_status_', 'dim_item_unique_dim_item_ItemBK', 'fact_sales_relationships_fact_sales_ItemSK__ItemSK__ref_dim_item_', 'dim_client_not_null_dim_client_IsActive', 'dim_document_type_not_null_dim_document_type_DocumentTypeLabel', 'dim_document_type_unique_dim_document_type_DocumentTypeBK', 'fact_sales_not_null_fact_sales_Quantity', 'dim_geographical_area_not_null_dim_geographical_area_GeographicalAreaBK', 'fact_sales_not_null_fact_sales_ItemSK', 'dim_date_unique_dim_date_DateBK', 'dim_client_unique_dim_client_ClientSK', 'dim_date_not_null_dim_date_Year', 'fact_sales_assert_fact_sales_discount_coherence', 'dim_date_accepted_values_dim_date_MonthName__Janvier__F_vrier__Mars__Avril__Mai__Juin__Juillet__Ao_t__Septembre__Octobre__Novembre__D_cembre', 'dim_geographical_area_unique_dim_geographical_area_GeographicalAreaBK', 'dim_warehouse_unique_dim_warehouse_WarehouseBK', 'dim_client_not_null_dim_client_ClientCode', 'dim_client_accepted_values_dim_client_IsBTOB__0__1', 'dim_date_accepted_values_dim_date_DayName__Lundi__Mardi__Mercredi__Jeudi__Vendredi__Samedi__Dimanche', 'dim_item_unique_dim_item_ItemSK', 'dim_document_type_not_null_dim_document_type_DocumentTypeSK', 'dim_item_not_null_dim_item_ItemBK', 'dim_date_not_null_dim_date_DateSK', 'fact_sales_not_null_fact_sales_DocumentStatusSK', 'fact_sales_not_null_fact_sales_DocumentCode', 'fact_sales_not_null_fact_sales_LinePrice', 'dim_date_dbt_utils_accepted_range_dim_date_Month__12__1', 'dim_document_status_not_null_dim_document_status_DocumentStatusBK', 'fact_sales_not_null_fact_sales_ClientSK', 'dim_warehouse_not_null_dim_warehouse_WarehouseCode', 'dim_client_accepted_values_dim_client_IsActive__0__1', 'dim_client_not_null_dim_client_ClientName', 'dim_document_status_unique_dim_document_status_DocumentStatusSK', 'fact_sales_assert_fact_sales_no_negative_priceTT', 'dim_document_status_unique_dim_document_status_DocumentStatusBK', 'fact_sales_relationships_fact_sales_DocumentTypeSK__DocumentTypeSK__ref_dim_document_type_', 'dim_geographical_area_not_null_dim_geographical_area_GeographicalAreaLabel', 'dim_warehouse_not_null_dim_warehouse_WarehouseBK', 'dim_date_unique_dim_date_DateSK', 'dim_warehouse_unique_dim_warehouse_WarehouseSK', 'fact_sales_relationships_fact_sales_ClientSK__ClientSK__ref_dim_client_', 'dim_document_status_not_null_dim_document_status_DocumentStatusSK', 'dim_item_not_null_dim_item_ItemLabel', 'dim_document_status_not_null_dim_document_status_DocumentStatusLabel', 'fact_sales_relationships_fact_sales_GeographicalAreaSK__GeographicalAreaSK__ref_dim_geographical_area_', 'dim_client_not_null_dim_client_ClientSK', 'dim_item_not_null_dim_item_ItemCode', 'dim_date_dbt_utils_accepted_range_dim_date_Year__2027__2000', 'fact_sales_not_null_fact_sales_DocumentTypeSK', 'dim_client_unique_dim_client_ClientBK', 'dim_document_type_not_null_dim_document_type_DocumentTypeBK', 'dim_warehouse_not_null_dim_warehouse_WarehouseName', 'dim_date_dbt_utils_accepted_range_dim_date_Quarter__4__1', 'fact_sales_relationships_fact_sales_DateSK__DateSK__ref_dim_date_', 'dim_date_not_null_dim_date_MonthName', 'dim_date_dbt_utils_accepted_range_dim_date_Day__31__1', 'dim_client_not_null_dim_client_ClientBK', 'fact_sales_not_null_fact_sales_GeographicalAreaSK', 'dim_date_not_null_dim_date_Quarter', 'dim_client_not_null_dim_client_IsBTOB', 'dim_geographical_area_unique_dim_geographical_area_GeographicalAreaSK', 'dim_warehouse_not_null_dim_warehouse_WarehouseSK', 'dim_document_type_unique_dim_document_type_DocumentTypeSK', 'fact_sales_not_null_fact_sales_DateSK', 'dim_date_not_null_dim_date_Day', 'dim_date_not_null_dim_date_DayName', 'dim_date_not_null_dim_date_Month', 'dim_date_not_null_dim_date_DateBK'}.
+2026-05-13 09:27:53 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_models - STEP_SUCCESS - Finished execution of step "dbt_models" in 14.03s.
+2026-05-13 09:27:53 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_docs - STEP_START - Started execution of step "dbt_docs".
+2026-05-13 09:28:02 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - dbt_docs - Docs dbt generes.
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_docs - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - dbt_docs - Writing file at: /dagster/storage/dbt_docs using PickledObjectFilesystemIOManager...
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_docs - ASSET_MATERIALIZATION - Materialized value dbt_docs.
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_docs - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - dbt_docs - STEP_SUCCESS - Finished execution of step "dbt_docs" in 8.35s.
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - cube_refresh - STEP_START - Started execution of step "cube_refresh".
+2026-05-13 09:28:02 +0000 - dagster - WARNING - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - cube_refresh - Cube.js 403 - pas bloquant
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - cube_refresh - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - cube_refresh - Writing file at: /dagster/storage/cube_refresh using PickledObjectFilesystemIOManager...
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - cube_refresh - ASSET_MATERIALIZATION - Materialized value cube_refresh.
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - cube_refresh - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - cube_refresh - STEP_SUCCESS - Finished execution of step "cube_refresh" in 251ms.
+2026-05-13 09:28:02 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - superset_sync - STEP_START - Started execution of step "superset_sync".
+2026-05-13 09:28:08 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - superset_sync - =======================================================
+  SAGAP - Synchronisation Cube.js -> Superset
+=======================================================
+Lecture Cube.js (extended)...
+   30 mesures trouvees
+Authentification Superset...
+   OK
+Suppression metriques existantes...
+   OK - colonnes calculees preservees
+
+Creation des metriques...
+   + clientCount (count) -> SUM(clientCount)
+   + itemCount (count) -> SUM(itemCount)
+   + nbFamilles (countDistinct) -> COUNT(DISTINCT nbFamilles)
+   + nbBrands (countDistinct) -> COUNT(DISTINCT nbBrands)
+   + documentStatusCount (count) -> SUM(documentStatusCount)
+   + DocumentTypeCount (count) -> SUM(DocumentTypeCount)
+   + geographicalAreaCount (count) -> SUM(geographicalAreaCount)
+   + warehouseCount (count) -> SUM(warehouseCount)
+   + totalOrders (countDistinct) -> COUNT(DISTINCT documentCode)
+   + totalActiveClients (countDistinct) -> COUNT(DISTINCT CASE WHEN isActive = 1 THEN clientSK END)
+   + totalInactiveClients (countDistinct) -> COUNT(DISTINCT CASE WHEN isActive = 0 THEN clientSK END)
+   + tauxChurn (number) -> SUM(tauxChurn)
+   + totalPriceHT (sum) -> SUM(totalPriceHT)
+   + avgOrderValue (number) -> SUM(avgOrderValue)
+   + totalPriceHTB2B (sum) -> SUM(totalPriceHTB2B)
+   + totalPriceHTB2C (sum) -> SUM(totalPriceHTB2C)
+   + totalPriceHTPos (sum) -> SUM(totalPriceHTPos)
+   + totalPriceHTNonPos (sum) -> SUM(totalPriceHTNonPos)
+   + totalCostPrice (sum) -> SUM(totalC
+2026-05-13 09:28:08 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - superset_sync - ostPrice)
+   + grossMargin (number) -> SUM(grossMargin)
+   + grossMarginRate (number) -> SUM(grossMarginRate)
+   + totalQuantity (sum) -> SUM(totalQuantity)
+   + avgQuantity (avg) -> AVG(avgQuantity)
+   + totalDiscount (sum) -> SUM(totalDiscount)
+   + avgDiscountRate (avg) -> AVG(avgDiscountRate)
+   + avgDiscountRateB2B (avg) -> AVG(avgDiscountRateB2B)
+   + avgDiscountRateB2C (avg) -> AVG(avgDiscountRateB2C)
+   + nbArticlesMarge15 (countDistinct) -> COUNT(DISTINCT nbArticlesMarge15)
+   + nbDocsRemise20 (countDistinct) -> COUNT(DISTINCT nbDocsRemise20)
+   + nbDocsVenteAPerte (countDistinct) -> COUNT(DISTINCT nbDocsVenteAPerte)
+
+Total: 31 metriques
+Status metriques: 200
+OK - Metriques creees!
+Refresh colonnes depuis source...
+   Refresh status: 200
+Suppression colonnes mesures...
+   OK - 31 colonnes supprimees!
+=======================================================
+  Synchronisation terminee avec succes!
+=======================================================
+2026-05-13 09:28:08 +0000 - dagster - INFO - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - superset_sync - Synchronisation Cube.js -> Superset terminee.
+2026-05-13 09:28:08 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - superset_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 09:28:08 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - superset_sync - Writing file at: /dagster/storage/superset_sync using PickledObjectFilesystemIOManager...
+2026-05-13 09:28:08 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - superset_sync - ASSET_MATERIALIZATION - Materialized value superset_sync.
+2026-05-13 09:28:08 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - superset_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 09:28:08 +0000 - dagster - DEBUG - full_pipeline - fb5f541c-080e-4d19-b60b-585c0c4effbf - 79236 - superset_sync - STEP_SUCCESS - Finished execution of step "superset_sync" in 6.44s.

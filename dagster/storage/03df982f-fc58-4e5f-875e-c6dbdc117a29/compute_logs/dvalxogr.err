@@ -1,0 +1,35 @@
+2026-04-15 08:03:30 +0000 - dagster - DEBUG - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - 613 - LOGS_CAPTURED - Started capturing logs in process (pid: 613).
+2026-04-15 08:03:30 +0000 - dagster - DEBUG - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - 613 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-04-15 08:03:30 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - Obtention du token OAuth2 Airbyte...
+2026-04-15 08:03:30 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - Token OAuth2 obtenu.
+2026-04-15 08:03:30 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - Déclenchement sync Airbyte connection_id=012ac2da-0a87-4781-8930-2f3fa69063c5...
+2026-04-15 08:03:38 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - Sync déclenchée — job_id=47
+2026-04-15 08:03:49 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - [1/360] Airbyte job status: running
+2026-04-15 08:03:59 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - [2/360] Airbyte job status: running
+2026-04-15 08:04:09 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - [3/360] Airbyte job status: running
+2026-04-15 08:04:19 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - [4/360] Airbyte job status: running
+2026-04-15 08:04:29 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - [5/360] Airbyte job status: running
+2026-04-15 08:04:39 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - [6/360] Airbyte job status: running
+2026-04-15 08:04:49 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - [7/360] Airbyte job status: running
+2026-04-15 08:04:59 +0000 - dagster - INFO - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - airbyte_sync - [8/360] Airbyte job status: incomplete
+2026-04-15 08:04:59 +0000 - dagster - ERROR - full_pipeline - 03df982f-fc58-4e5f-875e-c6dbdc117a29 - 613 - airbyte_sync - STEP_FAILURE - Execution of step "airbyte_sync" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "airbyte_sync"::
+
+Exception: Sync Airbyte échouée — status=incomplete, job_id=47
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 482, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 140, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 128, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dagster/pipeline.py", line 112, in airbyte_sync
+    raise Exception(f"Sync Airbyte échouée — status={status}, job_id={job_id}")
+

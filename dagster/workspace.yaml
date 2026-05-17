@@ -1,0 +1,7 @@
+# dagster/workspace.yaml
+# Indique à Dagster où trouver le code des assets/jobs/schedules
+
+load_from:
+  - python_file:
+      relative_path: pipeline.py
+      working_directory: /dagster

@@ -1,0 +1,16 @@
+2026-05-12 20:51:14 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 136580 - LOGS_CAPTURED - Started capturing logs in process (pid: 136580).
+2026-05-12 20:51:14 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 136580 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-05-12 20:51:20 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - Airbyte job_id=87
+2026-05-12 20:51:31 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - [1] status=running
+2026-05-12 20:51:41 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - [2] status=running
+2026-05-12 20:51:51 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - [3] status=running
+2026-05-12 20:52:01 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - [4] status=running
+2026-05-12 20:52:11 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - [5] status=running
+2026-05-12 20:52:21 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - [6] status=running
+2026-05-12 20:52:31 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - [7] status=running
+2026-05-12 20:52:41 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - [8] status=succeeded
+2026-05-12 20:52:41 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 136580 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 20:52:41 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-05-12 20:52:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 136580 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-05-12 20:52:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 136580 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 20:52:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 136580 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 1m27s.

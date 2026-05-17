@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "a196253e-36d5-4320-922a-91ad395f1f6f",
+      "name": "tiers"
+    },
+    "batch_definition": {
+      "id": "7594d1ba-1afc-4c3e-beb9-4f7cd192106b",
+      "name": "tiers_batch"
+    },
+    "datasource": {
+      "id": "3b64d034-f2d2-4517-854c-98d97168629e",
+      "name": "tiers"
+    }
+  },
+  "id": "d96a3b23-b4a6-430a-bd5f-6b587f1c03f2",
+  "name": "tiers_validation",
+  "suite": {
+    "id": "a06a0578-b9c2-4529-ae54-028364b2934e",
+    "name": "tiers_suite"
+  }
+}

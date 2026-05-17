@@ -1,0 +1,8 @@
+2026-05-13 07:35:22 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14310 - LOGS_CAPTURED - Started capturing logs in process (pid: 14310).
+2026-05-13 07:35:22 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14310 - silver__documentstatus - STEP_START - Started execution of step "silver__documentstatus".
+2026-05-13 07:35:22 +0000 - dagster - INFO - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - silver__documentstatus - Table silver.documentstatus disponible.
+2026-05-13 07:35:22 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14310 - silver__documentstatus - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-13 07:35:22 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - silver__documentstatus - Writing file at: /dagster/storage/silver/documentstatus using PickledObjectFilesystemIOManager...
+2026-05-13 07:35:22 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14310 - silver__documentstatus - ASSET_MATERIALIZATION - Materialized value silver documentstatus.
+2026-05-13 07:35:22 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14310 - silver__documentstatus - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-13 07:35:22 +0000 - dagster - DEBUG - __ASSET_JOB - eb5800f3-dfca-437f-acb7-a639244c2a90 - 14310 - silver__documentstatus - STEP_SUCCESS - Finished execution of step "silver__documentstatus" in 325ms.

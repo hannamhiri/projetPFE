@@ -1,0 +1,21 @@
+2026-04-14 13:48:19 +0000 - dagster - DEBUG - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - 600 - LOGS_CAPTURED - Started capturing logs in process (pid: 600).
+2026-04-14 13:48:19 +0000 - dagster - DEBUG - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - 600 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-04-14 13:48:19 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - Obtention du token OAuth2 Airbyte...
+2026-04-14 13:48:19 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - Token OAuth2 obtenu.
+2026-04-14 13:48:19 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - Déclenchement sync Airbyte connection_id=012ac2da-0a87-4781-8930-2f3fa69063c5...
+2026-04-14 13:48:23 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - Sync déclenchée — job_id=43
+2026-04-14 13:48:33 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [1/360] Airbyte job status: running
+2026-04-14 13:48:44 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [2/360] Airbyte job status: running
+2026-04-14 13:48:54 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [3/360] Airbyte job status: running
+2026-04-14 13:49:06 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [4/360] Airbyte job status: running
+2026-04-14 13:49:16 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [5/360] Airbyte job status: running
+2026-04-14 13:49:26 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [6/360] Airbyte job status: running
+2026-04-14 13:49:36 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [7/360] Airbyte job status: running
+2026-04-14 13:49:46 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [8/360] Airbyte job status: running
+2026-04-14 13:49:56 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - [9/360] Airbyte job status: succeeded
+2026-04-14 13:49:56 +0000 - dagster - INFO - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - Sync Airbyte terminée avec succès.
+2026-04-14 13:49:56 +0000 - dagster - DEBUG - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - 600 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-14 13:49:56 +0000 - dagster - DEBUG - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-04-14 13:49:56 +0000 - dagster - DEBUG - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - 600 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-04-14 13:49:56 +0000 - dagster - DEBUG - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - 600 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-14 13:49:56 +0000 - dagster - DEBUG - __ASSET_JOB - a97e4645-3b45-42c1-a0ab-be605e88139a - 600 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 1m37s.

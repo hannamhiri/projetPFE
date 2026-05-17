@@ -1,0 +1,8 @@
+2026-05-12 19:37:23 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92836 - LOGS_CAPTURED - Started capturing logs in process (pid: 92836).
+2026-05-12 19:37:23 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92836 - silver__geographicalarea - STEP_START - Started execution of step "silver__geographicalarea".
+2026-05-12 19:37:23 +0000 - dagster - INFO - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - silver__geographicalarea - Table silver.geographicalarea disponible.
+2026-05-12 19:37:23 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92836 - silver__geographicalarea - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 19:37:23 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - silver__geographicalarea - Writing file at: /dagster/storage/silver/geographicalarea using PickledObjectFilesystemIOManager...
+2026-05-12 19:37:23 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92836 - silver__geographicalarea - ASSET_MATERIALIZATION - Materialized value silver geographicalarea.
+2026-05-12 19:37:23 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92836 - silver__geographicalarea - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 19:37:23 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92836 - silver__geographicalarea - STEP_SUCCESS - Finished execution of step "silver__geographicalarea" in 189ms.

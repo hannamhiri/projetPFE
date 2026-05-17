@@ -1,0 +1,45 @@
+{
+  "expectations": [
+    {
+      "id": "fd5290de-b860-4c7c-b4cc-90c5363482c2",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "0cfa2580-7b9d-4d57-8e5c-3d47b18b6b55",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "b2a7c4ee-9dec-4e84-946d-c8a27099acad",
+      "kwargs": {
+        "column": "Label"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "3c0369e2-60c3-4b1b-9138-c976b149b5a3",
+      "kwargs": {
+        "column_set": [
+          "Id",
+          "Label"
+        ]
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "3d6846a5-c733-4552-bb76-031fbe33fb6a",
+  "meta": {
+    "great_expectations_version": "1.1.0"
+  },
+  "name": "geographical_area_suite",
+  "notes": null
+}

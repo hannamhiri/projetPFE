@@ -1,0 +1,13 @@
+[0m10:29:04  Running with dbt=1.8.8
+[0m10:29:04  Registered adapter: clickhouse=1.8.0
+[0m10:29:05  Unable to do partial parsing because of a version mismatch
+[0m10:29:06  [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m10:29:07  Found 18 models, 137 data tests, 10 sources, 567 macros, 1 group
+[0m10:29:07  
+[0m10:29:07  Concurrency: 4 threads (target='dev')
+[0m10:29:07  
+[0m10:29:16  Building catalog
+[0m10:29:17  Catalog written to /dbt/target/catalog.json

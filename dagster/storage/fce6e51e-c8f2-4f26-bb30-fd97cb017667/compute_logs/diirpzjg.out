@@ -1,0 +1,41 @@
+Running with dbt=1.8.8
+Registered adapter: clickhouse=1.8.0
+Unable to do partial parsing because of a version mismatch
+[[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+Found 18 models, 137 data tests, 10 sources, 567 macros, 1 group
+
+Concurrency: 4 threads (target='dev')
+
+1 of 10 START sql view model `gold`.`stg_client` ............................... [RUN]
+2 of 10 START sql view model `gold`.`stg_document` ............................. [RUN]
+3 of 10 START sql view model `gold`.`stg_document_line` ........................ [RUN]
+4 of 10 START sql view model `gold`.`stg_document_status` ...................... [RUN]
+2 of 10 OK created sql view model `gold`.`stg_document` ........................ [[32mOK[0m in 0.21s]
+1 of 10 OK created sql view model `gold`.`stg_client` .......................... [[32mOK[0m in 0.22s]
+6 of 10 START sql view model `gold`.`stg_family` ............................... [RUN]
+5 of 10 START sql view model `gold`.`stg_document_type` ........................ [RUN]
+4 of 10 OK created sql view model `gold`.`stg_document_status` ................. [[32mOK[0m in 0.33s]
+3 of 10 OK created sql view model `gold`.`stg_document_line` ................... [[32mOK[0m in 0.35s]
+7 of 10 START sql view model `gold`.`stg_geographical_area` .................... [RUN]
+8 of 10 START sql view model `gold`.`stg_item` ................................. [RUN]
+6 of 10 OK created sql view model `gold`.`stg_family` .......................... [[32mOK[0m in 0.18s]
+9 of 10 START sql view model `gold`.`stg_product_item` ......................... [RUN]
+5 of 10 OK created sql view model `gold`.`stg_document_type` ................... [[32mOK[0m in 0.27s]
+10 of 10 START sql view model `gold`.`stg_warehouse` ........................... [RUN]
+7 of 10 OK created sql view model `gold`.`stg_geographical_area` ............... [[32mOK[0m in 0.24s]
+9 of 10 OK created sql view model `gold`.`stg_product_item` .................... [[32mOK[0m in 0.17s]
+8 of 10 OK created sql view model `gold`.`stg_item` ............................ [[32mOK[0m in 0.17s]
+10 of 10 ERROR creating sql view model `gold`.`stg_warehouse` .................. [[31mERROR[0m in 0.08s]
+
+Finished running 10 view models in 0 hours 0 minutes and 0.93 seconds (0.93s).
+
+[31mCompleted with 1 error and 0 warnings:[0m
+
+  Database Error in model stg_warehouse (models/staging/stg_warehouse.sql)
+  Received ClickHouse exception, code: 60, server response: Code: 60. DB::Exception: Table silver.warehouse does not exist. (UNKNOWN_TABLE) (version 23.8.16.16 (official build)) (for url http://clickhouse:8123)
+  compiled code at target/dbt_staging-fce6e51-c6cc24b/run/sagap/models/staging/stg_warehouse.sql
+
+Done. PASS=9 WARN=0 ERROR=1 SKIP=0 TOTAL=10

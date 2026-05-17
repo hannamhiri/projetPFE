@@ -1,0 +1,76 @@
+{
+  "expectations": [
+    {
+      "id": "98f7f860-8697-4d01-8e7b-a818f27d45e4",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "524b60a3-83fc-4184-b3ab-a6ab947f2bf8",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "fdb3203c-1352-481e-81eb-703e358f80f1",
+      "kwargs": {
+        "column": "LabelProduct"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "6da6eea1-42d9-4d66-b749-1f3bd8d0873a",
+      "kwargs": {
+        "column": "CodeProduct"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "6fa47f21-3ae7-4bc3-a2c9-9defd38d9ae5",
+      "kwargs": {
+        "column": "LabelProduct",
+        "condition_parser": "pandas",
+        "regex": "^[a-zA-Z0-9\\u00C0-\\u024F].*",
+        "row_condition": "LabelProduct.notna()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "c48af8f5-bb61-4514-8979-b409d409a340",
+      "kwargs": {
+        "column": "CodeProduct",
+        "condition_parser": "pandas",
+        "regex": "^[a-zA-Z0-9\\u00C0-\\u024F].*",
+        "row_condition": "CodeProduct.notna()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "1aed901a-a70f-4890-9887-251e775cff68",
+      "kwargs": {
+        "column_set": [
+          "Id",
+          "CodeProduct",
+          "LabelProduct"
+        ]
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "325fdc27-fc8e-4bb6-b756-3b624427c2f6",
+  "meta": {
+    "great_expectations_version": "1.1.0"
+  },
+  "name": "product_item_suite",
+  "notes": null
+}

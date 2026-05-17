@@ -1,0 +1,8 @@
+2026-04-15 10:35:56 +0000 - dagster - DEBUG - full_pipeline - 5703875a-e7e6-4feb-9ea6-08a1c1bfd833 - 1157 - LOGS_CAPTURED - Started capturing logs in process (pid: 1157).
+2026-04-15 10:35:56 +0000 - dagster - DEBUG - full_pipeline - 5703875a-e7e6-4feb-9ea6-08a1c1bfd833 - 1157 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-04-15 10:35:56 +0000 - dagster - INFO - full_pipeline - 5703875a-e7e6-4feb-9ea6-08a1c1bfd833 - airbyte_sync - Vérification Airbyte...
+2026-04-15 10:35:56 +0000 - dagster - DEBUG - full_pipeline - 5703875a-e7e6-4feb-9ea6-08a1c1bfd833 - 1157 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-15 10:35:56 +0000 - dagster - DEBUG - full_pipeline - 5703875a-e7e6-4feb-9ea6-08a1c1bfd833 - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-04-15 10:35:56 +0000 - dagster - DEBUG - full_pipeline - 5703875a-e7e6-4feb-9ea6-08a1c1bfd833 - 1157 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-04-15 10:35:56 +0000 - dagster - DEBUG - full_pipeline - 5703875a-e7e6-4feb-9ea6-08a1c1bfd833 - 1157 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-15 10:35:56 +0000 - dagster - DEBUG - full_pipeline - 5703875a-e7e6-4feb-9ea6-08a1c1bfd833 - 1157 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 131ms.

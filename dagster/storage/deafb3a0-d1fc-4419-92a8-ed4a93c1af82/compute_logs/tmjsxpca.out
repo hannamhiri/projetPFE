@@ -1,0 +1,33 @@
+Running with dbt=1.7.19
+Registered adapter: clickhouse=1.7.7
+Unable to do partial parsing because config vars, config profile, or config target have changed
+Found 18 models, 137 tests, 10 sources, 0 exposures, 0 metrics, 545 macros, 1 group, 0 semantic models
+
+Concurrency: 4 threads (target='dev')
+
+1 of 10 START sql view model `gold`.`stg_client` ............................... [RUN]
+2 of 10 START sql view model `gold`.`stg_document` ............................. [RUN]
+3 of 10 START sql view model `gold`.`stg_document_line` ........................ [RUN]
+4 of 10 START sql view model `gold`.`stg_document_status` ...................... [RUN]
+1 of 10 OK created sql view model `gold`.`stg_client` .......................... [[32mOK[0m in 0.69s]
+4 of 10 OK created sql view model `gold`.`stg_document_status` ................. [[32mOK[0m in 0.69s]
+3 of 10 OK created sql view model `gold`.`stg_document_line` ................... [[32mOK[0m in 0.70s]
+2 of 10 OK created sql view model `gold`.`stg_document` ........................ [[32mOK[0m in 0.71s]
+5 of 10 START sql view model `gold`.`stg_document_type` ........................ [RUN]
+7 of 10 START sql view model `gold`.`stg_geographical_area` .................... [RUN]
+6 of 10 START sql view model `gold`.`stg_family` ............................... [RUN]
+8 of 10 START sql view model `gold`.`stg_item` ................................. [RUN]
+5 of 10 OK created sql view model `gold`.`stg_document_type` ................... [[32mOK[0m in 0.29s]
+6 of 10 OK created sql view model `gold`.`stg_family` .......................... [[32mOK[0m in 0.27s]
+7 of 10 OK created sql view model `gold`.`stg_geographical_area` ............... [[32mOK[0m in 0.27s]
+9 of 10 START sql view model `gold`.`stg_product_item` ......................... [RUN]
+8 of 10 OK created sql view model `gold`.`stg_item` ............................ [[32mOK[0m in 0.28s]
+10 of 10 START sql view model `gold`.`stg_warehouse` ........................... [RUN]
+9 of 10 OK created sql view model `gold`.`stg_product_item` .................... [[32mOK[0m in 0.19s]
+10 of 10 OK created sql view model `gold`.`stg_warehouse` ...................... [[32mOK[0m in 0.20s]
+
+Finished running 10 view models in 0 hours 0 minutes and 2.95 seconds (2.95s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10

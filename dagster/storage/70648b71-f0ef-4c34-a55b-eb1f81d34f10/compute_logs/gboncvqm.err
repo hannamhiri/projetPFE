@@ -1,0 +1,37 @@
+2026-05-06 19:30:52 +0000 - dagster - DEBUG - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - 18734 - LOGS_CAPTURED - Started capturing logs in process (pid: 18734).
+2026-05-06 19:30:52 +0000 - dagster - DEBUG - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - 18734 - dbt_marts - STEP_START - Started execution of step "dbt_marts".
+2026-05-06 19:30:52 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - Lancement dbt run --select marts...
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:53  Running with dbt=1.7.19
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:54  Registered adapter: clickhouse=1.7.7
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  Found 18 models, 125 tests, 10 sources, 0 exposures, 0 metrics, 545 macros, 1 group, 0 semantic models
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  Concurrency: 4 threads (target='dev')
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  1 of 8 START sql table model `gold`.`dim_client` ............................... [RUN]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  2 of 8 START sql table model `gold`.`dim_date` ................................. [RUN]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  3 of 8 START sql table model `gold`.`dim_document_status` ...................... [RUN]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  4 of 8 START sql table model `gold`.`dim_document_type` ........................ [RUN]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  1 of 8 OK created sql table model `gold`.`dim_client` .......................... [[32mOK[0m in 0.27s]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  5 of 8 START sql table model `gold`.`dim_geographical_area` .................... [RUN]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  4 of 8 OK created sql table model `gold`.`dim_document_type` ................... [[32mOK[0m in 0.29s]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  3 of 8 OK created sql table model `gold`.`dim_document_status` ................. [[32mOK[0m in 0.30s]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  6 of 8 START sql table model `gold`.`dim_item` ................................. [RUN]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  7 of 8 START sql table model `gold`.`dim_warehouse` ............................ [RUN]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  2 of 8 OK created sql table model `gold`.`dim_date` ............................ [[32mOK[0m in 0.35s]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  5 of 8 OK created sql table model `gold`.`dim_geographical_area` ............... [[32mOK[0m in 0.13s]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  7 of 8 OK created sql table model `gold`.`dim_warehouse` ....................... [[32mOK[0m in 0.11s]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  6 of 8 OK created sql table model `gold`.`dim_item` ............................ [[32mOK[0m in 0.23s]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:55  8 of 8 START sql table model `gold`.`fact_sales` ............................... [RUN]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:58  8 of 8 OK created sql table model `gold`.`fact_sales` .......................... [[32mOK[0m in 2.60s]
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:58  
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:58  Finished running 8 table models in 0 hours 0 minutes and 3.36 seconds (3.36s).
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:58  
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:58  [32mCompleted successfully[0m
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:58  
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - [0m19:30:58  Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+2026-05-06 19:31:00 +0000 - dagster - INFO - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - dbt marts termine avec succes.
+2026-05-06 19:31:00 +0000 - dagster - DEBUG - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - 18734 - dbt_marts - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-06 19:31:00 +0000 - dagster - DEBUG - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - dbt_marts - Writing file at: /dagster/storage/dbt_marts using PickledObjectFilesystemIOManager...
+2026-05-06 19:31:00 +0000 - dagster - DEBUG - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - 18734 - dbt_marts - ASSET_MATERIALIZATION - Materialized value dbt_marts.
+2026-05-06 19:31:00 +0000 - dagster - DEBUG - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - 18734 - dbt_marts - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-06 19:31:00 +0000 - dagster - DEBUG - __ASSET_JOB - 70648b71-f0ef-4c34-a55b-eb1f81d34f10 - 18734 - dbt_marts - STEP_SUCCESS - Finished execution of step "dbt_marts" in 8.28s.

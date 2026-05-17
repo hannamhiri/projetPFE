@@ -1,0 +1,56 @@
+2026-05-12 20:59:15 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140997 - LOGS_CAPTURED - Started capturing logs in process (pid: 140997).
+2026-05-12 20:59:15 +0000 - dagster - DEBUG - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140997 - superset_sync - STEP_START - Started execution of step "superset_sync".
+2026-05-12 20:59:15 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - Lecture mesures Cube.js...
+2026-05-12 20:59:15 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - 30 mesures trouvees
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + clientCount -> SUM(clientCount)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + itemCount -> SUM(itemCount)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + nbFamilles -> COUNT(DISTINCT nbFamilles)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + nbBrands -> COUNT(DISTINCT nbBrands)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + documentStatusCount -> SUM(documentStatusCount)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + DocumentTypeCount -> SUM(DocumentTypeCount)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + geographicalAreaCount -> SUM(geographicalAreaCount)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + warehouseCount -> SUM(warehouseCount)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalOrders -> COUNT(DISTINCT documentCode)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalActiveClients -> COUNT(DISTINCT CASE WHEN isActive = 1 THEN clientSK END)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalInactiveClients -> COUNT(DISTINCT CASE WHEN isActive = 0 THEN clientSK END)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + tauxChurn -> SUM(tauxChurn)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalPriceHT -> SUM(totalPriceHT)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + avgOrderValue -> SUM(avgOrderValue)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalPriceHTB2B -> SUM(totalPriceHTB2B)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalPriceHTB2C -> SUM(totalPriceHTB2C)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalPriceHTPos -> SUM(totalPriceHTPos)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalPriceHTNonPos -> SUM(totalPriceHTNonPos)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalCostPrice -> SUM(totalCostPrice)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + grossMargin -> SUM(grossMargin)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + grossMarginRate -> SUM(grossMarginRate)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalQuantity -> SUM(totalQuantity)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + avgQuantity -> AVG(avgQuantity)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + totalDiscount -> SUM(totalDiscount)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + avgDiscountRate -> AVG(avgDiscountRate)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + avgDiscountRateB2B -> AVG(avgDiscountRateB2B)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + avgDiscountRateB2C -> AVG(avgDiscountRateB2C)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + nbArticlesMarge15 -> COUNT(DISTINCT nbArticlesMarge15)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + nbDocsRemise20 -> COUNT(DISTINCT nbDocsRemise20)
+2026-05-12 20:59:17 +0000 - dagster - INFO - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - superset_sync - + nbDocsVenteAPerte -> COUNT(DISTINCT nbDocsVenteAPerte)
+2026-05-12 20:59:23 +0000 - dagster - ERROR - __ASSET_JOB - 5dd08f79-9653-4139-a18f-66c50ec2e1d1 - 140997 - superset_sync - STEP_FAILURE - Execution of step "superset_sync" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "superset_sync"::
+
+Exception: Superset metrics update failed: {"message":{"metrics":["One or more metrics already exist"]}}
+
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 473, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 141, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 129, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dagster/pipeline.py", line 328, in superset_sync
+    raise Exception("Superset metrics update failed: " + resp.text)
+

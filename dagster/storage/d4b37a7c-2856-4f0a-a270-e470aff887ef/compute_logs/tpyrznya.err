@@ -1,0 +1,20 @@
+2026-04-20 14:38:51 +0000 - dagster - DEBUG - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - 240541 - LOGS_CAPTURED - Started capturing logs in process (pid: 240541).
+2026-04-20 14:38:51 +0000 - dagster - DEBUG - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - 240541 - silver_ready - STEP_START - Started execution of step "silver_ready".
+2026-04-20 14:38:51 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready - Connexion ClickHouse clickhouse:8123 db=silver...
+2026-04-20 14:38:52 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready - [1/30] Verification tables Silver ClickHouse...
+2026-04-20 14:38:52 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok client - 837 lignes
+2026-04-20 14:38:54 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok document - 488192 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok documentline - 1394677 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok documentstatus - 16 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok documenttype - 7 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok item - 65626 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok family - 49 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok geographicalarea - 8 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok productitem - 850 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready -   ok warehouse - 6 lignes
+2026-04-20 14:38:55 +0000 - dagster - INFO - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready - Toutes les tables Silver sont pretes.
+2026-04-20 14:38:55 +0000 - dagster - DEBUG - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - 240541 - silver_ready - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-20 14:38:55 +0000 - dagster - DEBUG - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - silver_ready - Writing file at: /dagster/storage/silver_ready using PickledObjectFilesystemIOManager...
+2026-04-20 14:38:55 +0000 - dagster - DEBUG - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - 240541 - silver_ready - ASSET_MATERIALIZATION - Materialized value silver_ready.
+2026-04-20 14:38:55 +0000 - dagster - DEBUG - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - 240541 - silver_ready - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-20 14:38:55 +0000 - dagster - DEBUG - __ASSET_JOB - d4b37a7c-2856-4f0a-a270-e470aff887ef - 240541 - silver_ready - STEP_SUCCESS - Finished execution of step "silver_ready" in 4.17s.

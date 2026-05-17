@@ -1,0 +1,47 @@
+2026-05-13 09:13:00 +0000 - dagster - DEBUG - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - 76592 - LOGS_CAPTURED - Started capturing logs in process (pid: 76592).
+2026-05-13 09:13:00 +0000 - dagster - DEBUG - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - 76592 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-05-13 09:13:09 +0000 - dagster - INFO - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - airbyte_sync - Airbyte job_id=90
+2026-05-13 09:13:19 +0000 - dagster - INFO - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - airbyte_sync - [1] status=running
+2026-05-13 09:13:29 +0000 - dagster - INFO - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - airbyte_sync - [2] status=running
+2026-05-13 09:13:39 +0000 - dagster - INFO - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - airbyte_sync - [3] status=running
+2026-05-13 09:13:49 +0000 - dagster - INFO - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - airbyte_sync - [4] status=running
+2026-05-13 09:13:59 +0000 - dagster - INFO - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - airbyte_sync - [5] status=running
+2026-05-13 09:14:09 +0000 - dagster - INFO - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - airbyte_sync - [6] status=running
+2026-05-13 09:14:20 +0000 - dagster - INFO - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - airbyte_sync - [7] status=incomplete
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - 76592 - airbyte_sync - STEP_FAILURE - Execution of step "airbyte_sync" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "airbyte_sync"::
+
+Exception: Airbyte job incomplete
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 473, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 141, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 129, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dagster/pipeline.py", line 140, in airbyte_sync
+    raise Exception("Airbyte job " + status)
+
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - spark_silver_cleaning - Dependencies for step spark_silver_cleaning failed: ['airbyte_sync']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver_ready - Dependencies for step silver_ready were not executed: ['spark_silver_cleaning']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__client - Dependencies for step silver__client were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__document - Dependencies for step silver__document were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__documentline - Dependencies for step silver__documentline were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__documentstatus - Dependencies for step silver__documentstatus were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__documenttype - Dependencies for step silver__documenttype were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__family - Dependencies for step silver__family were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__geographicalarea - Dependencies for step silver__geographicalarea were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__item - Dependencies for step silver__item were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__productitem - Dependencies for step silver__productitem were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - silver__warehouse - Dependencies for step silver__warehouse were not executed: ['silver_ready']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - dbt_models - Dependencies for step dbt_models were not executed: ['silver__client', 'silver__document', 'silver__documentline', 'silver__documentstatus', 'silver__documenttype', 'silver__family', 'silver__geographicalarea', 'silver__item', 'silver__productitem', 'silver__warehouse']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - dbt_docs - Dependencies for step dbt_docs were not executed: ['dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models', 'dbt_models']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - cube_refresh - Dependencies for step cube_refresh were not executed: ['dbt_docs']. Not executing.
+2026-05-13 09:14:20 +0000 - dagster - ERROR - full_pipeline - bf6368c9-8a96-4b24-831e-be96b18db608 - superset_sync - Dependencies for step superset_sync were not executed: ['cube_refresh']. Not executing.

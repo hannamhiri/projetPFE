@@ -1,0 +1,102 @@
+{
+  "expectations": [
+    {
+      "id": "9b26046c-3e13-435f-a57b-d712806ba7ba",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "83bafe7b-8196-4c9c-8cf6-c06b23f92580",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "58caefb6-4bce-4397-b178-b202cfea9b75",
+      "kwargs": {
+        "column": "IdDocument"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "f6b27977-2273-4db7-906f-e6b76cc918a0",
+      "kwargs": {
+        "column": "IdItem"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "7f7e7d60-c5a5-421c-a130-7bfc78ed91c4",
+      "kwargs": {
+        "column": "MovementQty"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "2d426d9b-074e-4ca1-be99-d52c10fb2858",
+      "kwargs": {
+        "column": "HtTotalLine"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "0052633e-2d46-4575-bfd7-d7ecf2d05c57",
+      "kwargs": {
+        "column": "DiscountPercentage"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "5987b66e-86f2-47e3-9060-16c46c9088aa",
+      "kwargs": {
+        "column": "MovementQty",
+        "min_value": -1.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "2781dea4-e0f4-4689-922d-6be0238f0988",
+      "kwargs": {
+        "column": "DiscountPercentage",
+        "max_value": 100.0,
+        "min_value": -1000.0
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "674649fc-5bce-42e4-95ea-aa9b1f099d01",
+      "kwargs": {
+        "column_set": [
+          "Id",
+          "IdDocument",
+          "IdItem",
+          "IdWarehouse",
+          "MovementQty",
+          "DiscountPercentage",
+          "HtTotalLine",
+          "CostPrice"
+        ]
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "0f8ac075-39c6-43f9-9f34-aef7c5cf3251",
+  "meta": {
+    "great_expectations_version": "1.1.0"
+  },
+  "name": "document_line_suite",
+  "notes": null
+}

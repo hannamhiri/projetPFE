@@ -1,0 +1,48 @@
+Running with dbt=1.7.19
+Registered adapter: clickhouse=1.7.7
+Found 18 models, 125 tests, 10 sources, 0 exposures, 0 metrics, 545 macros, 1 group, 0 semantic models
+
+Concurrency: 4 threads (target='dev')
+
+1 of 18 START sql view model `gold`.`stg_client` ............................... [RUN]
+2 of 18 START sql view model `gold`.`stg_document` ............................. [RUN]
+3 of 18 START sql view model `gold`.`stg_document_line` ........................ [RUN]
+4 of 18 START sql view model `gold`.`stg_document_status` ...................... [RUN]
+3 of 18 OK created sql view model `gold`.`stg_document_line` ................... [[32mOK[0m in 1.53s]
+2 of 18 OK created sql view model `gold`.`stg_document` ........................ [[32mOK[0m in 1.56s]
+5 of 18 START sql view model `gold`.`stg_document_type` ........................ [RUN]
+1 of 18 OK created sql view model `gold`.`stg_client` .......................... [[32mOK[0m in 1.58s]
+6 of 18 START sql view model `gold`.`stg_family` ............................... [RUN]
+4 of 18 OK created sql view model `gold`.`stg_document_status` ................. [[32mOK[0m in 1.59s]
+8 of 18 START sql view model `gold`.`stg_item` ................................. [RUN]
+7 of 18 START sql view model `gold`.`stg_geographical_area` .................... [RUN]
+6 of 18 OK created sql view model `gold`.`stg_family` .......................... [[32mOK[0m in 0.73s]
+5 of 18 OK created sql view model `gold`.`stg_document_type` ................... [[32mOK[0m in 0.77s]
+8 of 18 OK created sql view model `gold`.`stg_item` ............................ [[32mOK[0m in 0.73s]
+9 of 18 START sql view model `gold`.`stg_product_item` ......................... [RUN]
+10 of 18 START sql view model `gold`.`stg_warehouse` ........................... [RUN]
+11 of 18 START sql table model `gold`.`dim_date` ............................... [RUN]
+7 of 18 OK created sql view model `gold`.`stg_geographical_area` ............... [[32mOK[0m in 0.85s]
+12 of 18 START sql table model `gold`.`dim_client` ............................. [RUN]
+9 of 18 OK created sql view model `gold`.`stg_product_item` .................... [[32mOK[0m in 0.59s]
+10 of 18 OK created sql view model `gold`.`stg_warehouse` ...................... [[32mOK[0m in 0.59s]
+13 of 18 START sql table model `gold`.`dim_document_status` .................... [RUN]
+14 of 18 START sql table model `gold`.`dim_document_type` ...................... [RUN]
+12 of 18 OK created sql table model `gold`.`dim_client` ........................ [[32mOK[0m in 0.80s]
+15 of 18 START sql table model `gold`.`dim_geographical_area` .................. [RUN]
+13 of 18 OK created sql table model `gold`.`dim_document_status` ............... [[32mOK[0m in 0.61s]
+16 of 18 START sql table model `gold`.`dim_item` ............................... [RUN]
+14 of 18 OK created sql table model `gold`.`dim_document_type` ................. [[32mOK[0m in 0.73s]
+17 of 18 START sql table model `gold`.`dim_warehouse` .......................... [RUN]
+15 of 18 OK created sql table model `gold`.`dim_geographical_area` ............. [[32mOK[0m in 0.46s]
+11 of 18 OK created sql table model `gold`.`dim_date` .......................... [[32mOK[0m in 1.36s]
+17 of 18 OK created sql table model `gold`.`dim_warehouse` ..................... [[32mOK[0m in 0.61s]
+16 of 18 OK created sql table model `gold`.`dim_item` .......................... [[32mOK[0m in 8.94s]
+18 of 18 START sql table model `gold`.`fact_sales` ............................. [RUN]
+18 of 18 OK created sql table model `gold`.`fact_sales` ........................ [[32mOK[0m in 9.92s]
+
+Finished running 10 view models, 8 table models in 0 hours 0 minutes and 25.25 seconds (25.25s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=18 WARN=0 ERROR=0 SKIP=0 TOTAL=18

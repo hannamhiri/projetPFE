@@ -1,0 +1,8 @@
+2026-05-12 19:11:36 +0000 - dagster - DEBUG - __ASSET_JOB - aab27473-36f5-430d-a344-04fe804f0fdd - 78910 - LOGS_CAPTURED - Started capturing logs in process (pid: 78910).
+2026-05-12 19:11:36 +0000 - dagster - DEBUG - __ASSET_JOB - aab27473-36f5-430d-a344-04fe804f0fdd - 78910 - silver__documentline - STEP_START - Started execution of step "silver__documentline".
+2026-05-12 19:11:36 +0000 - dagster - INFO - __ASSET_JOB - aab27473-36f5-430d-a344-04fe804f0fdd - silver__documentline - Table silver.documentline disponible.
+2026-05-12 19:11:36 +0000 - dagster - DEBUG - __ASSET_JOB - aab27473-36f5-430d-a344-04fe804f0fdd - 78910 - silver__documentline - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 19:11:36 +0000 - dagster - DEBUG - __ASSET_JOB - aab27473-36f5-430d-a344-04fe804f0fdd - silver__documentline - Writing file at: /dagster/storage/silver/documentline using PickledObjectFilesystemIOManager...
+2026-05-12 19:11:36 +0000 - dagster - DEBUG - __ASSET_JOB - aab27473-36f5-430d-a344-04fe804f0fdd - 78910 - silver__documentline - ASSET_MATERIALIZATION - Materialized value silver documentline.
+2026-05-12 19:11:36 +0000 - dagster - DEBUG - __ASSET_JOB - aab27473-36f5-430d-a344-04fe804f0fdd - 78910 - silver__documentline - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 19:11:36 +0000 - dagster - DEBUG - __ASSET_JOB - aab27473-36f5-430d-a344-04fe804f0fdd - 78910 - silver__documentline - STEP_SUCCESS - Finished execution of step "silver__documentline" in 258ms.

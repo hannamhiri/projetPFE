@@ -1,0 +1,247 @@
+Running with dbt=1.7.19
+Registered adapter: clickhouse=1.7.7
+Unable to do partial parsing because config vars, config profile, or config target have changed
+Found 18 models, 137 tests, 10 sources, 0 exposures, 0 metrics, 545 macros, 0 groups, 0 semantic models
+
+Concurrency: 4 threads (target='dev')
+
+1 of 70 START test source_not_null_silver_client_Code .......................... [RUN]
+2 of 70 START test source_not_null_silver_client_Id ............................ [RUN]
+3 of 70 START test source_not_null_silver_client_IdGeographicalArea ............ [RUN]
+4 of 70 START test source_not_null_silver_client_IsActive ...................... [RUN]
+3 of 70 FAIL 5 source_not_null_silver_client_IdGeographicalArea ................ [[31mFAIL 5[0m in 0.43s]
+5 of 70 START test source_not_null_silver_client_IsBTOB ........................ [RUN]
+4 of 70 PASS source_not_null_silver_client_IsActive ............................ [[32mPASS[0m in 0.48s]
+1 of 70 PASS source_not_null_silver_client_Code ................................ [[32mPASS[0m in 0.50s]
+6 of 70 START test source_not_null_silver_client_Name .......................... [RUN]
+7 of 70 START test source_not_null_silver_document_Code ........................ [RUN]
+2 of 70 PASS source_not_null_silver_client_Id .................................. [[32mPASS[0m in 0.59s]
+8 of 70 START test source_not_null_silver_document_DocumentDate ................ [RUN]
+5 of 70 PASS source_not_null_silver_client_IsBTOB .............................. [[32mPASS[0m in 0.24s]
+9 of 70 START test source_not_null_silver_document_DocumentHTPrice ............. [RUN]
+6 of 70 PASS source_not_null_silver_client_Name ................................ [[32mPASS[0m in 0.22s]
+10 of 70 START test source_not_null_silver_document_DocumentTypeCode ........... [RUN]
+9 of 70 PASS source_not_null_silver_document_DocumentHTPrice ................... [[32mPASS[0m in 1.38s]
+7 of 70 PASS source_not_null_silver_document_Code .............................. [[32mPASS[0m in 1.58s]
+8 of 70 PASS source_not_null_silver_document_DocumentDate ...................... [[32mPASS[0m in 1.50s]
+10 of 70 PASS source_not_null_silver_document_DocumentTypeCode ................. [[32mPASS[0m in 1.35s]
+11 of 70 START test source_not_null_silver_document_Id ......................... [RUN]
+12 of 70 START test source_not_null_silver_document_IdDocumentStatus ........... [RUN]
+13 of 70 START test source_not_null_silver_document_IdTiers .................... [RUN]
+14 of 70 START test source_not_null_silver_document_IsForPos ................... [RUN]
+11 of 70 PASS source_not_null_silver_document_Id ............................... [[32mPASS[0m in 0.27s]
+15 of 70 START test source_not_null_silver_documentline_HtTotalLine ............ [RUN]
+12 of 70 PASS source_not_null_silver_document_IdDocumentStatus ................. [[32mPASS[0m in 0.35s]
+13 of 70 PASS source_not_null_silver_document_IdTiers .......................... [[32mPASS[0m in 0.36s]
+16 of 70 START test source_not_null_silver_documentline_Id ..................... [RUN]
+17 of 70 START test source_not_null_silver_documentline_IdDocument ............. [RUN]
+14 of 70 FAIL 73599 source_not_null_silver_document_IsForPos ................... [[31mFAIL 73599[0m in 0.43s]
+18 of 70 START test source_not_null_silver_documentline_IdItem ................. [RUN]
+15 of 70 PASS source_not_null_silver_documentline_HtTotalLine .................. [[32mPASS[0m in 4.78s]
+17 of 70 PASS source_not_null_silver_documentline_IdDocument ................... [[32mPASS[0m in 4.67s]
+16 of 70 PASS source_not_null_silver_documentline_Id ........................... [[32mPASS[0m in 4.69s]
+18 of 70 PASS source_not_null_silver_documentline_IdItem ....................... [[32mPASS[0m in 4.59s]
+19 of 70 START test source_not_null_silver_documentline_MovementQty ............ [RUN]
+20 of 70 START test source_not_null_silver_documentstatus_Id ................... [RUN]
+21 of 70 START test source_not_null_silver_documentstatus_Label ................ [RUN]
+22 of 70 START test source_not_null_silver_documenttype_Code ................... [RUN]
+20 of 70 PASS source_not_null_silver_documentstatus_Id ......................... [[32mPASS[0m in 0.29s]
+21 of 70 PASS source_not_null_silver_documentstatus_Label ...................... [[32mPASS[0m in 0.29s]
+22 of 70 PASS source_not_null_silver_documenttype_Code ......................... [[32mPASS[0m in 0.27s]
+23 of 70 START test source_not_null_silver_documenttype_Label .................. [RUN]
+24 of 70 START test source_not_null_silver_family_Code ......................... [RUN]
+25 of 70 START test source_not_null_silver_family_Id ........................... [RUN]
+19 of 70 PASS source_not_null_silver_documentline_MovementQty .................. [[32mPASS[0m in 0.39s]
+26 of 70 START test source_not_null_silver_family_Label ........................ [RUN]
+23 of 70 PASS source_not_null_silver_documenttype_Label ........................ [[32mPASS[0m in 0.23s]
+24 of 70 PASS source_not_null_silver_family_Code ............................... [[32mPASS[0m in 0.21s]
+27 of 70 START test source_not_null_silver_geographicalarea_Id ................. [RUN]
+28 of 70 START test source_not_null_silver_geographicalarea_Label .............. [RUN]
+25 of 70 PASS source_not_null_silver_family_Id ................................. [[32mPASS[0m in 0.25s]
+29 of 70 START test source_not_null_silver_item_Code ........................... [RUN]
+26 of 70 PASS source_not_null_silver_family_Label .............................. [[32mPASS[0m in 0.21s]
+30 of 70 START test source_not_null_silver_item_Id ............................. [RUN]
+28 of 70 PASS source_not_null_silver_geographicalarea_Label .................... [[32mPASS[0m in 0.19s]
+27 of 70 PASS source_not_null_silver_geographicalarea_Id ....................... [[32mPASS[0m in 0.23s]
+31 of 70 START test source_not_null_silver_item_Label .......................... [RUN]
+32 of 70 START test source_not_null_silver_productitem_Id ...................... [RUN]
+29 of 70 PASS source_not_null_silver_item_Code ................................. [[32mPASS[0m in 0.21s]
+33 of 70 START test source_not_null_silver_productitem_LabelProduct ............ [RUN]
+30 of 70 PASS source_not_null_silver_item_Id ................................... [[32mPASS[0m in 0.17s]
+34 of 70 START test source_not_null_silver_warehouse_Id ........................ [RUN]
+31 of 70 PASS source_not_null_silver_item_Label ................................ [[32mPASS[0m in 0.20s]
+35 of 70 START test source_not_null_silver_warehouse_WarehouseCode ............. [RUN]
+32 of 70 PASS source_not_null_silver_productitem_Id ............................ [[32mPASS[0m in 0.23s]
+33 of 70 PASS source_not_null_silver_productitem_LabelProduct .................. [[32mPASS[0m in 0.21s]
+36 of 70 START test source_not_null_silver_warehouse_WarehouseName ............. [RUN]
+37 of 70 START test source_relationships_silver_client_IdGeographicalArea__Id__source_silver_geographicalarea_  [RUN]
+34 of 70 PASS source_not_null_silver_warehouse_Id .............................. [[32mPASS[0m in 0.22s]
+38 of 70 START test source_relationships_silver_document_DocumentTypeCode__Code__source_silver_documenttype_  [RUN]
+35 of 70 PASS source_not_null_silver_warehouse_WarehouseCode ................... [[32mPASS[0m in 0.21s]
+39 of 70 START test source_relationships_silver_document_IdDocumentStatus__Id__source_silver_documentstatus_  [RUN]
+36 of 70 PASS source_not_null_silver_warehouse_WarehouseName ................... [[32mPASS[0m in 0.25s]
+40 of 70 START test source_relationships_silver_document_IdTiers__Id__source_silver_client_  [RUN]
+37 of 70 PASS source_relationships_silver_client_IdGeographicalArea__Id__source_silver_geographicalarea_  [[32mPASS[0m in 0.26s]
+41 of 70 START test source_relationships_silver_documentline_IdDocument__Id__source_silver_document_  [RUN]
+38 of 70 FAIL 124216 source_relationships_silver_document_DocumentTypeCode__Code__source_silver_documenttype_  [[31mFAIL 124216[0m in 0.33s]
+42 of 70 START test source_relationships_silver_documentline_IdItem__Id__source_silver_item_  [RUN]
+39 of 70 PASS source_relationships_silver_document_IdDocumentStatus__Id__source_silver_documentstatus_  [[32mPASS[0m in 0.38s]
+43 of 70 START test source_relationships_silver_item_IdFamily__Id__source_silver_family_  [RUN]
+40 of 70 FAIL 125017 source_relationships_silver_document_IdTiers__Id__source_silver_client_  [[31mFAIL 125017[0m in 0.46s]
+44 of 70 START test source_relationships_silver_item_IdProductItem__Id__source_silver_productitem_  [RUN]
+43 of 70 PASS source_relationships_silver_item_IdFamily__Id__source_silver_family_  [[32mPASS[0m in 0.25s]
+45 of 70 START test source_unique_silver_client_Id ............................. [RUN]
+44 of 70 FAIL 1 source_relationships_silver_item_IdProductItem__Id__source_silver_productitem_  [[31mFAIL 1[0m in 0.24s]
+46 of 70 START test source_unique_silver_document_Code ......................... [RUN]
+45 of 70 PASS source_unique_silver_client_Id ................................... [[32mPASS[0m in 0.18s]
+47 of 70 START test source_unique_silver_document_Id ........................... [RUN]
+42 of 70 FAIL 987 source_relationships_silver_documentline_IdItem__Id__source_silver_item_  [[31mFAIL 987[0m in 0.73s]
+48 of 70 START test source_unique_silver_documentline_Id ....................... [RUN]
+41 of 70 FAIL 212 source_relationships_silver_documentline_IdDocument__Id__source_silver_document_  [[31mFAIL 212[0m in 0.95s]
+49 of 70 START test source_unique_silver_documentstatus_Id ..................... [RUN]
+46 of 70 FAIL 222 source_unique_silver_document_Code ........................... [[31mFAIL 222[0m in 0.34s]
+47 of 70 PASS source_unique_silver_document_Id ................................. [[32mPASS[0m in 0.31s]
+50 of 70 START test source_unique_silver_documenttype_Code ..................... [RUN]
+51 of 70 START test source_unique_silver_family_Code ........................... [RUN]
+49 of 70 PASS source_unique_silver_documentstatus_Id ........................... [[32mPASS[0m in 0.19s]
+52 of 70 START test source_unique_silver_family_Id ............................. [RUN]
+51 of 70 FAIL 29 source_unique_silver_family_Code .............................. [[31mFAIL 29[0m in 0.25s]
+50 of 70 PASS source_unique_silver_documenttype_Code ........................... [[32mPASS[0m in 0.26s]
+53 of 70 START test source_unique_silver_geographicalarea_Id ................... [RUN]
+54 of 70 START test source_unique_silver_item_Code ............................. [RUN]
+48 of 70 PASS source_unique_silver_documentline_Id ............................. [[32mPASS[0m in 0.51s]
+52 of 70 PASS source_unique_silver_family_Id ................................... [[32mPASS[0m in 0.27s]
+55 of 70 START test source_unique_silver_item_Id ............................... [RUN]
+56 of 70 START test source_unique_silver_productitem_Id ........................ [RUN]
+53 of 70 PASS source_unique_silver_geographicalarea_Id ......................... [[32mPASS[0m in 0.18s]
+57 of 70 START test source_unique_silver_warehouse_Id .......................... [RUN]
+54 of 70 FAIL 1611 source_unique_silver_item_Code .............................. [[31mFAIL 1611[0m in 0.22s]
+58 of 70 START test source_unique_silver_warehouse_WarehouseCode ............... [RUN]
+56 of 70 PASS source_unique_silver_productitem_Id .............................. [[32mPASS[0m in 0.18s]
+55 of 70 PASS source_unique_silver_item_Id ..................................... [[32mPASS[0m in 0.20s]
+59 of 70 SKIP relation gold.stg_client ......................................... [[33mSKIP[0m]
+60 of 70 SKIP relation gold.stg_document ....................................... [[33mSKIP[0m]
+61 of 70 START sql view model `gold`.`stg_document_status` ..................... [RUN]
+62 of 70 START sql view model `gold`.`stg_document_type` ....................... [RUN]
+57 of 70 PASS source_unique_silver_warehouse_Id ................................ [[32mPASS[0m in 0.20s]
+63 of 70 START sql view model `gold`.`stg_document_line` ....................... [RUN]
+58 of 70 PASS source_unique_silver_warehouse_WarehouseCode ..................... [[32mPASS[0m in 0.21s]
+64 of 70 SKIP relation gold.stg_family ......................................... [[33mSKIP[0m]
+65 of 70 START sql view model `gold`.`stg_geographical_area` ................... [RUN]
+61 of 70 OK created sql view model `gold`.`stg_document_status` ................ [[32mOK[0m in 0.19s]
+62 of 70 OK created sql view model `gold`.`stg_document_type` .................. [[32mOK[0m in 0.19s]
+66 of 70 START sql view model `gold`.`stg_product_item` ........................ [RUN]
+67 of 70 SKIP relation gold.stg_item ........................................... [[33mSKIP[0m]
+68 of 70 START sql view model `gold`.`stg_warehouse` ........................... [RUN]
+63 of 70 OK created sql view model `gold`.`stg_document_line` .................. [[32mOK[0m in 0.17s]
+69 of 70 SKIP test assert_document_total_vs_lines .............................. [[33mSKIP[0m]
+70 of 70 SKIP test assert_no_orphan_lines_in_fact .............................. [[33mSKIP[0m]
+65 of 70 OK created sql view model `gold`.`stg_geographical_area` .............. [[32mOK[0m in 0.15s]
+66 of 70 OK created sql view model `gold`.`stg_product_item` ................... [[32mOK[0m in 0.15s]
+68 of 70 OK created sql view model `gold`.`stg_warehouse` ...................... [[32mOK[0m in 0.13s]
+
+Finished running 60 tests, 10 view models in 0 hours 0 minutes and 11.08 seconds (11.08s).
+
+[31mCompleted with 10 errors and 0 warnings:[0m
+
+[31mFailure in test source_not_null_silver_client_IdGeographicalArea (models/staging/source.yml)[0m
+  Got 5 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_not_null_silver_client_IdGeographicalArea.sql
+
+  See test failures:
+  -------------------------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_not_null_silver_client_IdGeographicalArea`
+  -------------------------------------------------------------------------------------
+
+[31mFailure in test source_not_null_silver_document_IsForPos (models/staging/source.yml)[0m
+  Got 73599 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_not_null_silver_document_IsForPos.sql
+
+  See test failures:
+  -----------------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_not_null_silver_document_IsForPos`
+  -----------------------------------------------------------------------------
+
+[31mFailure in test source_relationships_silver_document_DocumentTypeCode__Code__source_silver_documenttype_ (models/staging/source.yml)[0m
+  Got 124216 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_relationships_silver_do_e67ff6abaea7b3093d25632e936d1d42.sql
+
+  See test failures:
+  ----------------------------------------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_relationships_silver_do_e67ff6abaea7b3093d25632e936d1d42`
+  ----------------------------------------------------------------------------------------------------
+
+[31mFailure in test source_relationships_silver_document_IdTiers__Id__source_silver_client_ (models/staging/source.yml)[0m
+  Got 125017 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_relationships_silver_do_2e8834d60884878f25ac5f9cd4a17b80.sql
+
+  See test failures:
+  ----------------------------------------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_relationships_silver_do_2e8834d60884878f25ac5f9cd4a17b80`
+  ----------------------------------------------------------------------------------------------------
+
+[31mFailure in test source_relationships_silver_item_IdProductItem__Id__source_silver_productitem_ (models/staging/source.yml)[0m
+  Got 1 result, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_relationships_silver_it_5c7e49c224b9c45548d2f9a277ad1921.sql
+
+  See test failures:
+  ----------------------------------------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_relationships_silver_it_5c7e49c224b9c45548d2f9a277ad1921`
+  ----------------------------------------------------------------------------------------------------
+
+[31mFailure in test source_relationships_silver_documentline_IdItem__Id__source_silver_item_ (models/staging/source.yml)[0m
+  Got 987 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_relationships_silver_do_ee947601d5bb061442b040dea9b2f2f9.sql
+
+  See test failures:
+  ----------------------------------------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_relationships_silver_do_ee947601d5bb061442b040dea9b2f2f9`
+  ----------------------------------------------------------------------------------------------------
+
+[31mFailure in test source_relationships_silver_documentline_IdDocument__Id__source_silver_document_ (models/staging/source.yml)[0m
+  Got 212 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_relationships_silver_do_28db1d29da57c4a7a4eb5c07f96dbc02.sql
+
+  See test failures:
+  ----------------------------------------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_relationships_silver_do_28db1d29da57c4a7a4eb5c07f96dbc02`
+  ----------------------------------------------------------------------------------------------------
+
+[31mFailure in test source_unique_silver_document_Code (models/staging/source.yml)[0m
+  Got 222 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_unique_silver_document_Code.sql
+
+  See test failures:
+  -----------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_unique_silver_document_Code`
+  -----------------------------------------------------------------------
+
+[31mFailure in test source_unique_silver_family_Code (models/staging/source.yml)[0m
+  Got 29 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_unique_silver_family_Code.sql
+
+  See test failures:
+  ---------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_unique_silver_family_Code`
+  ---------------------------------------------------------------------
+
+[31mFailure in test source_unique_silver_item_Code (models/staging/source.yml)[0m
+  Got 1611 results, configured to fail if != 0
+
+  compiled Code at target/dbt_staging-59bd644-57ee4ad/compiled/sagap/models/staging/source.yml/source_unique_silver_item_Code.sql
+
+  See test failures:
+  -------------------------------------------------------------------
+  select * from `gold_test_failures`.`source_unique_silver_item_Code`
+  -------------------------------------------------------------------
+
+Done. PASS=54 WARN=0 ERROR=10 SKIP=6 TOTAL=70

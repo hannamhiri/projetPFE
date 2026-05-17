@@ -1,0 +1,22 @@
+# dagster/dagster.yaml
+# DAGSTER_HOME doit pointer vers ce dossier (défini dans docker-compose)
+# Utilise les variables séparées — pas de postgres_url qui nécessite une env composée
+
+storage:
+  postgres:
+    postgres_db:
+      db_name: dagster
+      username: dagster
+      password: dagster
+      hostname: dagster_postgresql
+      port: 5432
+
+run_launcher:
+  module: dagster.core.launcher
+  class: DefaultRunLauncher
+
+run_coordinator:
+  module: dagster.core.run_coordinator
+  class: QueuedRunCoordinator
+  config:
+    max_concurrent_runs: 3

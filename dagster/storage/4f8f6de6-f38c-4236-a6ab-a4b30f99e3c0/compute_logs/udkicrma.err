@@ -1,0 +1,9 @@
+2026-04-21 14:08:34 +0000 - dagster - DEBUG - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - 39309 - LOGS_CAPTURED - Started capturing logs in process (pid: 39309).
+2026-04-21 14:08:34 +0000 - dagster - DEBUG - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - 39309 - dbt_docs - STEP_START - Started execution of step "dbt_docs".
+2026-04-21 14:08:34 +0000 - dagster - INFO - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - dbt_docs - Generation des docs dbt...
+2026-04-21 14:08:46 +0000 - dagster - INFO - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - dbt_docs - Documentation dbt generee avec succes.
+2026-04-21 14:08:46 +0000 - dagster - DEBUG - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - 39309 - dbt_docs - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-21 14:08:46 +0000 - dagster - DEBUG - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - dbt_docs - Writing file at: /dagster/storage/dbt_docs using PickledObjectFilesystemIOManager...
+2026-04-21 14:08:46 +0000 - dagster - DEBUG - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - 39309 - dbt_docs - ASSET_MATERIALIZATION - Materialized value dbt_docs.
+2026-04-21 14:08:47 +0000 - dagster - DEBUG - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - 39309 - dbt_docs - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-21 14:08:47 +0000 - dagster - DEBUG - __ASSET_JOB - 4f8f6de6-f38c-4236-a6ab-a4b30f99e3c0 - 39309 - dbt_docs - STEP_SUCCESS - Finished execution of step "dbt_docs" in 12.31s.

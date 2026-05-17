@@ -1,0 +1,45 @@
+{
+  "expectations": [
+    {
+      "id": "8f88d3bd-b631-4fa2-81bd-59aa18f356f4",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "349c092f-c28e-4d00-915b-6a45dccad81c",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "86b6594d-9071-41dc-921b-55dc29189f42",
+      "kwargs": {
+        "column": "Label"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "3c9ce9cf-844a-4ad7-a124-103d5d6b280d",
+      "kwargs": {
+        "column_set": [
+          "Id",
+          "Label"
+        ]
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "dce0b8c6-268c-4f99-a4d8-49f6f1793006",
+  "meta": {
+    "great_expectations_version": "1.1.0"
+  },
+  "name": "document_status_suite",
+  "notes": null
+}

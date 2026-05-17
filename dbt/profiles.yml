@@ -1,0 +1,13 @@
+sagap:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      host: clickhouse
+      port: 8123
+      user: default
+      password: clickhouse123
+      database: gold
+      schema: gold
+      secure: false
+      threads: 4

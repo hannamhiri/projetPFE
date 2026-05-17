@@ -1,0 +1,22 @@
+2026-04-27 16:03:26 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - 2472 - LOGS_CAPTURED - Started capturing logs in process (pid: 2472).
+2026-04-27 16:03:26 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - 2472 - silver_ready - STEP_START - Started execution of step "silver_ready".
+2026-04-27 16:03:27 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready - Connexion ClickHouse clickhouse:8123 db=silver...
+2026-04-27 16:03:27 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready - [1/30] Verification tables Silver ClickHouse...
+2026-04-27 16:03:27 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok client - 837 lignes
+2026-04-27 16:03:28 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok document - 489237 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok documentline - 1878451 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok documentstatus - 16 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok documenttype - 7 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok item - 65626 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok family - 49 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok geographicalarea - 8 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok productitem - 850 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready -   ok warehouse - 6 lignes
+2026-04-27 16:03:33 +0000 - dagster - INFO - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready - Toutes les tables Silver sont pretes.
+2026-04-27 16:03:33 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - 2472 - silver_ready - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-27 16:03:33 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready - Writing file at: /dagster/storage/silver_ready using PickledObjectFilesystemIOManager...
+2026-04-27 16:03:33 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - 2472 - silver_ready - ASSET_MATERIALIZATION - Materialized value silver_ready.
+2026-04-27 16:03:33 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - 2472 - silver_ready - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-27 16:03:33 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - 2472 - silver_ready - STEP_SUCCESS - Finished execution of step "silver_ready" in 6.76s.
+2026-04-27 16:03:33 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready - HOOK_SKIPPED - Skipped the execution of hook "email_on_failure". It did not meet its triggering condition during the execution of "silver_ready".
+2026-04-27 16:03:36 +0000 - dagster - DEBUG - full_pipeline - 9184f891-28c2-4476-b817-ecd93a1b1157 - silver_ready - HOOK_COMPLETED - Finished the execution of hook "email_on_success" triggered for "silver_ready".

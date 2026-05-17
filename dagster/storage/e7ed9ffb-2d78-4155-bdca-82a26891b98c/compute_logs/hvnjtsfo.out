@@ -1,0 +1,29 @@
+Running with dbt=1.7.19
+Registered adapter: clickhouse=1.7.7
+Unable to do partial parsing because config vars, config profile, or config target have changed
+Found 18 models, 137 tests, 10 sources, 0 exposures, 0 metrics, 545 macros, 1 group, 0 semantic models
+
+Concurrency: 4 threads (target='dev')
+
+1 of 8 START sql table model `gold`.`dim_client` ............................... [RUN]
+2 of 8 START sql table model `gold`.`dim_date` ................................. [RUN]
+3 of 8 START sql table model `gold`.`dim_document_status` ...................... [RUN]
+4 of 8 START sql table model `gold`.`dim_document_type` ........................ [RUN]
+3 of 8 OK created sql table model `gold`.`dim_document_status` ................. [[32mOK[0m in 0.36s]
+5 of 8 START sql table model `gold`.`dim_geographical_area` .................... [RUN]
+4 of 8 OK created sql table model `gold`.`dim_document_type` ................... [[32mOK[0m in 0.39s]
+1 of 8 OK created sql table model `gold`.`dim_client` .......................... [[32mOK[0m in 0.41s]
+6 of 8 START sql table model `gold`.`dim_item` ................................. [RUN]
+7 of 8 START sql table model `gold`.`dim_warehouse` ............................ [RUN]
+5 of 8 OK created sql table model `gold`.`dim_geographical_area` ............... [[32mOK[0m in 0.17s]
+7 of 8 OK created sql table model `gold`.`dim_warehouse` ....................... [[32mOK[0m in 0.16s]
+2 of 8 OK created sql table model `gold`.`dim_date` ............................ [[32mOK[0m in 0.80s]
+6 of 8 OK created sql table model `gold`.`dim_item` ............................ [[32mOK[0m in 0.84s]
+8 of 8 START sql table model `gold`.`fact_sales` ............................... [RUN]
+8 of 8 OK created sql table model `gold`.`fact_sales` .......................... [[32mOK[0m in 3.71s]
+
+Finished running 8 table models in 0 hours 0 minutes and 5.68 seconds (5.68s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8

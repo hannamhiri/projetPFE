@@ -1,0 +1,8 @@
+2026-05-12 19:37:18 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92723 - LOGS_CAPTURED - Started capturing logs in process (pid: 92723).
+2026-05-12 19:37:19 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92723 - silver__document - STEP_START - Started execution of step "silver__document".
+2026-05-12 19:37:19 +0000 - dagster - INFO - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - silver__document - Table silver.document disponible.
+2026-05-12 19:37:19 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92723 - silver__document - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 19:37:19 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - silver__document - Writing file at: /dagster/storage/silver/document using PickledObjectFilesystemIOManager...
+2026-05-12 19:37:19 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92723 - silver__document - ASSET_MATERIALIZATION - Materialized value silver document.
+2026-05-12 19:37:19 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92723 - silver__document - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 19:37:19 +0000 - dagster - DEBUG - __ASSET_JOB - 8aae4c33-e7e1-4a59-b64b-9351cb1d1211 - 92723 - silver__document - STEP_SUCCESS - Finished execution of step "silver__document" in 240ms.

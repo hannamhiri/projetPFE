@@ -1,0 +1,170 @@
+# models/staging/sources.yml
+version: 2
+
+sources:
+  - name: silver
+    database: silver
+    schema: silver
+    description: >
+      Couche Silver du Data Lakehouse — données nettoyées et normalisées par Spark.
+    meta:
+      owner: "data-engineering"
+      layer: "silver"
+
+    tables:
+      - name: client
+        description: "Référentiel des clients B2B et B2C."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: Code
+            tests: [not_null]
+          - name: Name
+            tests: [not_null]
+          - name: IdGeographicalArea
+            tests:
+              - relationships:
+                  to: source('silver', 'geographicalarea')
+                  field: Id
+                  config:
+                    severity: warn
+          - name: IsBTOB
+            tests: [not_null]
+          - name: IsActive
+            tests: [not_null]
+
+      - name: document
+        description: "Entête des documents commerciaux."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: Code
+            tests: [not_null]
+          - name: IdDocumentStatus
+            tests:
+              - not_null
+              - relationships:
+                  to: source('silver', 'documentstatus')
+                  field: Id
+                  config:
+                    severity: warn
+          - name: DocumentTypeCode
+            tests:
+              - not_null
+              - relationships:
+                  to: source('silver', 'documenttype')
+                  field: Code
+                  config:
+                    severity: warn
+          - name: IdTiers
+            tests:
+              - not_null
+              - relationships:
+                  to: source('silver', 'client')
+                  field: Id
+                  config:
+                    severity: warn
+          - name: DocumentDate
+            tests: [not_null]
+
+      - name: documentline
+        description: "Lignes de détail de chaque document commercial."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: IdDocument
+            tests:
+              - not_null
+              - relationships:
+                  to: source('silver', 'document')
+                  field: Id
+                  config:
+                    severity: warn
+          - name: IdItem
+            tests:
+              - not_null
+              - relationships:
+                  to: source('silver', 'item')
+                  field: Id
+                  config:
+                    severity: warn
+          - name: MovementQty
+            tests: [not_null]
+          - name: HtTotalLine
+            tests: [not_null]
+
+      - name: documentstatus
+        description: "Référentiel des statuts de documents."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: Label
+            tests: [not_null]
+
+      - name: documenttype
+        description: "Référentiel des types de documents."
+        columns:
+          - name: Code
+            tests: [unique, not_null]
+          - name: Label
+            tests: [not_null]
+
+      - name: item
+        description: "Référentiel des articles vendables."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: Code
+            tests: [not_null]
+          - name: Label
+            tests: [not_null]
+          - name: IdProductItem
+            tests:
+              - relationships:
+                  to: source('silver', 'productitem')
+                  field: Id
+                  config:
+                    severity: warn
+          - name: IdFamily
+            tests:
+              - relationships:
+                  to: source('silver', 'family')
+                  field: Id
+                  config:
+                    severity: warn
+
+      - name: geographicalarea
+        description: "Référentiel des zones géographiques."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: Label
+            tests: [not_null]
+
+      - name: productitem
+        description: "Référentiel des produits."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: LabelProduct
+            tests: [not_null]
+
+      - name: family
+        description: "Référentiel des familles d'articles."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: Code
+            tests: [unique, not_null]
+          - name: Label
+            tests: [not_null]
+
+      - name: warehouse
+        description: "Référentiel des dépôts."
+        columns:
+          - name: Id
+            tests: [unique, not_null]
+          - name: WarehouseCode
+            tests: [unique, not_null]
+          - name: WarehouseName
+            tests: [not_null]

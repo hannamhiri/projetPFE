@@ -1,0 +1,21 @@
+2026-05-12 15:07:52 +0000 - dagster - DEBUG - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - 12760 - LOGS_CAPTURED - Started capturing logs in process (pid: 12760).
+2026-05-12 15:07:52 +0000 - dagster - DEBUG - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - 12760 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-05-12 15:08:17 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - Airbyte job_id=79
+2026-05-12 15:08:28 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [1] status=running
+2026-05-12 15:08:40 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [2] status=running
+2026-05-12 15:08:51 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [3] status=running
+2026-05-12 15:09:01 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [4] status=running
+2026-05-12 15:09:17 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [5] status=running
+2026-05-12 15:09:27 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [6] status=running
+2026-05-12 15:09:39 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [7] status=running
+2026-05-12 15:09:53 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [8] status=running
+2026-05-12 15:10:03 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [9] status=running
+2026-05-12 15:10:14 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [10] status=running
+2026-05-12 15:10:25 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [11] status=running
+2026-05-12 15:10:36 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [12] status=running
+2026-05-12 15:10:46 +0000 - dagster - INFO - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - [13] status=succeeded
+2026-05-12 15:10:46 +0000 - dagster - DEBUG - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - 12760 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 15:10:46 +0000 - dagster - DEBUG - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-05-12 15:10:46 +0000 - dagster - DEBUG - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - 12760 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-05-12 15:10:46 +0000 - dagster - DEBUG - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - 12760 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 15:10:46 +0000 - dagster - DEBUG - __ASSET_JOB - b4fa062d-1688-4b39-b63e-9203277cc4f8 - 12760 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 2m54s.

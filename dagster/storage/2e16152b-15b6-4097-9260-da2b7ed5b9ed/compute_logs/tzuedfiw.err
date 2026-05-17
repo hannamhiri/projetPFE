@@ -1,0 +1,91 @@
+2026-05-13 07:21:16 +0000 - dagster - DEBUG - __ASSET_JOB - 2e16152b-15b6-4097-9260-da2b7ed5b9ed - 7333 - LOGS_CAPTURED - Started capturing logs in process (pid: 7333).
+2026-05-13 07:21:16 +0000 - dagster - DEBUG - __ASSET_JOB - 2e16152b-15b6-4097-9260-da2b7ed5b9ed - 7333 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-05-13 07:21:47 +0000 - dagster - ERROR - __ASSET_JOB - 2e16152b-15b6-4097-9260-da2b7ed5b9ed - 7333 - airbyte_sync - STEP_FAILURE - Execution of step "airbyte_sync" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "airbyte_sync"::
+
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='host.docker.internal', port=8000): Read timed out. (read timeout=30)
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 473, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 141, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 129, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dagster/pipeline.py", line 113, in airbyte_sync
+    trigger = requests.post(
+              ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 592, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/sessions.py", line 706, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/requests/adapters.py", line 691, in send
+    raise ReadTimeout(e, request=request)
+
+The above exception occurred during handling of the following exception:
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='host.docker.internal', port=8000): Read timed out. (read timeout=30)
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/requests/adapters.py", line 645, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 802, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/util/retry.py", line 552, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 716, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 358, in _raise_timeout
+    raise ReadTimeoutError(
+
+The above exception occurred during handling of the following exception:
+TimeoutError: timed out
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 463, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 1415, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.11/http/client.py", line 330, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/http/client.py", line 291, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 718, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+
+The above exception occurred during handling of the following exception:
+TypeError: HTTPConnection.getresponse() got an unexpected keyword argument 'buffering'
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 459, in _make_request
+    httplib_response = conn.getresponse(buffering=True)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+

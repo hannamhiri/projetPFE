@@ -1,0 +1,8 @@
+2026-05-12 15:43:31 +0000 - dagster - DEBUG - __ASSET_JOB - a449582f-da0a-42a3-bebe-b0ff2e6fbcb3 - 31355 - LOGS_CAPTURED - Started capturing logs in process (pid: 31355).
+2026-05-12 15:43:31 +0000 - dagster - DEBUG - __ASSET_JOB - a449582f-da0a-42a3-bebe-b0ff2e6fbcb3 - 31355 - silver__warehouse - STEP_START - Started execution of step "silver__warehouse".
+2026-05-12 15:43:31 +0000 - dagster - INFO - __ASSET_JOB - a449582f-da0a-42a3-bebe-b0ff2e6fbcb3 - silver__warehouse - Table silver.warehouse disponible.
+2026-05-12 15:43:31 +0000 - dagster - DEBUG - __ASSET_JOB - a449582f-da0a-42a3-bebe-b0ff2e6fbcb3 - 31355 - silver__warehouse - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 15:43:31 +0000 - dagster - DEBUG - __ASSET_JOB - a449582f-da0a-42a3-bebe-b0ff2e6fbcb3 - silver__warehouse - Writing file at: /dagster/storage/silver/warehouse using PickledObjectFilesystemIOManager...
+2026-05-12 15:43:31 +0000 - dagster - DEBUG - __ASSET_JOB - a449582f-da0a-42a3-bebe-b0ff2e6fbcb3 - 31355 - silver__warehouse - ASSET_MATERIALIZATION - Materialized value silver warehouse.
+2026-05-12 15:43:31 +0000 - dagster - DEBUG - __ASSET_JOB - a449582f-da0a-42a3-bebe-b0ff2e6fbcb3 - 31355 - silver__warehouse - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 15:43:31 +0000 - dagster - DEBUG - __ASSET_JOB - a449582f-da0a-42a3-bebe-b0ff2e6fbcb3 - 31355 - silver__warehouse - STEP_SUCCESS - Finished execution of step "silver__warehouse" in 581ms.

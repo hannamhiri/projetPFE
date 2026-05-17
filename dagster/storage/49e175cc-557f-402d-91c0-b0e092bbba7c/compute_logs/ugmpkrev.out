@@ -1,0 +1,33 @@
+Running with dbt=1.8.8
+Registered adapter: clickhouse=1.8.0
+Unable to do partial parsing because of a version mismatch
+[[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+Found 18 models, 137 data tests, 10 sources, 567 macros, 1 group
+
+Concurrency: 4 threads (target='dev')
+
+1 of 8 START sql table model `gold`.`dim_client` ............................... [RUN]
+2 of 8 START sql table model `gold`.`dim_date` ................................. [RUN]
+3 of 8 START sql table model `gold`.`dim_document_status` ...................... [RUN]
+4 of 8 START sql table model `gold`.`dim_document_type` ........................ [RUN]
+1 of 8 OK created sql table model `gold`.`dim_client` .......................... [[32mOK[0m in 0.56s]
+5 of 8 START sql table model `gold`.`dim_geographical_area` .................... [RUN]
+4 of 8 OK created sql table model `gold`.`dim_document_type` ................... [[32mOK[0m in 0.66s]
+6 of 8 START sql table model `gold`.`dim_item` ................................. [RUN]
+3 of 8 OK created sql table model `gold`.`dim_document_status` ................. [[32mOK[0m in 0.85s]
+7 of 8 START sql table model `gold`.`dim_warehouse` ............................ [RUN]
+5 of 8 OK created sql table model `gold`.`dim_geographical_area` ............... [[32mOK[0m in 0.46s]
+7 of 8 OK created sql table model `gold`.`dim_warehouse` ....................... [[32mOK[0m in 0.60s]
+6 of 8 OK created sql table model `gold`.`dim_item` ............................ [[32mOK[0m in 3.96s]
+2 of 8 OK created sql table model `gold`.`dim_date` ............................ [[32mOK[0m in 5.40s]
+8 of 8 START sql table model `gold`.`fact_sales` ............................... [RUN]
+8 of 8 OK created sql table model `gold`.`fact_sales` .......................... [[32mOK[0m in 22.83s]
+
+Finished running 8 table models in 0 hours 0 minutes and 29.05 seconds (29.05s).
+
+[32mCompleted successfully[0m
+
+Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8

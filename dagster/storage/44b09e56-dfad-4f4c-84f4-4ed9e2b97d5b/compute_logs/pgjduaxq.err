@@ -1,0 +1,356 @@
+2026-04-20 14:07:31 +0000 - dagster - DEBUG - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - 222855 - LOGS_CAPTURED - Started capturing logs in process (pid: 222855).
+2026-04-20 14:07:31 +0000 - dagster - DEBUG - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - 222855 - spark_silver_cleaning - STEP_START - Started execution of step "spark_silver_cleaning".
+2026-04-20 14:07:31 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Connexion au Docker daemon...
+2026-04-20 14:07:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:07:38 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:07:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:07:52 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 0:>                                                          (0 + 0) / 1]
+2026-04-20 14:07:52 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 0:>                                                          (0 + 1) / 1]
+2026-04-20 14:07:54 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 2:>                                                          (0 + 1) / 1]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   940 lignes extraites
+🔧 Transformation...
+   850 lignes après filtrage
+🔍 Validation GX...
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 1273.64it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 491.50it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 719.20it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 409.40it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 552.72it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 456.77it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 815.60it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 776.19it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 774.60it/s]
+2026-04-20 14:07:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 773.45it/s]
+2026-04-20 14:08:08 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-20 14:08:09 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour product_item
+💾 Écriture Silver (850 lignes)...
+ Écriture terminée → silver.ProductItem
+🏁 Pipeline Product Item terminé avec succès ✅
+2026-04-20 14:08:12 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:08:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:08:12 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   98 lignes extraites
+🔧 Transformation...
+   49 lignes après déduplication
+ Écriture terminée → silver.family_id_mapping
+   49 mappings sauvegardés
+🔍 Validation GX...
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 4238.81it/s]
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 271.26it/s]
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 381.91it/s]
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 216.88it/s]
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 449.95it/s]
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 358.01it/s]
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 891.18it/s]
+2026-04-20 14:08:18 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 826.62it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 824.42it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 822.42it/s]
+2026-04-20 14:08:28 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 35:>                                                         (0 + 1) / 1]
+2026-04-20 14:08:29 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour Family
+💾 Écriture Silver (49 lignes)...
+ Écriture terminée → silver.Family
+🏁 Pipeline Family terminé avec succès ✅
+2026-04-20 14:08:32 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:08:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:08:32 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   8 lignes extraites
+🔧 Transformation...
+   8 lignes après filtrage
+🔍 Validation GX...
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 3684.06it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 437.52it/s] Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 631.83it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 346.94it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 590.26it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 443.99it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 1005.57it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 935.50it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 932.89it/s]
+2026-04-20 14:08:36 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 929.90it/s]
+2026-04-20 14:08:45 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-20 14:08:46 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour geographical_area
+💾 Écriture Silver (8 lignes)...
+ Écriture terminée → silver.GeographicalArea
+🏁 Pipeline Geographical Area terminé avec succès ✅
+2026-04-20 14:08:49 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:08:49 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:08:49 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   16 lignes extraites
+🔧 Transformation...
+   16 lignes après filtrage
+🔍 Validation GX...
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 4036.87it/s]
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 463.56it/s] Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 671.84it/s]
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 359.59it/s]
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 601.05it/s]
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 459.52it/s]
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 1022.10it/s]
+2026-04-20 14:08:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 954.02it/s] Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 951.45it/s]Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 948.97it/s]
+2026-04-20 14:09:03 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour document_status
+💾 Écriture Silver (16 lignes)...
+ Écriture terminée → silver.DocumentStatus
+🏁 Pipeline Document Status terminé avec succès ✅
+2026-04-20 14:09:06 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:09:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:09:06 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   16 lignes extraites
+🔧 Transformation...
+   7 lignes après filtrage
+🔍 Validation GX...
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 2971.52it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 259.35it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 373.52it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 220.99it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 373.41it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 297.86it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 762.34it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 716.75it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 715.20it/s]
+2026-04-20 14:09:10 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 713.98it/s]
+2026-04-20 14:09:21 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-20 14:09:21 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour document_type
+💾 Écriture Silver (7 lignes)...
+ Écriture terminée → silver.DocumentType
+🏁 Pipeline Document Type terminé avec succès ✅
+2026-04-20 14:09:25 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:09:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:09:25 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN
+2026-04-20 14:09:25 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - ".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:09:30 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:09:30 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-04-20 14:09:31 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 35:>                                                         (0 + 2) / 2]
+2026-04-20 14:09:35 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 56:>                                                         (0 + 2) / 2]
+2026-04-20 14:09:35 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 56:=============================>                            (1 + 1) / 2]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   66873 lignes extraites
+🔧 Transformation...
+   65674 lignes après filtrage
+ Écriture terminée → quarantine.item_code_rejected
+⚠️  48 lignes rejetées → quarantine.item_code_rejected
+🔍 Validation GX...
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 132.26it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 112.18it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 167.20it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 147.01it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 96.82it/s]Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 96.82it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 96.82it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 96.82it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 169.98it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 169.98it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 169.98it/s]
+2026-04-20 14:09:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 155.86it/s]
+2026-04-20 14:09:50 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour item
+💾 Écriture Silver (65626 lignes)...
+ Écriture terminée → silver.Item
+🏁 Pipeline Item terminé avec succès ✅
+2026-04-20 14:09:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:09:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:09:53 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   8698 lignes extraites
+🔧 Transformation...
+   841 lignes après filtrage
+🔍 Validation GX...
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/65 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/65 [00:00<?, ?it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   9%|▉         | 6/65 [00:00<00:00, 1405.52it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   9%|▉         | 6/65 [00:00<00:00, 282.92it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 9/65 [00:00<00:00, 412.25it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 9/65 [00:00<00:00, 233.45it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  34%|███▍      | 22/65 [00:00<00:00, 437.09it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  34%|███▍      | 22/65 [00:00<00:00, 349.46it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 804.92it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 760.73it/s]Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 759.88it/s]
+2026-04-20 14:09:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 759.30it/s]
+2026-04-20 14:10:08 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:10:08 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-04-20 14:10:09 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-20 14:10:09 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+⚠️  Validation GX avec anomalies pour tiers — traitement en cours...
+──────────────────────────────────────────────────
+Règle    : expect_column_values_to_match_regex
+Colonne  : Name
+Total    : 841 lignes
+Échoués  : 4 lignes (0.4756%)
+ Écriture terminée → quarantine.tiers_lignes_rejected
+⚠️  4 lignes rejetées → quarantine.tiers_lignes_rejected
+💾 Écriture Silver (837 lignes valides)...
+ Écriture terminée → silver.Client
+🏁 Pipeline Tiers terminé avec succès ✅
+2026-04-20 14:10:13 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:10:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:10:13 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   7 lignes extraites
+🔧 Transformation...
+   6 lignes après filtrage
+🔍 Validation GX...
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 2706.88it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 302.85it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 440.56it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 228.09it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 439.56it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 339.81it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 842.83it/s]
+2026-04-20 14:10:17 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 790.30it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 788.07it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 786.46it/s]
+2026-04-20 14:10:28 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-20 14:10:28 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour Warehouse
+💾 Écriture Silver (6 lignes)...
+ Écriture terminée → silver.Warehouse
+🏁 Pipeline Warehouse terminé avec succès ✅
+2026-04-20 14:10:32 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:10:32 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:10:32 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:10:37 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:10:37 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-04-20 14:10:38 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 4:>                                                          (0 + 1) / 1]
+2026-04-20 14:11:24 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.util.SizeEstimator$ (file:/opt/spark/jars/spark-core_2.12-3.5.2.jar) to field java.math.BigDecimal.intVal
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.util.SizeEstimator$
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2026-04-20 14:11:25 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 9:>                                                          (0 + 1) / 1]
+2026-04-20 14:11:40 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 12:>                                                         (0 + 1) / 1]
+2026-04-20 14:11:45 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 14:>                                                         (0 + 1) / 1]
+2026-04-20 14:12:02 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   721676 lignes extraites
+🔧 Transformation...
+   488192 lignes valides
+   1045 lignes rejetées (client absent de Silver)
+ Écriture terminée → quarantine.document_lignes_rejected
+⚠️  1045 lignes rejetées → quarantine.document_lignes_rejected
+🔍 Validation GX...
+2026-04-20 14:12:02 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/68 [00:00<?, ?it/s]
+2026-04-20 14:12:02 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/68 [00:00<?, ?it/s]
+2026-04-20 14:12:03 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:02, 29.95it/s]
+2026-04-20 14:12:03 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:02, 29.95it/s]
+2026-04-20 14:12:03 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:02, 29.95it/s]
+2026-04-20 14:12:03 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  18%|█▊        | 12/68 [00:00<00:01, 29.95it/s]
+2026-04-20 14:12:03 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  18%|█▊        | 12/68 [00:00<00:01, 29.95it/s]
+2026-04-20 14:12:04 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - /usr/local/lib/python3.8/dist-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_match_regex.py:25: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  return column.astype(str).str.contains(regex)
+Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:02, 19.80it/s]Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:02, 19.80it/s]
+2026-04-20 14:12:04 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:02, 19.80it/s]
+2026-04-20 14:12:05 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 31.87it/s]Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 31.87it/s]
+2026-04-20 14:12:05 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 31.87it/s]Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 31.87it/s]Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 29.92it/s]
+2026-04-20 14:12:16 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 16:>                                                         (0 + 1) / 1]
+2026-04-20 14:12:21 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 20:>                                                         (0 + 1) / 1]
+2026-04-20 14:13:22 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 20:>                                                         (0 + 1) / 1]
+2026-04-20 14:13:34 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour document
+💾 Écriture Silver (488192 lignes)...
+ Écriture terminée → silver.Document
+🏁 Pipeline Document terminé avec succès ✅
+2026-04-20 14:13:41 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:13:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-20 14:13:41 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-20 14:13:47 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 0:>                                                          (0 + 1) / 1]
+2026-04-20 14:13:49 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 26/04/20 14:13:49 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-04-20 14:13:51 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 4:>                                                          (0 + 1) / 1]
+2026-04-20 14:14:19 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.util.SizeEstimator$ (file:/opt/spark/jars/spark-core_2.12-3.5.2.jar) to field java.math.BigDecimal.intVal
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.util.SizeEstimator$
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2026-04-20 14:14:33 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 9:>                                                          (0 + 1) / 1]
+2026-04-20 14:14:34 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-20 14:15:02 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 13:>                                                         (0 + 1) / 1]
+2026-04-20 14:15:28 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 16:>                                                         (0 + 1) / 1]
+2026-04-20 14:16:57 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📥 Extraction Bronze...
+   2175499 lignes extraites
+🔧 Transformation...
+   1394677 lignes valides
+   383570 lignes rejetées
+ Écriture terminée → quarantine.document_line_lignes_rejected
+⚠️  383570 lignes rejetées → quarantine.document_line_lignes_rejected
+🔍 Validation GX...
+2026-04-20 14:16:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/60 [00:00<?, ?it/s]
+2026-04-20 14:16:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/60 [00:00<?, ?it/s]
+2026-04-20 14:16:58 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   3%|▎         | 2/60 [00:00<00:00, 3103.44it/s]
+2026-04-20 14:16:59 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   3%|▎         | 2/60 [00:00<00:00, 89.31it/s]
+2026-04-20 14:16:59 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   5%|▌         | 3/60 [00:00<00:00, 132.36it/s]
+2026-04-20 14:16:59 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:   5%|▌         | 3/60 [00:00<00:00, 60.75it/s]
+2026-04-20 14:17:02 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  25%|██▌       | 15/60 [00:05<00:16,  2.70it/s]Calculating Metrics:  25%|██▌       | 15/60 [00:05<00:16,  2.70it/s]
+2026-04-20 14:17:02 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics:  25%|██▌       | 15/60 [00:05<00:16,  2.70it/s]
+2026-04-20 14:17:04 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 60/60 [00:06<00:00, 10.78it/s]Calculating Metrics: 100%|██████████| 60/60 [00:06<00:00, 10.78it/s]
+2026-04-20 14:17:04 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 60/60 [00:06<00:00, 10.78it/s]Calculating Metrics: 100%|██████████| 60/60 [00:06<00:00, 10.78it/s]Calculating Metrics: 100%|██████████| 60/60 [00:06<00:00,  8.80it/s]
+2026-04-20 14:17:22 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 17:>                 (0 + 1) / 1][Stage 18:>                 (0 + 1) / 1]
+2026-04-20 14:17:23 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 19:>                                                         (0 + 1) / 1]
+2026-04-20 14:17:47 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 22:>                 (0 + 1) / 1][Stage 23:>                 (0 + 1) / 1]
+2026-04-20 14:17:50 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 24:>                                                         (0 + 1) / 1]
+2026-04-20 14:18:51 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - [Stage 24:>                                                         (0 + 1) / 1]
+2026-04-20 14:19:19 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour document_line
+💾 Écriture Silver (1394677 lignes)...
+ Écriture terminée → silver.DocumentLine
+🏁 Pipeline Document Line terminé avec succès ✅
+2026-04-20 14:19:24 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - ==================================================
+🚀 Lancement : clean_product_item.py
+==================================================
+✅ Succès : clean_product_item.py
+
+==================================================
+🚀 Lancement : clean_family.py
+==================================================
+✅ Succès : clean_family.py
+
+==================================================
+🚀 Lancement : clean_geographical_area.py
+==================================================
+✅ Succès : clean_geographical_area.py
+
+==================================================
+🚀 Lancement : clean_document_status.py
+==================================================
+✅ Succès : clean_document_status.py
+
+==================================================
+🚀 Lancement : clean_document_type.py
+==================================================
+✅ Succès : clean_document_type.py
+
+==================================================
+🚀 Lancement : clean_item.py
+==================================================
+✅ Succès : clean_item.py
+
+==================================================
+🚀 Lancement : clean_tiers.py
+==================================================
+✅ Succès : clean_tiers.py
+
+==================================================
+🚀 Lancement : clean_warehouse.py
+==================================================
+✅ Succès : clean_warehouse.py
+
+==================================================
+🚀 Lancement : clean_document.py
+==================================================
+✅ Succès : clean_document.py
+
+==================================================
+🚀 Lancement : clean_document_line.py
+==================================================
+✅ Succès : clean_document_line.py
+
+==================================================
+📊 Résumé : 10/10 jobs réussis
+🏁 Tous les jobs terminés avec succès ✅
+2026-04-20 14:19:24 +0000 - dagster - INFO - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Spark Silver cleaning termine avec succes.
+2026-04-20 14:19:25 +0000 - dagster - DEBUG - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - 222855 - spark_silver_cleaning - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-20 14:19:25 +0000 - dagster - DEBUG - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - spark_silver_cleaning - Writing file at: /dagster/storage/spark_silver_cleaning using PickledObjectFilesystemIOManager...
+2026-04-20 14:19:25 +0000 - dagster - DEBUG - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - 222855 - spark_silver_cleaning - ASSET_MATERIALIZATION - Materialized value spark_silver_cleaning.
+2026-04-20 14:19:25 +0000 - dagster - DEBUG - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - 222855 - spark_silver_cleaning - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-20 14:19:25 +0000 - dagster - DEBUG - __ASSET_JOB - 44b09e56-dfad-4f4c-84f4-4ed9e2b97d5b - 222855 - spark_silver_cleaning - STEP_SUCCESS - Finished execution of step "spark_silver_cleaning" in 11m54s.

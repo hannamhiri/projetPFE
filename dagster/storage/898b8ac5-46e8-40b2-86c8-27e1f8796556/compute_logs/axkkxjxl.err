@@ -1,0 +1,493 @@
+2026-04-27 16:04:17 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - LOGS_CAPTURED - Started capturing logs in process (pid: 2988).
+2026-04-27 16:04:17 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-04-27 16:04:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - Obtention du token OAuth2 Airbyte...
+2026-04-27 16:04:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - Token OAuth2 obtenu.
+2026-04-27 16:04:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - Declenchement sync Airbyte connection_id=012ac2da-0a87-4781-8930-2f3fa69063c5...
+2026-04-27 16:04:19 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - Sync declenchee - job_id=63
+2026-04-27 16:04:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - [1/360] Airbyte job status: running
+2026-04-27 16:04:39 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - [2/360] Airbyte job status: running
+2026-04-27 16:04:49 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - [3/360] Airbyte job status: running
+2026-04-27 16:04:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - [4/360] Airbyte job status: running
+2026-04-27 16:05:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - [5/360] Airbyte job status: running
+2026-04-27 16:05:20 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - [6/360] Airbyte job status: running
+2026-04-27 16:05:30 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - [7/360] Airbyte job status: running
+2026-04-27 16:05:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - [8/360] Airbyte job status: succeeded
+2026-04-27 16:05:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - Sync Airbyte terminee avec succes.
+2026-04-27 16:05:40 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-27 16:05:40 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-04-27 16:05:40 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-04-27 16:05:40 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-27 16:05:40 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 1m23s.
+2026-04-27 16:05:40 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - HOOK_SKIPPED - Skipped the execution of hook "email_on_failure". It did not meet its triggering condition during the execution of "airbyte_sync".
+2026-04-27 16:05:42 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - airbyte_sync - HOOK_COMPLETED - Finished the execution of hook "email_on_success" triggered for "airbyte_sync".
+2026-04-27 16:05:42 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - spark_silver_cleaning - STEP_START - Started execution of step "spark_silver_cleaning".
+2026-04-27 16:05:42 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Connexion au Docker daemon...
+2026-04-27 16:05:49 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:05:49 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:05:49 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   940 lignes extraites
+🔧 Transformation...
+   850 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 913.00it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 367.19it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 535.04it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 367.69it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 499.45it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 422.37it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 771.80it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 736.72it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 734.32it/s]
+2026-04-27 16:05:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 732.32it/s]
+2026-04-27 16:06:12 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-27 16:06:12 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour product_item
+💾 Écriture Silver (850 lignes)...
+ Écriture terminée → silver.ProductItem
+🏁 Pipeline Product Item terminé avec succès ✅
+2026-04-27 16:06:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:06:17 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:06:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+2026-04-27 16:06:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   98 lignes extraites
+🔧 Transformation...
+   49 lignes après déduplication
+ Écriture terminée → silver.family_id_mapping
+   49 mappings sauvegardés
+🔍 Validation GX...
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 3887.21it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 340.67it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 494.53it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 266.33it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 534.65it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 400.20it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 861.51it/s]
+2026-04-27 16:06:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 802.06it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 798.69it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 796.92it/s]
+2026-04-27 16:06:33 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 35:>                                                         (0 + 1) / 1]
+2026-04-27 16:06:33 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour Family
+💾 Écriture Silver (49 lignes)...
+ Écriture terminée → silver.Family
+🏁 Pipeline Family terminé avec succès ✅
+2026-04-27 16:06:36 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:06:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:06:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   8 lignes extraites
+🔧 Transformation...
+   8 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 2037.55it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 387.50it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 562.47it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 308.11it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 476.86it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 355.59it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 821.66it/s]
+2026-04-27 16:06:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 771.19it/s]Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 768.74it/s]Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 767.02it/s]
+2026-04-27 16:06:51 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-27 16:06:52 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour geographical_area
+💾 Écriture Silver (8 lignes)...
+ Écriture terminée → silver.GeographicalArea
+🏁 Pipeline Geographical Area terminé avec succès ✅
+2026-04-27 16:06:55 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:06:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:06:55 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "
+2026-04-27 16:06:55 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   16 lignes extraites
+🔧 Transformation...
+   16 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/18 [00:00<?, ?it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 3098.86it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  11%|█         | 2/18 [00:00<00:00, 420.06it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 602.05it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  17%|█▋        | 3/18 [00:00<00:00, 334.46it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 574.80it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  33%|███▎      | 6/18 [00:00<00:00, 436.44it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 998.12it/s]
+2026-04-27 16:06:59 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 932.54it/s]Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 929.89it/s]Calculating Metrics: 100%|██████████| 18/18 [00:00<00:00, 927.54it/s]
+2026-04-27 16:07:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour document_status
+💾 Écriture Silver (16 lignes)...
+ Écriture terminée → silver.DocumentStatus
+🏁 Pipeline Document Status terminé avec succès ✅
+2026-04-27 16:07:12 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:07:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:07:13 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   16 lignes extraites
+🔧 Transformation...
+   7 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 3279.36it/s]
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 310.29it/s] Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 445.38it/s]
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 242.51it/s]
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 435.78it/s]
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 334.66it/s]
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 784.49it/s]
+2026-04-27 16:07:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 734.22it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 732.37it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 731.19it/s]
+2026-04-27 16:07:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-27 16:07:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour document_type
+💾 Écriture Silver (7 lignes)...
+ Écriture terminée → silver.DocumentType
+🏁 Pipeline Document Type terminé avec succès ✅
+2026-04-27 16:07:33 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:07:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:07:33 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:07:38 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 3:>                                                          (0 + 1) / 1]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   66873 lignes extraites
+🔧 Transformation...
+   65674 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/43 [00:00<?, ?it/s]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 246.04it/s]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 6/43 [00:00<00:00, 185.25it/s]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 274.74it/s]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  21%|██        | 9/43 [00:00<00:00, 226.06it/s]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 151.30it/s]Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 151.30it/s]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  40%|███▉      | 17/43 [00:00<00:00, 151.30it/s]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 151.30it/s]
+2026-04-27 16:07:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 151.30it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 151.30it/s]Calculating Metrics: 100%|██████████| 43/43 [00:00<00:00, 226.04it/s]
+2026-04-27 16:07:52 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:07:52 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-04-27 16:07:53 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 44:>                                                         (0 + 2) / 2]
+2026-04-27 16:07:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 44:=============================>                            (1 + 1) / 2]
+2026-04-27 16:08:00 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 104:============================>                            (1 + 1) / 2]
+2026-04-27 16:08:01 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+
+❌ Validation GX — anomalies détectées pour item :
+──────────────────────────────────────────────────
+
+  Règle    : expect_column_values_to_match_regex
+  Colonne  : Code
+  Total    : 65674 lignes
+  Échoués  : 46 lignes (0.0700%)
+
+  Règle    : expect_column_values_to_match_regex
+  Colonne  : Label
+  Total    : 65674 lignes
+  Échoués  : 48 lignes (0.0731%)
+──────────────────────────────────────────────────
+⚠️  Traitement des anomalies en cours ...
+ Écriture terminée → quarantine.item_lignes_rejected
+⚠️  46 lignes rejetées → quarantine.item_lignes_rejected
+ Écriture terminée → quarantine.item_lignes_rejected
+⚠️  48 lignes rejetées → quarantine.item_lignes_rejected
+💾 Écriture Silver (65626 lignes valides)...
+ Écriture terminée → silver.Item
+🏁 Pipeline Item terminé avec succès ✅
+2026-04-27 16:08:04 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:08:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:08:04 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/65 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/65 [00:00<?, ?it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   8698 lignes extraites
+🔧 Transformation...
+   841 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   9%|▉         | 6/65 [00:00<00:00, 1657.39it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   9%|▉         | 6/65 [00:00<00:00, 316.37it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 9/65 [00:00<00:00, 465.96it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  14%|█▍        | 9/65 [00:00<00:00, 278.73it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  34%|███▍      | 22/65 [00:00<00:00, 517.14it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  34%|███▍      | 22/65 [00:00<00:00, 413.61it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 926.14it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 871.39it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 870.57it/s]
+2026-04-27 16:08:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 65/65 [00:00<00:00, 869.85it/s]
+2026-04-27 16:08:18 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:08:18 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-04-27 16:08:19 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+
+❌ Validation GX — anomalies détectées pour tiers :
+──────────────────────────────────────────────────
+
+  Règle    : expect_column_values_to_match_regex
+  Colonne  : Name
+  Total    : 841 lignes
+  Échoués  : 4 lignes (0.4756%)
+──────────────────────────────────────────────────
+⚠️  Traitement des anomalies en cours ...
+ Écriture terminée → quarantine.tiers_lignes_rejected
+⚠️  4 lignes rejetées → quarantine.tiers_lignes_rejected
+💾 Écriture Silver (837 lignes valides)...
+ Écriture terminée → silver.Client
+🏁 Pipeline Tiers terminé avec succès ✅
+2026-04-27 16:08:22 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:08:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:08:22 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/23 [00:00<?, ?it/s]
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   7 lignes extraites
+🔧 Transformation...
+   6 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 4332.96it/s]
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   9%|▊         | 2/23 [00:00<00:00, 361.36it/s] Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 526.86it/s]
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  13%|█▎        | 3/23 [00:00<00:00, 270.20it/s]
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 550.25it/s]
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  30%|███       | 7/23 [00:00<00:00, 419.69it/s]
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 1021.61it/s]
+2026-04-27 16:08:26 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 953.18it/s] Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 951.17it/s]Calculating Metrics: 100%|██████████| 23/23 [00:00<00:00, 949.25it/s]
+2026-04-27 16:08:36 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-27 16:08:36 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour Warehouse
+💾 Écriture Silver (6 lignes)...
+ Écriture terminée → silver.Warehouse
+🏁 Pipeline Warehouse terminé avec succès ✅
+2026-04-27 16:08:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:08:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:08:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:08:44 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 3:>                                                          (0 + 1) / 1]
+2026-04-27 16:08:56 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 6:>                                                          (0 + 1) / 1]
+2026-04-27 16:09:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   721676 lignes extraites
+🔧 Transformation...
+   489237 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:09:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/68 [00:00<?, ?it/s]Calculating Metrics:   0%|          | 0/68 [00:00<?, ?it/s]
+2026-04-27 16:09:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:01, 33.58it/s]Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:01, 33.58it/s]
+2026-04-27 16:09:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  12%|█▏        | 8/68 [00:00<00:01, 33.58it/s]
+2026-04-27 16:09:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  18%|█▊        | 12/68 [00:00<00:01, 33.58it/s]
+2026-04-27 16:09:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  18%|█▊        | 12/68 [00:00<00:01, 33.58it/s]
+2026-04-27 16:09:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - /usr/local/lib/python3.8/dist-packages/great_expectations/expectations/metrics/column_map_metrics/column_values_match_regex.py:25: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
+  return column.astype(str).str.contains(regex)
+Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:01, 23.37it/s]Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:01, 23.37it/s]
+2026-04-27 16:09:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  37%|███▋      | 25/68 [00:01<00:01, 23.37it/s]
+2026-04-27 16:09:11 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 35.76it/s]Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 35.76it/s]
+2026-04-27 16:09:11 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 35.76it/s]Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 35.76it/s]
+2026-04-27 16:09:11 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 68/68 [00:02<00:00, 33.81it/s]
+2026-04-27 16:09:21 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 7:>                                                          (0 + 1) / 1]
+2026-04-27 16:09:22 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:09:22 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-04-27 16:09:23 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-27 16:09:32 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour document
+💾 Écriture Silver (489237 lignes)...
+ Écriture terminée → silver.Document
+🏁 Pipeline Document terminé avec succès ✅
+2026-04-27 16:09:36 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:09:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-04-27 16:09:36 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-04-27 16:09:40 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 0:>                                                          (0 + 1) / 1]
+2026-04-27 16:09:41 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 3:>                                                          (0 + 1) / 1]
+2026-04-27 16:09:52 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 6:>                                                          (0 + 1) / 1]
+2026-04-27 16:10:02 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 6:===========================================================(1 + 0) / 1]
+2026-04-27 16:10:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📥 Extraction Bronze...
+   2175499 lignes extraites
+🔧 Transformation...
+   1878451 lignes après filtrage
+🔍 Validation GX...
+2026-04-27 16:10:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/55 [00:00<?, ?it/s]
+2026-04-27 16:10:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   0%|          | 0/55 [00:00<?, ?it/s]
+2026-04-27 16:10:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   4%|▎         | 2/55 [00:00<00:00, 2457.84it/s]
+2026-04-27 16:10:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   4%|▎         | 2/55 [00:00<00:00, 106.60it/s]
+2026-04-27 16:10:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   5%|▌         | 3/55 [00:00<00:00, 157.48it/s]
+2026-04-27 16:10:17 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:   5%|▌         | 3/55 [00:00<00:00, 86.66it/s]
+2026-04-27 16:10:18 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  25%|██▌       | 14/55 [00:00<00:02, 20.38it/s]Calculating Metrics:  25%|██▌       | 14/55 [00:00<00:02, 20.38it/s]
+2026-04-27 16:10:18 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics:  25%|██▌       | 14/55 [00:00<00:02, 20.38it/s]
+2026-04-27 16:10:18 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 55/55 [00:01<00:00, 52.39it/s]Calculating Metrics: 100%|██████████| 55/55 [00:01<00:00, 52.39it/s]
+2026-04-27 16:10:18 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 55/55 [00:01<00:00, 52.39it/s]Calculating Metrics: 100%|██████████| 55/55 [00:01<00:00, 52.39it/s]
+2026-04-27 16:10:18 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Calculating Metrics: 100%|██████████| 55/55 [00:01<00:00, 46.57it/s]
+2026-04-27 16:10:30 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 7:>                                                          (0 + 1) / 1]
+2026-04-27 16:10:33 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 26/04/27 16:10:33 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+2026-04-27 16:10:35 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - [Stage 10:>                                                         (0 + 1) / 1]
+2026-04-27 16:11:03 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - 📊 Data Docs générés → http://localhost:8080
+✅ Validation GX OK pour document_line
+💾 Écriture Silver (1878451 lignes)...
+ Écriture terminée → silver.DocumentLine
+🏁 Pipeline Document Line terminé avec succès ✅
+2026-04-27 16:11:05 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - ==================================================
+🚀 Lancement : clean_product_item.py
+==================================================
+✅ Succès : clean_product_item.py
+
+==================================================
+🚀 Lancement : clean_family.py
+==================================================
+✅ Succès : clean_family.py
+
+==================================================
+🚀 Lancement : clean_geographical_area.py
+==================================================
+✅ Succès : clean_geographical_area.py
+
+==================================================
+🚀 Lancement : clean_document_status.py
+==================================================
+✅ Succès : clean_document_status.py
+
+==================================================
+🚀 Lancement : clean_document_type.py
+==================================================
+✅ Succès : clean_document_type.py
+
+==================================================
+🚀 Lancement : clean_item.py
+==================================================
+✅ Succès : clean_item.py
+
+==================================================
+🚀 Lancement : clean_tiers.py
+==================================================
+✅ Succès : clean_tiers.py
+
+==================================================
+🚀 Lancement : clean_warehouse.py
+==================================================
+✅ Succès : clean_warehouse.py
+
+==================================================
+🚀 Lancement : clean_document.py
+==================================================
+✅ Succès : clean_document.py
+
+==================================================
+🚀 Lancement : clean_document_line.py
+==================================================
+✅ Succès : clean_document_line.py
+
+==================================================
+📊 Résumé : 10/10 jobs réussis
+🏁 Tous les jobs terminés avec succès ✅
+2026-04-27 16:11:06 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Spark Silver cleaning termine avec succes.
+2026-04-27 16:11:06 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - spark_silver_cleaning - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-27 16:11:06 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - Writing file at: /dagster/storage/spark_silver_cleaning using PickledObjectFilesystemIOManager...
+2026-04-27 16:11:07 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - spark_silver_cleaning - ASSET_MATERIALIZATION - Materialized value spark_silver_cleaning.
+2026-04-27 16:11:07 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - spark_silver_cleaning - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-27 16:11:07 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - spark_silver_cleaning - STEP_SUCCESS - Finished execution of step "spark_silver_cleaning" in 5m24s.
+2026-04-27 16:11:07 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - HOOK_SKIPPED - Skipped the execution of hook "email_on_failure". It did not meet its triggering condition during the execution of "spark_silver_cleaning".
+2026-04-27 16:11:09 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - spark_silver_cleaning - HOOK_COMPLETED - Finished the execution of hook "email_on_success" triggered for "spark_silver_cleaning".
+2026-04-27 16:11:09 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - silver_ready - STEP_START - Started execution of step "silver_ready".
+2026-04-27 16:11:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready - Connexion ClickHouse clickhouse:8123 db=silver...
+2026-04-27 16:11:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready - [1/30] Verification tables Silver ClickHouse...
+2026-04-27 16:11:09 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok client - 837 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok document - 489237 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok documentline - 1878451 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok documentstatus - 16 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok documenttype - 7 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok item - 65626 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok family - 49 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok geographicalarea - 8 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok productitem - 850 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready -   ok warehouse - 6 lignes
+2026-04-27 16:11:10 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready - Toutes les tables Silver sont pretes.
+2026-04-27 16:11:10 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - silver_ready - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-27 16:11:10 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready - Writing file at: /dagster/storage/silver_ready using PickledObjectFilesystemIOManager...
+2026-04-27 16:11:10 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - silver_ready - ASSET_MATERIALIZATION - Materialized value silver_ready.
+2026-04-27 16:11:10 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - silver_ready - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-27 16:11:10 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - silver_ready - STEP_SUCCESS - Finished execution of step "silver_ready" in 1.28s.
+2026-04-27 16:11:10 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready - HOOK_SKIPPED - Skipped the execution of hook "email_on_failure". It did not meet its triggering condition during the execution of "silver_ready".
+2026-04-27 16:11:13 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - silver_ready - HOOK_COMPLETED - Finished the execution of hook "email_on_success" triggered for "silver_ready".
+2026-04-27 16:11:13 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_staging - STEP_START - Started execution of step "dbt_staging".
+2026-04-27 16:11:13 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - Lancement dbt run --select staging...
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:14  Running with dbt=1.7.19
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:14  Registered adapter: clickhouse=1.7.7
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:14  Unable to do partial parsing because of a version mismatch
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:17  Found 18 models, 125 tests, 10 sources, 0 exposures, 0 metrics, 545 macros, 1 group, 0 semantic models
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:17  
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:17  Concurrency: 4 threads (target='dev')
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:17  
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:17  1 of 10 START sql view model `gold`.`stg_client` ............................... [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:17  2 of 10 START sql view model `gold`.`stg_document` ............................. [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:17  3 of 10 START sql view model `gold`.`stg_document_line` ........................ [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:17  4 of 10 START sql view model `gold`.`stg_document_status` ...................... [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:19  2 of 10 OK created sql view model `gold`.`stg_document` ........................ [[32mOK[0m in 1.85s]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:19  5 of 10 START sql view model `gold`.`stg_document_type` ........................ [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:19  1 of 10 OK created sql view model `gold`.`stg_client` .......................... [[32mOK[0m in 2.02s]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:19  3 of 10 OK created sql view model `gold`.`stg_document_line` ................... [[32mOK[0m in 2.02s]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:19  6 of 10 START sql view model `gold`.`stg_family` ............................... [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:19  7 of 10 START sql view model `gold`.`stg_geographical_area` .................... [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:19  4 of 10 OK created sql view model `gold`.`stg_document_status` ................. [[32mOK[0m in 2.15s]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:19  8 of 10 START sql view model `gold`.`stg_item` ................................. [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:23  5 of 10 OK created sql view model `gold`.`stg_document_type` ................... [[32mOK[0m in 3.41s]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:24  9 of 10 START sql view model `gold`.`stg_product_item` ......................... [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:26  6 of 10 OK created sql view model `gold`.`stg_family` .......................... [[32mOK[0m in 6.75s]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:26  10 of 10 START sql view model `gold`.`stg_warehouse` ........................... [RUN]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:26  8 of 10 OK created sql view model `gold`.`stg_item` ............................ [[32mOK[0m in 7.03s]
+2026-04-27 16:11:28 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:26  7 of 10 OK created sql view model `gold`.`stg_geographical_area` ............... [[32mOK[0m in 7.28s]
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:27  9 of 10 OK created sql view model `gold`.`stg_product_item` .................... [[32mOK[0m in 2.14s]
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:27  10 of 10 OK created sql view model `gold`.`stg_warehouse` ...................... [[32mOK[0m in 0.64s]
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:27  
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:27  Finished running 10 view models in 0 hours 0 minutes and 10.01 seconds (10.01s).
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:27  
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:27  [32mCompleted successfully[0m
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:27  
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - [0m16:11:27  Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+2026-04-27 16:11:29 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - dbt staging termine avec succes.
+2026-04-27 16:11:29 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_staging - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-27 16:11:29 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - Writing file at: /dagster/storage/dbt_staging using PickledObjectFilesystemIOManager...
+2026-04-27 16:11:29 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_staging - ASSET_MATERIALIZATION - Materialized value dbt_staging.
+2026-04-27 16:11:29 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_staging - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-27 16:11:29 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_staging - STEP_SUCCESS - Finished execution of step "dbt_staging" in 16.07s.
+2026-04-27 16:11:29 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - HOOK_SKIPPED - Skipped the execution of hook "email_on_failure". It did not meet its triggering condition during the execution of "dbt_staging".
+2026-04-27 16:11:30 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_staging - HOOK_COMPLETED - Finished the execution of hook "email_on_success" triggered for "dbt_staging".
+2026-04-27 16:11:30 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_marts - STEP_START - Started execution of step "dbt_marts".
+2026-04-27 16:11:30 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - Lancement dbt run --select marts...
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:32  Running with dbt=1.7.19
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:32  Registered adapter: clickhouse=1.7.7
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  Found 18 models, 125 tests, 10 sources, 0 exposures, 0 metrics, 545 macros, 1 group, 0 semantic models
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  Concurrency: 4 threads (target='dev')
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  1 of 8 START sql table model `gold`.`dim_client` ............................... [RUN]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  2 of 8 START sql table model `gold`.`dim_date` ................................. [RUN]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  3 of 8 START sql table model `gold`.`dim_document_status` ...................... [RUN]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  4 of 8 START sql table model `gold`.`dim_document_type` ........................ [RUN]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  1 of 8 OK created sql table model `gold`.`dim_client` .......................... [[32mOK[0m in 0.23s]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  5 of 8 START sql table model `gold`.`dim_geographical_area` .................... [RUN]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  4 of 8 OK created sql table model `gold`.`dim_document_type` ................... [[32mOK[0m in 0.27s]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  6 of 8 START sql table model `gold`.`dim_item` ................................. [RUN]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  3 of 8 OK created sql table model `gold`.`dim_document_status` ................. [[32mOK[0m in 0.29s]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  7 of 8 START sql table model `gold`.`dim_warehouse` ............................ [RUN]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  2 of 8 OK created sql table model `gold`.`dim_date` ............................ [[32mOK[0m in 0.34s]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  5 of 8 OK created sql table model `gold`.`dim_geographical_area` ............... [[32mOK[0m in 0.16s]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  7 of 8 OK created sql table model `gold`.`dim_warehouse` ....................... [[32mOK[0m in 0.10s]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  6 of 8 OK created sql table model `gold`.`dim_item` ............................ [[32mOK[0m in 0.24s]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:33  8 of 8 START sql table model `gold`.`fact_sales` ............................... [RUN]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:36  8 of 8 OK created sql table model `gold`.`fact_sales` .......................... [[32mOK[0m in 2.19s]
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:36  
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:36  Finished running 8 table models in 0 hours 0 minutes and 2.88 seconds (2.88s).
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:36  
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:36  [32mCompleted successfully[0m
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:36  
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - [0m16:11:36  Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+2026-04-27 16:11:37 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - dbt marts termine avec succes.
+2026-04-27 16:11:37 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_marts - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-27 16:11:37 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - Writing file at: /dagster/storage/dbt_marts using PickledObjectFilesystemIOManager...
+2026-04-27 16:11:37 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_marts - ASSET_MATERIALIZATION - Materialized value dbt_marts.
+2026-04-27 16:11:37 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_marts - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-27 16:11:37 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_marts - STEP_SUCCESS - Finished execution of step "dbt_marts" in 6.56s.
+2026-04-27 16:11:37 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - HOOK_SKIPPED - Skipped the execution of hook "email_on_failure". It did not meet its triggering condition during the execution of "dbt_marts".
+2026-04-27 16:11:39 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_marts - HOOK_COMPLETED - Finished the execution of hook "email_on_success" triggered for "dbt_marts".
+2026-04-27 16:11:39 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_docs - STEP_START - Started execution of step "dbt_docs".
+2026-04-27 16:11:39 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_docs - Generation des docs dbt...
+2026-04-27 16:11:44 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_docs - Documentation dbt generee avec succes.
+2026-04-27 16:11:44 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_docs - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-27 16:11:44 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_docs - Writing file at: /dagster/storage/dbt_docs using PickledObjectFilesystemIOManager...
+2026-04-27 16:11:44 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_docs - ASSET_MATERIALIZATION - Materialized value dbt_docs.
+2026-04-27 16:11:44 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_docs - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-27 16:11:44 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - dbt_docs - STEP_SUCCESS - Finished execution of step "dbt_docs" in 5.28s.
+2026-04-27 16:11:44 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_docs - HOOK_SKIPPED - Skipped the execution of hook "email_on_failure". It did not meet its triggering condition during the execution of "dbt_docs".
+2026-04-27 16:11:46 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - dbt_docs - HOOK_COMPLETED - Finished the execution of hook "email_on_success" triggered for "dbt_docs".
+2026-04-27 16:11:46 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - cube_refresh - STEP_START - Started execution of step "cube_refresh".
+2026-04-27 16:11:46 +0000 - dagster - INFO - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - cube_refresh - Rafraîchissement Cube.js...
+2026-04-27 16:11:46 +0000 - dagster - WARNING - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - cube_refresh - Cube.js refresh retourné 403 — pas bloquant
+2026-04-27 16:11:46 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - cube_refresh - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-27 16:11:46 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - cube_refresh - Writing file at: /dagster/storage/cube_refresh using PickledObjectFilesystemIOManager...
+2026-04-27 16:11:46 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - cube_refresh - ASSET_MATERIALIZATION - Materialized value cube_refresh.
+2026-04-27 16:11:46 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - cube_refresh - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-27 16:11:46 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - 2988 - cube_refresh - STEP_SUCCESS - Finished execution of step "cube_refresh" in 296ms.
+2026-04-27 16:11:46 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - cube_refresh - HOOK_SKIPPED - Skipped the execution of hook "email_on_failure". It did not meet its triggering condition during the execution of "cube_refresh".
+2026-04-27 16:11:48 +0000 - dagster - DEBUG - full_pipeline - 898b8ac5-46e8-40b2-86c8-27e1f8796556 - cube_refresh - HOOK_COMPLETED - Finished the execution of hook "email_on_success" triggered for "cube_refresh".

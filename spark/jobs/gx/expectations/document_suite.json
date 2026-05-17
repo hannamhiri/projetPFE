@@ -1,0 +1,116 @@
+{
+  "expectations": [
+    {
+      "id": "00b18196-c657-4317-82aa-05f453722e28",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "09f53a95-45c8-4321-b587-da75271ca100",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "26a4e375-d77e-4ee2-8a65-668bf7abf900",
+      "kwargs": {
+        "column": "Code"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "e606713b-775f-42c9-8474-e8363f554c0c",
+      "kwargs": {
+        "column": "Code",
+        "condition_parser": "pandas",
+        "regex": "^[a-zA-Z0-9\u00c0-\u024f].*",
+        "row_condition": "Code.notna()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "4a7bbac3-b762-4008-b31f-c8dff0051fd4",
+      "kwargs": {
+        "column": "IdDocumentStatus"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "a79b1e49-280a-4b70-a7be-d44aefee60e0",
+      "kwargs": {
+        "column": "DocumentTypeCode"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "2d373f9b-871b-42ad-8d6c-01c59ec61eae",
+      "kwargs": {
+        "column": "DocumentTypeCode",
+        "condition_parser": "pandas",
+        "regex": "^([A-Z]{1}|[A-Z]{2})-[A-Z]{2}$",
+        "row_condition": "DocumentTypeCode.notna()"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "f137fbc1-bd74-40ad-ae30-ceefdc29b012",
+      "kwargs": {
+        "column": "IdTiers"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "ef89e9c6-6bc3-4fe1-9a30-79374857b8f8",
+      "kwargs": {
+        "column": "DocumentDate"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "78aae31c-aa2f-4e01-a76d-aed078a5385b",
+      "kwargs": {
+        "column": "IsForPos",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "61e81711-0b0e-4baf-bf9b-f923ac1efea9",
+      "kwargs": {
+        "column_set": [
+          "Id",
+          "Code",
+          "IdDocumentStatus",
+          "DocumentTypeCode",
+          "IdTiers",
+          "DocumentDate",
+          "IsForPos"
+        ]
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "ef9e15b4-4609-469f-aea8-1df0385abb9b",
+  "meta": {
+    "great_expectations_version": "1.1.0"
+  },
+  "name": "document_suite",
+  "notes": null
+}

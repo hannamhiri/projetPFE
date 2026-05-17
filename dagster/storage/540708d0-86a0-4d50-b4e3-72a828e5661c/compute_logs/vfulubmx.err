@@ -1,0 +1,18 @@
+2026-05-12 15:07:47 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 12693 - LOGS_CAPTURED - Started capturing logs in process (pid: 12693).
+2026-05-12 15:07:47 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 12693 - silver_ready - STEP_START - Started execution of step "silver_ready".
+2026-05-12 15:07:47 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ client — 837 lignes
+2026-05-12 15:07:47 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ document — 489237 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ documentline — 1878451 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ documentstatus — 16 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ documenttype — 7 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ item — 65626 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ family — 50 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ geographicalarea — 9 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ productitem — 851 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - ✓ warehouse — 7 lignes
+2026-05-12 15:07:48 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - Toutes les tables Silver prêtes.
+2026-05-12 15:07:48 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 12693 - silver_ready - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 15:07:48 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - silver_ready - Writing file at: /dagster/storage/silver_ready using PickledObjectFilesystemIOManager...
+2026-05-12 15:07:48 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 12693 - silver_ready - ASSET_MATERIALIZATION - Materialized value silver_ready.
+2026-05-12 15:07:48 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 12693 - silver_ready - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 15:07:48 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 12693 - silver_ready - STEP_SUCCESS - Finished execution of step "silver_ready" in 1.54s.

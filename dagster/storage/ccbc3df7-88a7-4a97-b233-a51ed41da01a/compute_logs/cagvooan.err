@@ -1,0 +1,7 @@
+2026-04-15 10:29:02 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 1412 - LOGS_CAPTURED - Started capturing logs in process (pid: 1412).
+2026-04-15 10:29:02 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 1412 - dbt_docs - STEP_START - Started execution of step "dbt_docs".
+2026-04-15 10:29:20 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 1412 - dbt_docs - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-15 10:29:20 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - dbt_docs - Writing file at: /dagster/storage/dbt_docs using PickledObjectFilesystemIOManager...
+2026-04-15 10:29:20 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 1412 - dbt_docs - ASSET_MATERIALIZATION - Materialized value dbt_docs.
+2026-04-15 10:29:20 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 1412 - dbt_docs - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-15 10:29:20 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 1412 - dbt_docs - STEP_SUCCESS - Finished execution of step "dbt_docs" in 17.94s.

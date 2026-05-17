@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "62d8bb55-483d-4ca2-8cd4-ac21bbf100de",
+      "name": "product_item"
+    },
+    "batch_definition": {
+      "id": "5eab3a80-8769-4944-b75c-11b36252bf46",
+      "name": "product_item_batch"
+    },
+    "datasource": {
+      "id": "76d3f5dd-9b62-427d-8850-993563e0f903",
+      "name": "product_item"
+    }
+  },
+  "id": "32fcac39-81f0-4d14-b89c-24ef39a9cebd",
+  "name": "product_item_validation",
+  "suite": {
+    "id": "915b500e-f0e6-4976-8a6f-a22bf59cdef2",
+    "name": "product_item_suite"
+  }
+}

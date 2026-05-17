@@ -1,0 +1,26 @@
+2026-05-12 20:23:57 +0000 - dagster - DEBUG - __ASSET_JOB - 7673e14b-eb1c-4abc-82a9-e78059df66f0 - 119123 - LOGS_CAPTURED - Started capturing logs in process (pid: 119123).
+2026-05-12 20:23:57 +0000 - dagster - DEBUG - __ASSET_JOB - 7673e14b-eb1c-4abc-82a9-e78059df66f0 - 119123 - superset_sync - STEP_START - Started execution of step "superset_sync".
+2026-05-12 20:23:57 +0000 - dagster - INFO - __ASSET_JOB - 7673e14b-eb1c-4abc-82a9-e78059df66f0 - superset_sync - Lecture mesures Cube.js...
+2026-05-12 20:23:57 +0000 - dagster - INFO - __ASSET_JOB - 7673e14b-eb1c-4abc-82a9-e78059df66f0 - superset_sync - 30 mesures trouvees
+2026-05-12 20:23:59 +0000 - dagster - ERROR - __ASSET_JOB - 7673e14b-eb1c-4abc-82a9-e78059df66f0 - 119123 - superset_sync - STEP_FAILURE - Execution of step "superset_sync" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "superset_sync"::
+
+sqlite3.OperationalError: unable to open database file
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/usr/local/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 473, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 141, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 129, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/dagster/pipeline.py", line 308, in superset_sync
+    conn = sqlite3.connect(DB_PATH)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+

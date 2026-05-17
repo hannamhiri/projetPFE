@@ -1,0 +1,54 @@
+{
+  "expectations": [
+    {
+      "id": "60755b70-2dcb-476a-95f6-60e408492bc1",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "55483188-5c19-4bd9-b8eb-0fb2b819bbe7",
+      "kwargs": {
+        "column": "Id"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "d2689402-7c76-4ef2-8922-c840d721d062",
+      "kwargs": {
+        "column": "WarehouseName"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "4280d36f-a68b-47eb-a893-33256a6fa8fc",
+      "kwargs": {
+        "column": "WarehouseCode"
+      },
+      "meta": {},
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "a4d339a1-edaa-4a54-8d88-f430f9d3e651",
+      "kwargs": {
+        "column_set": [
+          "Id",
+          "WarehouseCode",
+          "WarehouseName"
+        ]
+      },
+      "meta": {},
+      "type": "expect_table_columns_to_match_set"
+    }
+  ],
+  "id": "f1709c48-e4e3-4415-8302-c0f41e296e19",
+  "meta": {
+    "great_expectations_version": "1.1.0"
+  },
+  "name": "Warehouse_suite",
+  "notes": null
+}

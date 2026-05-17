@@ -1,0 +1,9 @@
+2026-04-21 13:45:16 +0000 - dagster - DEBUG - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - 25313 - LOGS_CAPTURED - Started capturing logs in process (pid: 25313).
+2026-04-21 13:45:16 +0000 - dagster - DEBUG - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - 25313 - cube_refresh - STEP_START - Started execution of step "cube_refresh".
+2026-04-21 13:45:16 +0000 - dagster - INFO - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - cube_refresh - Rafraîchissement Cube.js...
+2026-04-21 13:45:16 +0000 - dagster - WARNING - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - cube_refresh - Cube.js refresh retourné 403 — pas bloquant
+2026-04-21 13:45:16 +0000 - dagster - DEBUG - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - 25313 - cube_refresh - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-21 13:45:16 +0000 - dagster - DEBUG - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - cube_refresh - Writing file at: /dagster/storage/cube_refresh using PickledObjectFilesystemIOManager...
+2026-04-21 13:45:16 +0000 - dagster - DEBUG - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - 25313 - cube_refresh - ASSET_MATERIALIZATION - Materialized value cube_refresh.
+2026-04-21 13:45:16 +0000 - dagster - DEBUG - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - 25313 - cube_refresh - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-21 13:45:16 +0000 - dagster - DEBUG - full_pipeline - 38dd7846-35e7-4cf1-8509-4927f1f26618 - 25313 - cube_refresh - STEP_SUCCESS - Finished execution of step "cube_refresh" in 171ms.

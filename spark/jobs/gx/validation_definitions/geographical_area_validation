@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "f7e5b0b0-00a7-4a0a-8726-9c01ab509c5c",
+      "name": "geographical_area"
+    },
+    "batch_definition": {
+      "id": "cd461808-e21a-4564-9967-4a2844d452b0",
+      "name": "geographical_area_batch"
+    },
+    "datasource": {
+      "id": "ca5081a7-a489-4ffb-84b8-f060117e5dea",
+      "name": "geographical_area"
+    }
+  },
+  "id": "1a2ddf35-2848-4dcf-80f1-cee351538369",
+  "name": "geographical_area_validation",
+  "suite": {
+    "id": "ae56ef22-7298-415b-8dae-496adc354950",
+    "name": "geographical_area_suite"
+  }
+}

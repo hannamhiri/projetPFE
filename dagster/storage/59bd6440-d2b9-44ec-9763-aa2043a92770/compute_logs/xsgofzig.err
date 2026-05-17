@@ -1,0 +1,372 @@
+2026-04-14 09:52:02 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - LOGS_CAPTURED - Started capturing logs in process (pid: 15137).
+2026-04-14 09:52:02 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - STEP_START - Started execution of step "dbt_staging".
+2026-04-14 09:52:02 +0000 - dagster - INFO - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - A dbt subsetted execution is not being performed. Using the default dbt selection arguments `['--select', 'staging']`.
+2026-04-14 09:52:03 +0000 - dagster - INFO - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Copying `/dbt/target/partial_parse.msgpack` to `/dbt/target/dbt_staging-59bd644-57ee4ad/partial_parse.msgpack` to take advantage of partial parsing.
+2026-04-14 09:52:03 +0000 - dagster - INFO - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Running dbt command: `dbt build --select staging --target dev --select staging`.
+2026-04-14 09:52:08 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_client_IdGeographicalArea`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:08 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:08 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_client_IsActive`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:08 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:08 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_client_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:08 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:09 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_client_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:09 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:09 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_client_IsBTOB`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:09 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:09 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_client_Name`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:09 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:10 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_document_DocumentHTPrice`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:10 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:10 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_document_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:10 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:10 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_document_DocumentDate`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:10 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:10 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_document_DocumentTypeCode`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:10 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:10 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_document_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:10 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:10 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_document_IdDocumentStatus`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:10 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:10 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_document_IdTiers`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:10 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:10 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_document_IsForPos`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:11 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:15 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documentline_HtTotalLine`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:15 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:15 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documentline_IdDocument`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:15 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:15 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documentline_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:15 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:15 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documentline_IdItem`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:15 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:15 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documentstatus_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:15 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:15 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documentstatus_Label`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:15 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:15 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documenttype_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:15 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documentline_MovementQty`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_documenttype_Label`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_family_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_family_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_family_Label`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_geographicalarea_Label`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_geographicalarea_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_item_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_item_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_item_Label`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_productitem_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_productitem_LabelProduct`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_warehouse_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_warehouse_WarehouseCode`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_not_null_silver_warehouse_WarehouseName`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:16 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_relationships_silver_client_IdGeographicalArea__Id__source_silver_geographicalarea_`.
+
+`source_relationships_silver_client_IdGeographicalArea__Id__source_silver_geographicalarea_` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:16 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_relationships_silver_document_DocumentTypeCode__Code__source_silver_documenttype_`.
+
+`source_relationships_silver_document_DocumentTypeCode__Code__source_silver_documenttype_` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_relationships_silver_document_IdDocumentStatus__Id__source_silver_documentstatus_`.
+
+`source_relationships_silver_document_IdDocumentStatus__Id__source_silver_documentstatus_` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_relationships_silver_document_IdTiers__Id__source_silver_client_`.
+
+`source_relationships_silver_document_IdTiers__Id__source_silver_client_` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_relationships_silver_item_IdFamily__Id__source_silver_family_`.
+
+`source_relationships_silver_item_IdFamily__Id__source_silver_family_` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_relationships_silver_item_IdProductItem__Id__source_silver_productitem_`.
+
+`source_relationships_silver_item_IdProductItem__Id__source_silver_productitem_` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_client_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_relationships_silver_documentline_IdItem__Id__source_silver_item_`.
+
+`source_relationships_silver_documentline_IdItem__Id__source_silver_item_` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_relationships_silver_documentline_IdDocument__Id__source_silver_document_`.
+
+`source_relationships_silver_documentline_IdDocument__Id__source_silver_document_` is a singular test with multiple dependencies. Configure an asset key in the test's dbt meta to load it as an asset check.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:17 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_document_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_document_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_documentstatus_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_family_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_documenttype_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_documentline_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_family_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_geographicalarea_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_item_Code`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_productitem_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_item_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_warehouse_Id`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - WARNING - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Logging an `AssetObservation` instead of an `AssetCheckResult` for dbt test `source_unique_silver_warehouse_WarehouseCode`.
+
+This test was included in Dagster's asset check selection, and was likely executed due to dbt indirect selection.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_OBSERVATION - DagsterEventType.ASSET_OBSERVATION for step dbt_staging
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_document_status" of type "Nothing". (Type check passed).
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_document_status.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_document_type" of type "Nothing". (Type check passed).
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_document_type.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_document_line" of type "Nothing". (Type check passed).
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_document_line.
+2026-04-14 09:52:18 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_geographical_area" of type "Nothing". (Type check passed).
+2026-04-14 09:52:19 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_geographical_area.
+2026-04-14 09:52:19 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_product_item" of type "Nothing". (Type check passed).
+2026-04-14 09:52:19 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_product_item.
+2026-04-14 09:52:19 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - STEP_OUTPUT - Yielded output "model_sagap_stg_warehouse" of type "Nothing". (Type check passed).
+2026-04-14 09:52:19 +0000 - dagster - DEBUG - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - ASSET_MATERIALIZATION - Materialized value stg_warehouse.
+2026-04-14 09:52:19 +0000 - dagster - INFO - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - dbt_staging - Finished dbt command: `dbt build --select staging --target dev --select staging`.
+2026-04-14 09:52:19 +0000 - dagster - ERROR - __ASSET_JOB - 59bd6440-d2b9-44ec-9763-aa2043a92770 - 15137 - dbt_staging - STEP_FAILURE - Execution of step "dbt_staging" failed.
+
+dagster_dbt.errors.DagsterDbtCliRuntimeError: The dbt CLI process with command
+
+`dbt build --select staging --target dev --select staging`
+
+failed with exit code `1`. Check the stdout in the Dagster compute logs for the full information about the error, or view the dbt debug log: /dbt/target/dbt_staging-59bd644-57ee4ad/dbt.log.
+
+Errors parsed from dbt logs:
+
+3 of 70 FAIL 5 source_not_null_silver_client_IdGeographicalArea ................ [[31mFAIL 5[0m in 0.43s]
+
+14 of 70 FAIL 73599 source_not_null_silver_document_IsForPos ................... [[31mFAIL 73599[0m in 0.43s]
+
+38 of 70 FAIL 124216 source_relationships_silver_document_DocumentTypeCode__Code__source_silver_documenttype_  [[31mFAIL 124216[0m in 0.33s]
+
+40 of 70 FAIL 125017 source_relationships_silver_document_IdTiers__Id__source_silver_client_  [[31mFAIL 125017[0m in 0.46s]
+
+44 of 70 FAIL 1 source_relationships_silver_item_IdProductItem__Id__source_silver_productitem_  [[31mFAIL 1[0m in 0.24s]
+
+42 of 70 FAIL 987 source_relationships_silver_documentline_IdItem__Id__source_silver_item_  [[31mFAIL 987[0m in 0.73s]
+
+41 of 70 FAIL 212 source_relationships_silver_documentline_IdDocument__Id__source_silver_document_  [[31mFAIL 212[0m in 0.95s]
+
+46 of 70 FAIL 222 source_unique_silver_document_Code ........................... [[31mFAIL 222[0m in 0.34s]
+
+51 of 70 FAIL 29 source_unique_silver_family_Code .............................. [[31mFAIL 29[0m in 0.25s]
+
+54 of 70 FAIL 1611 source_unique_silver_item_Code .............................. [[31mFAIL 1611[0m in 0.22s]
+
+[31mFailure in test source_not_null_silver_client_IdGeographicalArea (models/staging/source.yml)[0m
+
+  Got 5 results, configured to fail if != 0
+
+[31mFailure in test source_not_null_silver_document_IsForPos (models/staging/source.yml)[0m
+
+  Got 73599 results, configured to fail if != 0
+
+[31mFailure in test source_relationships_silver_document_DocumentTypeCode__Code__source_silver_documenttype_ (models/staging/source.yml)[0m
+
+  Got 124216 results, configured to fail if != 0
+
+[31mFailure in test source_relationships_silver_document_IdTiers__Id__source_silver_client_ (models/staging/source.yml)[0m
+
+  Got 125017 results, configured to fail if != 0
+
+[31mFailure in test source_relationships_silver_item_IdProductItem__Id__source_silver_productitem_ (models/staging/source.yml)[0m
+
+  Got 1 result, configured to fail if != 0
+
+[31mFailure in test source_relationships_silver_documentline_IdItem__Id__source_silver_item_ (models/staging/source.yml)[0m
+
+  Got 987 results, configured to fail if != 0
+
+[31mFailure in test source_relationships_silver_documentline_IdDocument__Id__source_silver_document_ (models/staging/source.yml)[0m
+
+  Got 212 results, configured to fail if != 0
+
+[31mFailure in test source_unique_silver_document_Code (models/staging/source.yml)[0m
+
+  Got 222 results, configured to fail if != 0
+
+[31mFailure in test source_unique_silver_family_Code (models/staging/source.yml)[0m
+
+  Got 29 results, configured to fail if != 0
+
+[31mFailure in test source_unique_silver_item_Code (models/staging/source.yml)[0m
+
+  Got 1611 results, configured to fail if != 0
+
+Stack Trace:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_plan.py", line 282, in dagster_event_sequence_for_step
+    for step_event in check.generator(step_events):
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 494, in core_dagster_event_sequence_for_step
+    for user_event in _step_output_error_checked_user_event_sequence(
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 183, in _step_output_error_checked_user_event_sequence
+    for user_event in user_event_sequence:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/execute_step.py", line 88, in _process_asset_results_to_events
+    for user_event in user_event_sequence:
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 198, in execute_core_compute
+    for step_output in _yield_compute_results(step_context, inputs, compute_fn, compute_context):
+  File "/usr/local/lib/python3.11/site-packages/dagster/_core/execution/plan/compute.py", line 167, in _yield_compute_results
+    for event in iterate_with_context(
+  File "/usr/local/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 473, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/dagster/pipeline.py", line 186, in dbt_staging_assets
+    yield from dbt.cli(["build", "--select", "staging"], context=context).stream()
+  File "/usr/local/lib/python3.11/site-packages/dagster_dbt/core/resources_v2.py", line 1147, in __next__
+    return next(self._inner_iterator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/dagster_dbt/core/resources_v2.py", line 619, in _stream_asset_events
+    for event in self.stream_raw_events():
+  File "/usr/local/lib/python3.11/site-packages/dagster_dbt/core/resources_v2.py", line 712, in stream_raw_events
+    self._raise_on_error()
+  File "/usr/local/lib/python3.11/site-packages/dagster_dbt/core/resources_v2.py", line 804, in _raise_on_error
+    raise error
+

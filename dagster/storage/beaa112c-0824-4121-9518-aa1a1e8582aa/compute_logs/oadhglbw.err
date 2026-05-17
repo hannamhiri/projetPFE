@@ -1,0 +1,42 @@
+2026-04-16 08:15:41 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 3795 - LOGS_CAPTURED - Started capturing logs in process (pid: 3795).
+2026-04-16 08:15:41 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 3795 - dbt_staging - STEP_START - Started execution of step "dbt_staging".
+2026-04-16 08:15:41 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - Lancement dbt run --select staging...
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:43  Running with dbt=1.7.19
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:43  Registered adapter: clickhouse=1.7.7
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:43  Unable to do partial parsing because of a version mismatch
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  Found 18 models, 137 tests, 10 sources, 0 exposures, 0 metrics, 545 macros, 1 group, 0 semantic models
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  Concurrency: 4 threads (target='dev')
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  1 of 10 START sql view model `gold`.`stg_client` ............................... [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  2 of 10 START sql view model `gold`.`stg_document` ............................. [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  3 of 10 START sql view model `gold`.`stg_document_line` ........................ [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  4 of 10 START sql view model `gold`.`stg_document_status` ...................... [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  1 of 10 OK created sql view model `gold`.`stg_client` .......................... [[32mOK[0m in 0.26s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  2 of 10 OK created sql view model `gold`.`stg_document` ........................ [[32mOK[0m in 0.26s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  5 of 10 START sql view model `gold`.`stg_document_type` ........................ [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  6 of 10 START sql view model `gold`.`stg_family` ............................... [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  4 of 10 OK created sql view model `gold`.`stg_document_status` ................. [[32mOK[0m in 0.30s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  3 of 10 OK created sql view model `gold`.`stg_document_line` ................... [[32mOK[0m in 0.31s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  7 of 10 START sql view model `gold`.`stg_geographical_area` .................... [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:46  8 of 10 START sql view model `gold`.`stg_item` ................................. [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  5 of 10 OK created sql view model `gold`.`stg_document_type` ................... [[32mOK[0m in 0.14s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  6 of 10 OK created sql view model `gold`.`stg_family` .......................... [[32mOK[0m in 0.14s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  9 of 10 START sql view model `gold`.`stg_product_item` ......................... [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  10 of 10 START sql view model `gold`.`stg_warehouse` ........................... [RUN]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  8 of 10 OK created sql view model `gold`.`stg_item` ............................ [[32mOK[0m in 0.12s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  7 of 10 OK created sql view model `gold`.`stg_geographical_area` ............... [[32mOK[0m in 0.14s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  9 of 10 OK created sql view model `gold`.`stg_product_item` .................... [[32mOK[0m in 0.09s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  10 of 10 OK created sql view model `gold`.`stg_warehouse` ...................... [[32mOK[0m in 0.09s]
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  Finished running 10 view models in 0 hours 0 minutes and 0.78 seconds (0.78s).
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  [32mCompleted successfully[0m
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - [0m08:15:47  Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+2026-04-16 08:15:51 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - dbt staging termine avec succes.
+2026-04-16 08:15:51 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 3795 - dbt_staging - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-16 08:15:51 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - dbt_staging - Writing file at: /dagster/storage/dbt_staging using PickledObjectFilesystemIOManager...
+2026-04-16 08:15:51 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 3795 - dbt_staging - ASSET_MATERIALIZATION - Materialized value dbt_staging.
+2026-04-16 08:15:51 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 3795 - dbt_staging - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-16 08:15:51 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 3795 - dbt_staging - STEP_SUCCESS - Finished execution of step "dbt_staging" in 10.2s.

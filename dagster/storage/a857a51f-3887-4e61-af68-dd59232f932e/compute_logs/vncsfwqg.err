@@ -1,0 +1,8 @@
+2026-04-15 09:49:36 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 6125 - LOGS_CAPTURED - Started capturing logs in process (pid: 6125).
+2026-04-15 09:49:36 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 6125 - silver_ready - STEP_START - Started execution of step "silver_ready".
+2026-04-15 09:49:36 +0000 - dagster - INFO - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - silver_ready - Silver prêt — dbt peut démarrer.
+2026-04-15 09:49:36 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 6125 - silver_ready - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-15 09:49:36 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - silver_ready - Writing file at: /dagster/storage/silver_ready using PickledObjectFilesystemIOManager...
+2026-04-15 09:49:36 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 6125 - silver_ready - ASSET_MATERIALIZATION - Materialized value silver_ready.
+2026-04-15 09:49:36 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 6125 - silver_ready - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-15 09:49:36 +0000 - dagster - DEBUG - full_pipeline - a857a51f-3887-4e61-af68-dd59232f932e - 6125 - silver_ready - STEP_SUCCESS - Finished execution of step "silver_ready" in 234ms.

@@ -1,0 +1,16 @@
+2026-05-12 14:58:17 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 9917 - LOGS_CAPTURED - Started capturing logs in process (pid: 9917).
+2026-05-12 14:58:17 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 9917 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-05-12 14:58:18 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - Airbyte job_id=78
+2026-05-12 14:58:28 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - [1] status=running
+2026-05-12 14:58:39 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - [2] status=running
+2026-05-12 14:58:49 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - [3] status=running
+2026-05-12 14:58:59 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - [4] status=running
+2026-05-12 14:59:09 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - [5] status=running
+2026-05-12 14:59:19 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - [6] status=running
+2026-05-12 14:59:45 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - [7] status=running
+2026-05-12 14:59:57 +0000 - dagster - INFO - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - [8] status=succeeded
+2026-05-12 14:59:57 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 9917 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 14:59:57 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-05-12 14:59:57 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 9917 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-05-12 14:59:57 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 9917 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 14:59:57 +0000 - dagster - DEBUG - __ASSET_JOB - 540708d0-86a0-4d50-b4e3-72a828e5661c - 9917 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 1m40s.

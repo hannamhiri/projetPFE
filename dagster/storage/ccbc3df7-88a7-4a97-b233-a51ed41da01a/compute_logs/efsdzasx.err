@@ -1,0 +1,19 @@
+2026-04-15 10:28:06 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 950 - LOGS_CAPTURED - Started capturing logs in process (pid: 950).
+2026-04-15 10:28:06 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 950 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-04-15 10:28:06 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Obtention du token OAuth2 Airbyte...
+2026-04-15 10:28:13 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:28:30 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:28:45 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:29:00 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:29:15 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:29:30 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:29:45 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:30:00 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:30:15 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:30:30 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: running
+2026-04-15 10:30:45 +0000 - dagster - INFO - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Airbyte job status: succeeded
+2026-04-15 10:30:45 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 950 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-15 10:30:45 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-04-15 10:30:45 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 950 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-04-15 10:30:46 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 950 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-15 10:30:46 +0000 - dagster - DEBUG - full_pipeline - ccbc3df7-88a7-4a97-b233-a51ed41da01a - 950 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 2m39s.

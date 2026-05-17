@@ -1,0 +1,9 @@
+2026-04-21 13:14:18 +0000 - dagster - DEBUG - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - 6619 - LOGS_CAPTURED - Started capturing logs in process (pid: 6619).
+2026-04-21 13:14:18 +0000 - dagster - DEBUG - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - 6619 - cube_refresh - STEP_START - Started execution of step "cube_refresh".
+2026-04-21 13:14:18 +0000 - dagster - INFO - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - cube_refresh - Rafraîchissement Cube.js...
+2026-04-21 13:14:18 +0000 - dagster - WARNING - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - cube_refresh - Cube.js refresh retourné 403 — pas bloquant
+2026-04-21 13:14:18 +0000 - dagster - DEBUG - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - 6619 - cube_refresh - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-21 13:14:18 +0000 - dagster - DEBUG - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - cube_refresh - Writing file at: /dagster/storage/cube_refresh using PickledObjectFilesystemIOManager...
+2026-04-21 13:14:18 +0000 - dagster - DEBUG - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - 6619 - cube_refresh - ASSET_MATERIALIZATION - Materialized value cube_refresh.
+2026-04-21 13:14:18 +0000 - dagster - DEBUG - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - 6619 - cube_refresh - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-21 13:14:18 +0000 - dagster - DEBUG - __ASSET_JOB - 07983799-31a3-4168-ac4f-556b26457a38 - 6619 - cube_refresh - STEP_SUCCESS - Finished execution of step "cube_refresh" in 252ms.

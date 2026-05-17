@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "92fedcdc-4d81-4576-b645-56aaf9f61eab",
+      "name": "Family"
+    },
+    "batch_definition": {
+      "id": "77ac8c87-d48d-4c54-8152-3a1a39ce1685",
+      "name": "Family_batch"
+    },
+    "datasource": {
+      "id": "15019790-75c8-43dd-8000-2225ce024610",
+      "name": "Family"
+    }
+  },
+  "id": "5a8ec40f-ec3c-4f05-96e8-c81d940b5c00",
+  "name": "Family_validation",
+  "suite": {
+    "id": "da44d9f9-cd95-4962-893c-58502c75283b",
+    "name": "Family_suite"
+  }
+}

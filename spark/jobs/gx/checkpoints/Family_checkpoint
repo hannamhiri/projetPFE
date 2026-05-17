@@ -1,0 +1,18 @@
+{
+  "actions": [
+    {
+      "name": "update_data_docs",
+      "site_names": [],
+      "type": "update_data_docs"
+    }
+  ],
+  "id": "ce268713-2c60-47be-b850-5b71201ae125",
+  "name": "Family_checkpoint",
+  "result_format": "SUMMARY",
+  "validation_definitions": [
+    {
+      "id": "5a8ec40f-ec3c-4f05-96e8-c81d940b5c00",
+      "name": "Family_validation"
+    }
+  ]
+}

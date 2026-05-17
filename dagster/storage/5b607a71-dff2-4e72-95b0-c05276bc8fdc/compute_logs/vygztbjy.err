@@ -1,0 +1,8 @@
+2026-05-12 16:18:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5b607a71-dff2-4e72-95b0-c05276bc8fdc - 49627 - LOGS_CAPTURED - Started capturing logs in process (pid: 49627).
+2026-05-12 16:18:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5b607a71-dff2-4e72-95b0-c05276bc8fdc - 49627 - silver__client - STEP_START - Started execution of step "silver__client".
+2026-05-12 16:18:42 +0000 - dagster - INFO - __ASSET_JOB - 5b607a71-dff2-4e72-95b0-c05276bc8fdc - silver__client - Table silver.client disponible.
+2026-05-12 16:18:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5b607a71-dff2-4e72-95b0-c05276bc8fdc - 49627 - silver__client - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-12 16:18:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5b607a71-dff2-4e72-95b0-c05276bc8fdc - silver__client - Writing file at: /dagster/storage/silver/client using PickledObjectFilesystemIOManager...
+2026-05-12 16:18:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5b607a71-dff2-4e72-95b0-c05276bc8fdc - 49627 - silver__client - ASSET_MATERIALIZATION - Materialized value silver client.
+2026-05-12 16:18:42 +0000 - dagster - DEBUG - __ASSET_JOB - 5b607a71-dff2-4e72-95b0-c05276bc8fdc - 49627 - silver__client - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-12 16:18:43 +0000 - dagster - DEBUG - __ASSET_JOB - 5b607a71-dff2-4e72-95b0-c05276bc8fdc - 49627 - silver__client - STEP_SUCCESS - Finished execution of step "silver__client" in 682ms.

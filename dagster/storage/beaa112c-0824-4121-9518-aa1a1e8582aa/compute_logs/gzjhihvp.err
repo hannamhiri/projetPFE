@@ -1,0 +1,19 @@
+2026-04-16 08:09:36 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 240 - LOGS_CAPTURED - Started capturing logs in process (pid: 240).
+2026-04-16 08:09:36 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 240 - airbyte_sync - STEP_START - Started execution of step "airbyte_sync".
+2026-04-16 08:09:36 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - Obtention du token OAuth2 Airbyte...
+2026-04-16 08:09:36 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - Token OAuth2 obtenu.
+2026-04-16 08:09:36 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - Declenchement sync Airbyte connection_id=012ac2da-0a87-4781-8930-2f3fa69063c5...
+2026-04-16 08:09:39 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - Sync declenchee - job_id=57
+2026-04-16 08:09:49 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - [1/360] Airbyte job status: running
+2026-04-16 08:09:59 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - [2/360] Airbyte job status: running
+2026-04-16 08:10:09 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - [3/360] Airbyte job status: running
+2026-04-16 08:10:20 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - [4/360] Airbyte job status: running
+2026-04-16 08:10:30 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - [5/360] Airbyte job status: running
+2026-04-16 08:10:40 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - [6/360] Airbyte job status: running
+2026-04-16 08:10:50 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - [7/360] Airbyte job status: succeeded
+2026-04-16 08:10:50 +0000 - dagster - INFO - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - Sync Airbyte terminee avec succes.
+2026-04-16 08:10:50 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 240 - airbyte_sync - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-04-16 08:10:50 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - airbyte_sync - Writing file at: /dagster/storage/airbyte_sync using PickledObjectFilesystemIOManager...
+2026-04-16 08:10:50 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 240 - airbyte_sync - ASSET_MATERIALIZATION - Materialized value airbyte_sync.
+2026-04-16 08:10:50 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 240 - airbyte_sync - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-04-16 08:10:50 +0000 - dagster - DEBUG - __ASSET_JOB - beaa112c-0824-4121-9518-aa1a1e8582aa - 240 - airbyte_sync - STEP_SUCCESS - Finished execution of step "airbyte_sync" in 1m13s.
