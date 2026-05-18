@@ -1,0 +1,184 @@
+2026-05-18 14:10:21 +0000 - dagster - DEBUG - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - 411423 - LOGS_CAPTURED - Started capturing logs in process (pid: 411423).
+2026-05-18 14:10:21 +0000 - dagster - DEBUG - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - 411423 - ml_timeseries_pipeline - STEP_START - Started execution of step "ml_timeseries_pipeline".
+2026-05-18 14:10:21 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Lancement du pipeline ML dans ml_engine...
+2026-05-18 14:10:21 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Script : /app/scripts/pipeline.py
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - ============================================================
+  PIPELINE ML SAGAP — Prévision CA Mensuel
+============================================================
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - >>> ETAPE 1 — Load Raw Data
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - [data_loader] 49 mois charges
+  Periode  : Jan 2022 -> Jan 2026
+  CA moyen : 1,157,030 DT
+  CA min   : 576,097 DT (Feb 2022)
+  CA max   : 1,644,113 DT (Jul 2025)
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - >>> ETAPE 2 — Exploratory Data Analysis
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - [eda] Statistiques descriptives :
+  Nombre de mois : 49
+  CA moyen       :       1,157,030 DT
+  CA mediane     :       1,193,357 DT
+  Ecart-type     :         279,729 DT
+  CA minimum     :         576,097 DT (Feb 2022)
+  CA maximum     :       1,644,113 DT (Jul 2025)
+  Coefficient CV :            24.2 % (variabilite relative)
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> Graphe sauvegarde : /tmp/ml_outputs/eda_serie_brute.png
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> Graphe sauvegarde : /tmp/ml_outputs/eda_saisonnalite.png
+
+[eda] Saisonnalite :
+  Mois les plus forts  : ['Oct', 'Dec', 'Sep']
+  Mois les plus faibles: ['Fev', 'Mar', 'Avr']
+  Amplitude            : 377,557 DT
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - [eda] CA Annuel :
+  2022 :       9,564,378 DT
+  2023 :      13,725,276 DT
+  2024 :      15,843,689 DT
+  2025 :      16,342,751 DT
+  Croissance totale 2022->2025 : +70.9%
+2026-05-18 14:10:26 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> Graphe sauvegarde : /tmp/ml_outputs/eda_ca_annuel.png
+
+>>> ETAPE 3 — Decomposition + ADF + ACF/PACF
+[decomposition] Decomposition additive...
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Tendance     : +553,566 DT sur la periode
+  Saisonnalite : amplitude 305,979 DT
+  Residus      : std = 89,259 DT
+
+  Composante saisonniere par mois :
+    Jan :    -75,482 DT  III
+    Fev :   -120,630 DT  IIIIII
+    Mar :   -166,726 DT  IIIIIIII
+    Avr :   -135,692 DT  IIIIII
+    Mai : +    34,266 DT  I
+    Jun :     -3,031 DT  
+    Jul : +   113,019 DT  IIIII
+    Aou : +    27,356 DT  I
+    Sep : +   139,253 DT  IIIIII
+    Oct : +   101,138 DT  IIIII
+    Nov : +    15,131 DT  
+    Dec : +    71,399 DT  III
+
+[decomposition] Test ADF...
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Statistique ADF : -1.8989
+  p-value         : 0.3326
+  Serie NON STATIONNAIRE -> d=1
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - ADF apres diff(1) : p-value = 0.0007
+  -> d=1 confirme pour SARIMA
+
+[decomposition] ACF/PACF...
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> Graphes sauvegardes dans /tmp/ml_outputs/
+  -> Pic lag 12 confirme saisonnalite annuelle
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Split : Train=43 mois | Test=6 mois
+
+>>> ETAPE 4 — Model Selection and Fitting
+
+[models] 1 — Holt-Winters Additif
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Overfitting : train=8.41% | test=8.36% | ecart=0.06% -> Pas d overfitting
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - 2026/05/18 14:10:27 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> MLflow run [HW-Additif] enregistre
+  MAE=111,825 | RMSE=142,048 | MAPE=8.36%
+
+[models] 2 — Holt-Winters Multiplicatif
+2026-05-18 14:10:27 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Overfitting : train=7.01% | test=7.88% | ecart=0.87% -> Pas d overfitting
+2026-05-18 14:10:28 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> MLflow run [HW-Multiplicatif] enregistre
+  MAE=105,503 | RMSE=131,515 | MAPE=7.88%
+
+[models] 3 — SARIMA Grid Search
+2026-05-18 14:10:28 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Meilleur : SARIMA(1, 1, 1)(1, 1, 1, 12) | AIC=436.04
+2026-05-18 14:10:28 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Overfitting : train=11.70% | test=13.49% | ecart=1.78% -> Pas d overfitting
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> MLflow run [SARIMA(1, 1, 1)] enregistre
+  MAE=186,871 | RMSE=201,511 | MAPE=13.49%
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - [models] 4 — Prophet
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - 14:10:29 - cmdstanpy - INFO - Chain [1] start processing
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - 14:10:29 - cmdstanpy - INFO - Chain [1] done processing
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Overfitting : train=5.78% | test=6.20% | ecart=0.42% -> Pas d overfitting
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> MLflow run [Prophet] enregistre
+  MAE=92,136 | RMSE=103,450 | MAPE=6.20%
+
+>>> ETAPE 5 — Model Evaluation
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - [evaluation] Comparaison des modeles :
+===========================================================================
+Modele                              MAE       RMSE     MAPE    SMAPE        Biais
+===========================================================================
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Prophet                          92,136    103,450    6.20%    6.29%      -35,922  [bon]
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - HW-Multiplicatif                105,503    131,515    7.88%    7.41%       98,805  [bon]
+HW-Additif                      111,825    142,048    8.36%    7.81%       89,571  [bon]
+SARIMA(1, 1, 1)                 186,871    201,511   13.49%   12.45%      186,871  [acceptable]
+===========================================================================
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Meilleur modele : Prophet (MAPE=6.20%)
+  Reference industrie : 10-15% -> nos modeles sont au-dessus du standard
+2026-05-18 14:10:29 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> Graphes sauvegardes dans /tmp/ml_outputs/
+
+>>> ETAPE 6 — Model Prediction and Forecasting
+
+[models] Meilleur modele : Prophet (MAPE=6.20%)
+
+[prediction] Reentraînement de Prophet sur 49 mois...
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - 14:10:29 - cmdstanpy - INFO - Chain [1] start processing
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - 14:10:30 - cmdstanpy - INFO - Chain [1] done processing
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Predictions Prophet :
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Feb 2026 ->    1,334,374.62 DT
+    Mar 2026 ->    1,303,395.03 DT
+    Apr 2026 ->    1,326,820.29 DT
+    May 2026 ->    1,491,650.09 DT
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Jun 2026 ->    1,470,686.07 DT
+    Jul 2026 ->    1,581,405.09 DT
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Aug 2026 ->    1,468,124.94 DT
+    Sep 2026 ->    1,640,153.11 DT
+    Oct 2026 ->    1,628,716.08 DT
+    Nov 2026 ->    1,536,722.39 DT
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Dec 2026 ->    1,576,778.61 DT
+    Jan 2027 ->    1,441,487.03 DT
+
+  =======================================================
+  CA reel 2024      :   15,843,689.48 DT
+  CA reel 2025      :   16,342,751.14 DT
+  CA prevu          :   17,800,313.37 DT
+  Croissance 25->26 :            8.92 %
+  Modele            : Prophet
+  MAPE test         : 6.20%
+  =======================================================
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> Graphes sauvegardes dans /tmp/ml_outputs/
+
+[prediction] Ecriture dans ClickHouse...
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - -> 12 predictions ecrites dans gold.ml_predictions
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - date  year  month  predicted_sales  is_prediction
+2026-02-01  2026      2     1.334375e+06              1
+2026-03-01  2026      3     1.303395e+06              1
+2026-04-01  2026      4     1.326820e+06              1
+2026-05-01  2026      5     1.491650e+06              1
+2026-06-01  2026      6     1.470686e+06              1
+2026-07-01  2026      7     1.581405e+06              1
+2026-08-01  2026      8     1.468125e+06              1
+2026-09-01  2026      9     1.640153e+06              1
+2026-10-01  2026     10     1.628716e+06              1
+2026-11-01  2026     11     1.536722e+06              1
+2026-12-01  2026     12     1.576779e+06              1
+2027-01-01  2027      1     1.441487e+06              1
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - ============================================================
+  PIPELINE TERMINE en 4.1s
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Meilleur modele : Prophet (MAPE=6.20%)
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - CA prevu        : 17,800,313 DT
+  MLflow          : http://mlflow:5000
+  Graphes         : /tmp/ml_outputs/
+============================================================
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Pipeline ML termine avec succes
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Predictions disponibles dans gold.ml_predictions
+2026-05-18 14:10:30 +0000 - dagster - INFO - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Artifacts disponibles dans MLflow -> http://mlflow:5000
+2026-05-18 14:10:30 +0000 - dagster - DEBUG - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - 411423 - ml_timeseries_pipeline - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2026-05-18 14:10:30 +0000 - dagster - DEBUG - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - ml_timeseries_pipeline - Writing file at: /dagster/storage/ml_timeseries_pipeline using PickledObjectFilesystemIOManager...
+2026-05-18 14:10:30 +0000 - dagster - DEBUG - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - 411423 - ml_timeseries_pipeline - ASSET_MATERIALIZATION - Materialized value ml_timeseries_pipeline.
+2026-05-18 14:10:30 +0000 - dagster - DEBUG - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - 411423 - ml_timeseries_pipeline - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2026-05-18 14:10:30 +0000 - dagster - DEBUG - __ASSET_JOB - c66ff9c9-31df-4eae-911d-6a249d3c754e - 411423 - ml_timeseries_pipeline - STEP_SUCCESS - Finished execution of step "ml_timeseries_pipeline" in 9.59s.

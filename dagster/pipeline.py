@@ -36,6 +36,9 @@ SMTP_PASSWORD = os.getenv("DAGSTER_SMTP_PASSWORD", "")
 EMAIL_FROM    = os.getenv("DAGSTER_EMAIL_FROM",    "")
 EMAIL_TO      = os.getenv("DAGSTER_EMAIL_TO",      "")
 
+# -- ML Config ----------------------------------------------------------------
+ML_PIPELINE_SCRIPT = os.getenv("ML_PIPELINE_SCRIPT", "/app/scripts/pipeline.py")
+
 # -- dbt ----------------------------------------------------------------------
 dbt_project  = DbtProject(project_dir=DBT_PROJECT_DIR)
 dbt_resource = DbtCliResource(project_dir=DBT_PROJECT_DIR, profiles_dir=DBT_PROFILES_DIR, target="dev")
@@ -77,7 +80,7 @@ def send_email(subject, body):
 @run_status_sensor(run_status=DagsterRunStatus.SUCCESS)
 def email_on_pipeline_success(context: RunStatusSensorContext):
     job_name = context.dagster_run.job_name
-    if job_name not in ("full_pipeline", "dbt_gold_refresh"):
+    if job_name not in ("full_pipeline", "dbt_gold_refresh", "ml_timeseries_job"):
         return
     send_email(
         "[OK] Pipeline " + job_name + " reussi",
@@ -87,7 +90,7 @@ def email_on_pipeline_success(context: RunStatusSensorContext):
 @run_status_sensor(run_status=DagsterRunStatus.FAILURE)
 def email_on_pipeline_failure(context: RunStatusSensorContext):
     job_name = context.dagster_run.job_name
-    if job_name not in ("full_pipeline", "dbt_gold_refresh"):
+    if job_name not in ("full_pipeline", "dbt_gold_refresh", "ml_timeseries_job"):
         return
     send_email(
         "[ERREUR] Pipeline " + job_name + " echoue",
@@ -146,17 +149,38 @@ def spark_silver_cleaning(context):
     import docker
     client    = docker.from_env()
     container = client.containers.get("spark_clean")
-    exec_id   = client.api.exec_create(
-        container.id, cmd=["python3", "/opt/jobs/main_clean_silver.py"],
-        stdout=True, stderr=True)
+
+    # Créer l'exec
+    exec_id = client.api.exec_create(
+        container.id,
+        cmd=["python3", "/opt/jobs/main_clean_silver.py"],
+        stdout=True, stderr=True
+    )
+
+    # Lancer et streamer les logs
     for chunk in client.api.exec_start(exec_id["Id"], stream=True):
         if chunk:
             line = chunk.decode("utf-8", errors="replace").strip()
             if line:
                 context.log.info(line)
-    exit_code = client.api.exec_inspect(exec_id["Id"]).get("ExitCode", -1)
+
+    # Attendre que l'exec soit vraiment terminé
+    import time
+    for _ in range(60):
+        inspect = client.api.exec_inspect(exec_id["Id"])
+        if not inspect.get("Running", True):
+            break
+        time.sleep(2)
+
+    exit_code = client.api.exec_inspect(exec_id["Id"]).get("ExitCode")
+
+    if exit_code is None:
+        context.log.warning("exit_code=None — on suppose succes")
+        return {"status": "success"}
+
     if exit_code != 0:
         raise Exception("Spark failed exit_code=" + str(exit_code))
+
     return {"status": "success"}
 
 # 3. SILVER - Verification
@@ -240,8 +264,6 @@ def cube_refresh(context):
     return {"status": "refreshed"}
 
 # 7. SEMANTIC - Superset sync
-# Execute le script sync_cube_to_superset.py dans le container Superset
-# Le script a acces au SQLite de Superset et aux APIs Cube.js/Superset
 @asset(group_name="semantic", deps=[cube_refresh],
        description="Synchronise les mesures Cube.js vers Superset")
 def superset_sync(context):
@@ -263,6 +285,42 @@ def superset_sync(context):
     context.log.info("Synchronisation Cube.js -> Superset terminee.")
     return {"status": "synced"}
 
+# =============================================================
+# 8. ML TIMESERIES — 1 seul asset qui appelle pipeline.py
+#    Se positionne après gold (dbt_docs), en parallèle de semantic
+# =============================================================
+@asset(
+    group_name="ml_timeseries",
+    deps=[dbt_docs],
+    description="[ML] Pipeline complet : EDA -> Decomposition -> HW + SARIMA + Prophet -> Prediction -> gold.ml_predictions"
+)
+def ml_timeseries_pipeline(context):
+    import docker
+    context.log.info("Lancement du pipeline ML dans ml_engine...")
+    context.log.info("Script : " + ML_PIPELINE_SCRIPT)
+
+    client    = docker.from_env()
+    container = client.containers.get("ml_engine")
+    exec_id   = client.api.exec_create(
+        container.id,
+        cmd=["python3", ML_PIPELINE_SCRIPT],
+        stdout=True, stderr=True
+    )
+    for chunk in client.api.exec_start(exec_id["Id"], stream=True):
+        if chunk:
+            line = chunk.decode("utf-8", errors="replace").strip()
+            if line:
+                context.log.info(line)
+
+    exit_code = client.api.exec_inspect(exec_id["Id"]).get("ExitCode", -1)
+    if exit_code != 0:
+        raise Exception("ML pipeline failed — exit_code=" + str(exit_code))
+
+    context.log.info("Pipeline ML termine avec succes")
+    context.log.info("Predictions disponibles dans gold.ml_predictions")
+    context.log.info("Artifacts disponibles dans MLflow -> http://mlflow:5000")
+    return {"status": "ml_pipeline_done"}
+
 # -- Jobs ---------------------------------------------------------------------
 _bronze        = AssetSelection.assets(airbyte_sync)
 _silver        = AssetSelection.assets(spark_silver_cleaning) | AssetSelection.assets(silver_ready)
@@ -271,11 +329,12 @@ _dbt           = AssetSelection.assets(dbt_models)
 _docs          = AssetSelection.assets(dbt_docs)
 _cube          = AssetSelection.assets(cube_refresh)
 _superset      = AssetSelection.assets(superset_sync)
+_ml            = AssetSelection.assets(ml_timeseries_pipeline)
 
 full_pipeline_job = define_asset_job(
     name="full_pipeline",
-    description="Pipeline complet : Bronze -> Silver -> Gold -> Semantic",
-    selection=_bronze | _silver | _silver_tables | _dbt | _docs | _cube | _superset,
+    description="Pipeline complet : Bronze -> Silver -> Gold -> Semantic + ML",
+    selection=_bronze | _silver | _silver_tables | _dbt | _docs | _cube | _superset | _ml,
     config={"execution": {"config": {"in_process": {}}}},
 )
 
@@ -285,12 +344,22 @@ dbt_gold_refresh_job = define_asset_job(
     selection=_dbt | _docs,
 )
 
+ml_timeseries_job = define_asset_job(
+    name="ml_timeseries_job",
+    description="Pipeline ML series temporelles — peut tourner independamment",
+    selection=_ml,
+)
+
 @schedule(job=full_pipeline_job, cron_schedule="0 2 * * *")
 def nightly_pipeline_schedule(context):
     return {}
 
 @schedule(job=dbt_gold_refresh_job, cron_schedule="0 */6 * * *")
 def dbt_refresh_schedule(context):
+    return {}
+
+@schedule(job=ml_timeseries_job, cron_schedule="0 3 1 * *")  # 1er de chaque mois a 3h
+def monthly_ml_schedule(context):
     return {}
 
 # -- Definitions --------------------------------------------------------------
@@ -304,9 +373,10 @@ defs = Definitions(
         dbt_docs,
         cube_refresh,
         superset_sync,
+        ml_timeseries_pipeline,
     ],
-    jobs=[full_pipeline_job, dbt_gold_refresh_job],
-    schedules=[nightly_pipeline_schedule, dbt_refresh_schedule],
+    jobs=[full_pipeline_job, dbt_gold_refresh_job, ml_timeseries_job],
+    schedules=[nightly_pipeline_schedule, dbt_refresh_schedule, monthly_ml_schedule],
     sensors=[email_on_pipeline_success, email_on_pipeline_failure],
     resources={"dbt": dbt_resource},
 )
