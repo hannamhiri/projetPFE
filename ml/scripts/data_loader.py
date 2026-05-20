@@ -37,6 +37,7 @@ def load_time_series() -> pd.Series:
         JOIN gold.dim_date   AS d ON f.DateSK = d.DateSK
         WHERE f.DocumentTypeSK IN (4, 1, 5)
           AND f.LinePrice IS NOT NULL
+          AND f.DocumentStatusSK NOT IN (4, 13)
         GROUP BY year, month
         ORDER BY year, month
     """)
