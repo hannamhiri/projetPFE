@@ -1,5 +1,5 @@
 # =============================================================
-# evaluation.py — Comparaison des modèles + visualisations
+# evaluation.py — Comparaison des modeles + visualisations
 # =============================================================
 
 import pandas as pd
@@ -13,12 +13,6 @@ from config import MAPE_BON, MAPE_EXCELLENT
 
 def run_evaluation(ts_train, ts_test, all_results: list,
                    save_dir: str = '/tmp') -> pd.DataFrame:
-    """
-    Comparer tous les modèles, afficher le tableau,
-    sauvegarder les graphes.
-    Retourne un DataFrame trié par MAPE.
-    """
-    # ── Tableau comparatif ─────────────────────────────────────
     df = pd.DataFrame([
         {k: v for k, v in r.items()
          if k not in ('pred', 'model_obj', 'ci_low', 'ci_high',
@@ -48,7 +42,7 @@ def run_evaluation(ts_train, ts_test, all_results: list,
     print(f'\n  Meilleur modele : {best_name} (MAPE={best_mape:.2f}%)')
     print(f'  Reference industrie : 10-15% -> nos modeles sont au-dessus du standard')
 
-    # ── Graphe MAPE coloré ─────────────────────────────────────
+    # Graphe MAPE
     fig, ax = plt.subplots(figsize=(12, 5))
     vals   = df['MAPE'].astype(float)
     colors = ['green' if v < MAPE_EXCELLENT
@@ -59,7 +53,7 @@ def run_evaluation(ts_train, ts_test, all_results: list,
                label=f'Seuil {MAPE_BON}% (acceptable)', alpha=0.7)
     ax.axhline(MAPE_EXCELLENT, color='green',  linestyle='--',
                label=f'Seuil {MAPE_EXCELLENT}% (excellent)', alpha=0.7)
-    ax.set_title('MAPE par Modele — Comparaison')
+    ax.set_title('MAPE par Modele - Comparaison')
     ax.set_ylabel('MAPE (%)')
     ax.tick_params(axis='x', rotation=30)
     for bar, val in zip(bars, vals.values):
@@ -71,22 +65,20 @@ def run_evaluation(ts_train, ts_test, all_results: list,
     plt.savefig(f'{save_dir}/eval_mape_comparison.png', dpi=100)
     plt.close()
 
-    # ── Graphe réel vs prédit tous modèles ────────────────────
+    # Graphe reel vs predit
     fig, ax = plt.subplots(figsize=(14, 6))
     ax.plot(ts_train.index, ts_train.values,
             color='steelblue', linewidth=1.5, alpha=0.5, label='Train')
     ax.plot(ts_test.index, ts_test.values,
             color='black', marker='o', linewidth=2.5,
             label='CA Reel (test)', zorder=5)
-
     palette = plt.cm.tab10.colors
     for i, r in enumerate(all_results):
         ax.plot(ts_test.index, r['pred'],
                 label=f"{r['name']} ({float(r['MAPE']):.1f}%)",
                 marker='s', linestyle='--',
                 color=palette[i % len(palette)], alpha=0.8)
-
-    ax.set_title('CA Reel vs Predit — Tous les modeles')
+    ax.set_title('CA Reel vs Predit - Tous les modeles')
     ax.set_ylabel('CA (DT)')
     ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x:,.0f}'))
     ax.legend(loc='upper left', fontsize=8)
@@ -100,18 +92,13 @@ def run_evaluation(ts_train, ts_test, all_results: list,
 
 if __name__ == '__main__':
     from data_loader import load_time_series
-    from models import (train_hw_additif, train_hw_multiplicatif,
-                        train_sarima, train_prophet)
+    from models import run_h1_modeling, select_best
     from config import N_TEST
 
     ts       = load_time_series()
     ts_train = ts.iloc[:-N_TEST]
     ts_test  = ts.iloc[-N_TEST:]
 
-    all_results = [
-        train_hw_additif(ts_train, ts_test, N_TEST),
-        train_hw_multiplicatif(ts_train, ts_test, N_TEST),
-        train_sarima(ts_train, ts_test, N_TEST),
-        train_prophet(ts_train, ts_test, N_TEST),
-    ]
+    h1_results  = run_h1_modeling(ts_train, ts_test, N_TEST)
+    all_results = h1_results['all']
     df = run_evaluation(ts_train, ts_test, all_results)

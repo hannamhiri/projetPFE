@@ -35,3 +35,6 @@ MAPE_BON        = 10.0
 
 # ── ClickHouse output ─────────────────────────────────────────
 OUTPUT_TABLE = 'gold.ml_predictions'
+
+# For best model retriraining
+REGISTRY_NAME = 'TimeSeries_SalesForcast'
